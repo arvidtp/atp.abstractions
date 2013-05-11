@@ -46,7 +46,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 50.0, 94.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -66,6 +66,17 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 22.0, 206.0, 20.0, 20.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -145,7 +156,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 118.0, 145.0, 20.0 ],
-									"text" : "loadmess maxMasterBus"
+									"text" : "loadmess MaxMasterBus"
 								}
 
 							}
@@ -178,7 +189,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 120.0, 286.0, 25.0, 25.0 ]
+									"patching_rect" : [ 150.0, 286.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -225,6 +236,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-31", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-32", 0 ]
 								}
 
 							}
@@ -1200,19 +1220,19 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 414.0, 177.0, 145.0, 20.0 ],
+					"patching_rect" : [ 414.0, 177.0, 214.0, 20.0 ],
 					"restore" : 					{
 						"Dac-direct" : [ 0 ],
 						"Link-L-R" : [ 1 ],
-						"MaxMasterBusSend" : [ 0 ],
+						"MaxMasterBusSend" : [ 1 ],
 						"audio-out-chans" : [ 0 ],
 						"limiter-enable" : [ 0 ],
 						"main[1]" : [ 127 ],
 						"main[2]" : [ 127 ]
 					}
 ,
-					"text" : "autopattr @autorestore 0",
-					"varname" : "u311000686"
+					"text" : "autopattr atpAudioOut @autorestore 0",
+					"varname" : "atpAudioOut"
 				}
 
 			}
@@ -1419,7 +1439,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 127.0, 10.0, 25.0, 25.0 ]
 				}
 
@@ -1431,7 +1451,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 95.0, 10.0, 25.0, 25.0 ]
 				}
 
@@ -1658,7 +1678,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 404.0, 48.0, 25.0, 25.0 ]
 								}
 
@@ -2759,21 +2779,6 @@
 					"source" : [ "obj-90", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "tosig",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions",
-				"patcherrelativepath" : ".",
-				"type" : "maxb",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "atp.+=.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
 			}
  ]
 	}
