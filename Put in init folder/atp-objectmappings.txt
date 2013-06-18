@@ -1,0 +1,3 @@
+max objectfile atp.|| atp.logicalOr;
+max objectfile atp.&& atp.logicalAnd;
+max objectfile atp.* atp.multiply;

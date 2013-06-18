@@ -1,0 +1,4 @@
+max definecommand [ patcher insertobj inlet;
+max definecommandinstructions patcher [ "inlet";
+max definecommand ] patcher insertobj outlet;
+max definecommandinstructions patcher ] "outlet";
