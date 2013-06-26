@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 3,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 529.0, 121.0, 640.0, 480.0 ],
@@ -27,6 +28,21 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-12",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 383.0, 213.0, 150.0, 47.0 ],
+					"text" : "Arguments:\n1: dict name\n2: key to set on input"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -62,8 +78,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 430.0, 54.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 450.0, 55.0, 0.0, 0.0 ]
+					"patching_rect" : [ 430.0, 54.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -103,7 +118,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 340.0, 118.0, 74.0, 20.0 ],
-					"presentation_rect" : [ 246.0, 119.0, 0.0, 0.0 ],
 					"text" : "prepend set"
 				}
 
