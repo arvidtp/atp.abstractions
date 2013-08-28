@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 1700.0, -106.0, 936.0, 855.0 ],
+		"rect" : [ 460.0, 44.0, 936.0, 855.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -176,7 +176,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 454.5, 451.0, 135.0, 20.0 ],
-					"presentation_rect" : [ 455.0, 448.0, 0.0, 0.0 ],
 					"text" : "4: continuation of touch"
 				}
 
@@ -191,7 +190,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 122.0, 254.0, 93.0, 20.0 ],
-					"presentation_rect" : [ 120.0, 250.0, 0.0, 0.0 ],
 					"text" : "3: start of touch"
 				}
 
@@ -728,7 +726,7 @@
 					"patching_rect" : [ 400.0, 481.0, 125.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"name" : "1010IdToParam",
+						"name" : "#0IdToParam",
 						"parameter_enable" : 0,
 						"range" : 128,
 						"showeditor" : 0,
@@ -796,14 +794,14 @@
 					"patching_rect" : [ 269.666656, 571.0, 125.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"name" : "1010IdToParam",
+						"name" : "#0IdToParam",
 						"parameter_enable" : 0,
 						"range" : 128,
 						"showeditor" : 0,
 						"size" : 128
 					}
 ,
-					"showeditor" : 1,
+					"showeditor" : 0,
 					"text" : "table #0IdToParam"
 				}
 
@@ -822,7 +820,7 @@
 					"patching_rect" : [ 422.0, 375.0, 125.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"name" : "1010IdToParam",
+						"name" : "#0IdToParam",
 						"parameter_enable" : 0,
 						"range" : 128,
 						"showeditor" : 0,
@@ -862,7 +860,7 @@
 					"patching_rect" : [ 170.0, 693.0, 125.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"name" : "1010IdToParam",
+						"name" : "#0IdToParam",
 						"parameter_enable" : 0,
 						"range" : 128,
 						"showeditor" : 0,
@@ -2072,7 +2070,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "list" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 368.0, 10.0, 25.0, 25.0 ]
 				}
 
@@ -2095,7 +2093,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "list" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 239.0, 10.0, 25.0, 25.0 ]
 				}
 
@@ -2617,7 +2615,8 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ]
 	}
 
 }
