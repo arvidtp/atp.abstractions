@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x86"
 		}
 ,
@@ -34,7 +34,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 339.0, 287.0, 25.0, 25.0 ]
+					"patching_rect" : [ 339.0, 315.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -62,7 +62,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 386.0, 67.0, 204.0, 194.0 ],
+					"patching_rect" : [ 386.0, 67.0, 204.0, 195.0 ],
 					"text" : "atp.patchPath\n\nGet path of patcher. - allows one to make sure they are writing files the to parent folder of THIS patch, not the folder of a more recently open patch.\n\nArgument 1:\nname of send/receive and value objects to interact with\n\nArvid Tomayko\narvidtp.net"
 				}
 
@@ -77,8 +77,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 98.0, 304.0, 120.0, 47.0 ],
-					"text" : "this serves at trigger too so we know value is already set"
+					"patching_rect" : [ 100.0, 304.0, 120.0, 47.0 ],
+					"text" : "this sends at trigger too so we know value is already set"
 				}
 
 			}
@@ -104,7 +104,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.0, 278.0, 67.0, 20.0 ],
+					"patching_rect" : [ 100.0, 278.0, 107.0, 20.0 ],
 					"text" : "s #1"
 				}
 
@@ -146,7 +146,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 219.5, 278.0, 90.0, 20.0 ],
+					"patching_rect" : [ 219.5, 278.0, 130.0, 20.0 ],
 					"text" : "value #1"
 				}
 
@@ -173,7 +173,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 122.0, 209.0, 83.0, 20.0 ],
+					"patching_rect" : [ 122.0, 209.0, 123.0, 20.0 ],
 					"text" : "print #1"
 				}
 
@@ -185,7 +185,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 100.0, 98.0, 25.0, 25.0 ]
 				}
 
