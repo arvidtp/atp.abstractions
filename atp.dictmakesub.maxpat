@@ -37,7 +37,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 249.0, 78.0, 57.0, 18.0 ],
-					"presentation_rect" : [ 283.25, 77.0, 0.0, 0.0 ],
 					"text" : "name $1"
 				}
 
@@ -50,8 +49,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 249.0, 42.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 283.25, 41.0, 0.0, 0.0 ]
+					"patching_rect" : [ 249.0, 42.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -130,7 +128,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 192.25, 298.5, 59.5, 20.0 ],
+					"patching_rect" : [ 192.25, 298.5, 73.5, 20.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0
@@ -146,12 +144,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-12",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 324.0, 172.0, 150.0, 33.0 ],
-					"text" : "send in the name of a subdict and it will create "
+					"patching_rect" : [ 349.0, 165.0, 252.0, 47.0 ],
+					"text" : "Send the name of a subdict into inlet 1 and it will be created inside the dict specified by the argument to this abstraction."
 				}
 
 			}
@@ -163,8 +161,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 355.0, 42.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 275.0, 99.0, 0.0, 0.0 ]
+					"patching_rect" : [ 355.0, 42.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -230,7 +227,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 116.0, 165.0, 196.0, 21.0 ],
+					"patching_rect" : [ 116.0, 165.0, 210.0, 21.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0
@@ -379,8 +376,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ]
+ ]
 	}
 
 }
