@@ -11,7 +11,7 @@ function anything()
 	var i;
 	var a = arrayfromargs(messagename, arguments);
 	for(i=0;i<a.length;i++) {
-		if (typeof a[i] == 'string') { //if string
+		if (typeof a[i] == 'string' || myVar instanceof String) { //if string
 			a[i] = a[i].replace("#","0x");
 			v[i] = parseInt(a[i],16);
 		} else { //if not (ie an int), just pass it through
