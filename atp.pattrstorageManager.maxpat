@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x86"
 		}
 ,
@@ -30,14 +30,27 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 350.0, 172.0, 37.0, 18.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "Recall preset #",
 					"id" : "obj-17",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 780.5, 6.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 784.0, 5.0, 0.0, 0.0 ]
+					"patching_rect" : [ 780.5, 6.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -264,7 +277,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x86"
 						}
 ,
@@ -985,7 +998,7 @@
 					"fontsize" : 12.0,
 					"hltcolor" : [ 1.0, 0.277021, 0.203063, 1.0 ],
 					"id" : "obj-345",
-					"items" : [ "(undefined)", ",", "Default", ",", "Modest Machine 2009 11 24", ",", "2013-04-13 Default", ",", "2013-04-13 Harmonic Minor Pitch Only Quant" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1171,7 +1184,7 @@
 					"fontsize" : 12.0,
 					"hltcolor" : [ 0.113865, 0.89663, 0.998892, 1.0 ],
 					"id" : "obj-315",
-					"items" : [ "(undefined)", ",", "Default", ",", "Modest Machine 2009 11 24", ",", "2013-04-13 Default", ",", "2013-04-13 Harmonic Minor Pitch Only Quant" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1205,7 +1218,7 @@
 					"fontsize" : 12.0,
 					"hltcolor" : [ 1.0, 0.6, 0.0, 1.0 ],
 					"id" : "obj-314",
-					"items" : [ "(undefined)", ",", "Default", ",", "Modest Machine 2009 11 24", ",", "2013-04-13 Default", ",", "2013-04-13 Harmonic Minor Pitch Only Quant", ",", "==New==" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1341,7 +1354,7 @@
 					"fontsize" : 12.0,
 					"hltcolor" : [ 0.235855, 1.0, 0.028345, 1.0 ],
 					"id" : "obj-290",
-					"items" : [ "(undefined)", ",", "Default", ",", "Modest Machine 2009 11 24", ",", "2013-04-13 Default", ",", "2013-04-13 Harmonic Minor Pitch Only Quant" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1729,6 +1742,42 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-290", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-314", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-315", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-345", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}

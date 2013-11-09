@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 5
+			"minor" : 1,
+			"revision" : 4,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 1280.0, -392.0, 1280.0, 956.0 ],
+		"rect" : [ 400.0, 44.0, 1280.0, 956.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -31,13 +32,43 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-99",
-					"maxclass" : "newobj",
+					"id" : "obj-104",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 424.0, 164.0, 37.0, 18.0 ],
+					"text" : "done"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-96",
+					"maxclass" : "comment",
 					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 134.5, 182.0, 253.0, 20.0 ],
-					"text" : "regexp \\\\d\\\\d\\\\d\\\\d-\\\\d\\\\d-\\\\d\\\\d @substitute %0"
+					"numoutlets" : 0,
+					"patching_rect" : [ 899.0, 241.0, 47.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 201.0, 66.0, 47.0, 20.0 ],
+					"text" : "<< File"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-97",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 479.0, 190.0, 37.0, 18.0 ],
+					"text" : "clear"
 				}
 
 			}
@@ -80,11 +111,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 5
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 565.0, 69.0, 640.0, 480.0 ],
+						"rect" : [ 565.0, 95.0, 640.0, 454.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -305,22 +337,21 @@
 								}
 
 							}
- ],
-						"dependency_cache" : [  ]
+ ]
 					}
 ,
 					"patching_rect" : [ 39.0, 641.0, 107.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : "",
+						"digest" : "",
 						"fontface" : 0,
-						"fontsize" : 12.0
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p setToLastStored"
@@ -344,6 +375,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-60",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -734,12 +766,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-72",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 647.0, 912.0, 123.0, 34.0 ],
+					"patching_rect" : [ 647.0, 912.0, 123.0, 33.0 ],
 					"text" : "ask to save on close patcher if dirty"
 				}
 
@@ -757,11 +790,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 5
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 1648.0, -46.0, 640.0, 480.0 ],
+						"rect" : [ 1040.0, 44.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -859,7 +893,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "int" ],
-									"patching_rect" : [ 95.0, 192.0, 67.0, 20.0 ],
+									"patching_rect" : [ 95.0, 192.0, 67.0, 19.0 ],
 									"text" : "unpack s 0"
 								}
 
@@ -873,7 +907,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "bang" ],
-									"patching_rect" : [ 50.0, 122.0, 33.0, 20.0 ],
+									"patching_rect" : [ 50.0, 122.0, 33.0, 19.0 ],
 									"text" : "t 0 b"
 								}
 
@@ -887,7 +921,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 100.0, 64.0, 20.0 ],
+									"patching_rect" : [ 50.0, 100.0, 64.0, 19.0 ],
 									"text" : "route done"
 								}
 
@@ -1055,22 +1089,21 @@
 								}
 
 							}
- ],
-						"dependency_cache" : [  ]
+ ]
 					}
 ,
 					"patching_rect" : [ 96.0, 229.0, 69.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : "",
+						"digest" : "",
 						"fontface" : 0,
-						"fontsize" : 12.0
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p slotname"
@@ -1090,8 +1123,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 5
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 367.0, 127.0, 796.0, 478.0 ],
@@ -1137,7 +1171,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 42.0, 189.5, 322.0, 18.0 ],
-									"text" : "symbol \"2012-07-18 cuts+ interp steve guit end 2\""
+									"text" : "symbol Default"
 								}
 
 							}
@@ -1467,22 +1501,21 @@
 								}
 
 							}
- ],
-						"dependency_cache" : [  ]
+ ]
 					}
 ,
 					"patching_rect" : [ 273.0, 688.5, 103.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : "",
+						"digest" : "",
 						"fontface" : 0,
-						"fontsize" : 12.0
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p askToOverwrite"
@@ -1493,6 +1526,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-54",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1515,8 +1549,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 5
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 50.0, 94.0, 495.0, 413.0 ],
@@ -1538,7 +1573,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -1618,8 +1652,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 67.0, 125.0, 272.0, 18.0 ],
-									"text" : "2012-07-18 cuts+ interp steve guit endpoint 2"
+									"patching_rect" : [ 67.0, 125.0, 272.0, 18.0 ]
 								}
 
 							}
@@ -1781,28 +1814,21 @@
 								}
 
 							}
- ],
-						"dependency_cache" : [ 							{
-								"name" : "atp.dateYMD.maxpat",
-								"bootpath" : "/Applications/Max6/Cycling '74/abstractions",
-								"type" : "JSON",
-								"implicit" : 1
-							}
  ]
 					}
 ,
 					"patching_rect" : [ 288.0, 621.0, 95.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : "",
+						"digest" : "",
 						"fontface" : 0,
-						"fontsize" : 12.0
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p make-a-name"
@@ -1858,8 +1884,8 @@
 					"bordercolor" : [ 1.0, 0.376471, 0.376471, 0.509804 ],
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
+					"frgb" : 0.0,
 					"id" : "obj-42",
-					"linecount" : 5,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -1867,11 +1893,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 987.0, 835.0, 128.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
 					"presentation_rect" : [ 1.0, 0.0, 197.0, 60.0 ],
 					"rounded" : 4.0,
-					"tabmode" : 0,
-					"text" : "\"Macbook320:/Users/steve/Your Heaven/SEQ/Filters/Guitar/44.1k-guitar-biquads-atp04.json\""
+					"tabmode" : 0
 				}
 
 			}
@@ -1990,7 +2014,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-52",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 601.0, 849.0, 58.0, 20.0 ],
@@ -2002,6 +2026,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-49",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2071,6 +2096,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-46",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2130,7 +2156,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 938.0, 561.0, 137.0, 48.0 ],
+					"patching_rect" : [ 938.0, 561.0, 137.0, 47.0 ],
 					"text" : "dialog Clear all presets currently in RAM - are you sure?"
 				}
 
@@ -2247,6 +2273,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-27",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2265,7 +2292,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 457.0, 369.0, 154.0, 18.0 ],
+					"patching_rect" : [ 457.0, 369.0, 154.0, 17.0 ],
 					"text" : "clearchecks, checkitem $1 1"
 				}
 
@@ -2274,12 +2301,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-33",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 65.0, 81.0, 150.0, 34.0 ],
+					"patching_rect" : [ 65.0, 81.0, 150.0, 33.0 ],
 					"text" : "don't make menus until after xml file is loaded"
 				}
 
@@ -2377,13 +2405,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 9.0,
 					"id" : "obj-29",
-					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 648.0, 376.0, 155.0, 46.0 ],
-					"text" : "read \"Macbook320:/Users/steve/Your Heaven/SEQ/Filters/Guitar/44.1k-guitar-biquads-atp04.json\""
+					"patching_rect" : [ 648.0, 376.0, 155.0, 15.0 ]
 				}
 
 			}
@@ -2531,7 +2557,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 391.0, 736.0, 124.0, 20.0 ],
+					"patching_rect" : [ 391.0, 736.0, 124.0, 19.0 ],
 					"text" : "dialog Deleting Preset"
 				}
 
@@ -2571,7 +2597,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 421.0, 5.0, 25.0, 25.0 ]
 				}
 
@@ -2608,12 +2634,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-2",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 799.0, 74.0, 247.0, 62.0 ],
+					"patching_rect" : [ 799.0, 74.0, 247.0, 60.0 ],
 					"text" : "Args:\n1: name of json file to store in\n2: 1 = default to store current settings automatically as preset 1 on close, 0 = don't"
 				}
 
@@ -2645,13 +2672,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 9.0,
 					"id" : "obj-128",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 647.0, 280.0, 173.0, 36.0 ],
-					"text" : "write \"Macbook320:/Users/steve/Your Heaven/SEQ/Filters/Guitar/44.1k-guitar-biquads-atp04.json\""
+					"patching_rect" : [ 647.0, 280.0, 173.0, 15.0 ]
 				}
 
 			}
@@ -2687,6 +2712,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-344",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2705,7 +2731,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 1.0, 0.156863, 0.062745, 1.0 ],
 					"id" : "obj-345",
-					"items" : [ "(undefined)", ",", "2012-06-29 taylor for interp", ",", "2012-06-29 HD28 for interp - old", ",", "2012-07-02 HD28-Taylor interp 0.5000", ",", "2012-07-02 M00018 for interp", ",", "2012-07-02 (HD28-Tayl interp .5)(M00018) interp 0.5000", ",", "2012-07-02 SC for interp", ",", "2012-07-02 SC for interp 2", ",", "2012-07-02 HD28 for interp 2", ",", "2012-06-29 HD28-Taylor interp 0.5000 - old", ",", "2012-07-02 M00018 modded for SC", ",", "2012-07-02 HD28-Taylor interp 0.5000 modded for SC 1", ",", "2012-07-02 HD28-Taylor interp 0.5000 modded for SC 2", ",", "2012-07-02 all four 1", ",", "2012-07-02 all four 2 (tweaked)", ",", "2012-07-02 HD28 for interp 3", ",", "2012-07-03 wakefield all", ",", "2012-07-06 HD28 to covered ref 1", ",", "2012-07-06 HD28 to covered ref 1 adapted to open ref", ",", "2012-07-06 Taylor to covered ref 1 - maybe not useful", ",", "2012-07-09 HD28 to covered ref 2", ",", "2012-07-09 M018 to covered ref 1", ",", "2012-07-09 HD28 to M018 covered ref via scaling", ",", "2012-07-10 SC to covered ref 1", ",", "2012-07-10 Taylor to covered ref 1", ",", "2012-07-10 Tay-HD28 to covered ref interp 0.5000", ",", "2012-07-10 Tay-HD28 to covered ref interp 0.6500", ",", "2012-07-10 all 4 to covered ref interp tweaked for SC and open ref", ",", "2012-07-10 all 4 to covered ref interp tweaked for SC", ",", "2012-07-11 HD28 to covered ref 2 to Open Ref", ",", "2012-07-11 M018 to covered ref 1 to open ref", ",", "2012-07-11 SC to covered ref 1 to open ref", ",", "2012-07-11 Taylor to covered ref 1 to open ref", ",", "2012-07-11 HD28+Taylor (.65) to covered ref to open ref", ",", "2012-07-11 Prev+ M00018 cov2open (.333) #12 byp for SC", ",", "2012-07-12 taylor for interp b1", ",", "2012-07-12 HD28 for interp b1", ",", "2012-07-12 Taylor just cuts", ",", "2012-07-12 taylor cuts+ 1", ",", "2012-07-13 HD28 cuts+ 1", ",", "2012-07-13 HD28+Taylor cuts+ interp 1", ",", "2012-07-13 HD28+Taylor cuts+ interp 1 tweaked for SC", ",", "2012-07-13 M00018 cuts+ 1", ",", "2012-07-13 HD28 cuts+ 2", ",", "2012-07-13 HD28 cuts+ 3", ",", "2012-07-13 HD28+Taylor cuts+ interp 2", ",", "2012-07-13 HD28+Taylor cuts+ interp 2 tweaked for SC", ",", "2012-07-16 M00018 cuts+ 2", ",", "2012-07-16 SC interp result cuts+ 1", ",", "2012-07-16", "cuts+", "interp", "HD28", "endpoint", 1, ",", "2012-07-16", "cuts+", "interp", 18, "endpoint", 1, ",", "2012-07-16 cuts+ interp SC result 1 (.25 ^.5)", ",", "2012-07-16 cuts+ interp Taylor result 1 (.4 ^.5)", ",", "2012-07-16 guitar machine cuts+ 1", ",", "2012-07-18", "cuts+", "interp", 18, "endpoint", 2, ",", "2012-07-18", "cuts+", "interp", "steve", "guit", "endpoint", 2 ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2877,7 +2903,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ],
 					"id" : "obj-315",
-					"items" : [ "(undefined)", ",", "2012-06-29 taylor for interp", ",", "2012-06-29 HD28 for interp - old", ",", "2012-07-02 HD28-Taylor interp 0.5000", ",", "2012-07-02 M00018 for interp", ",", "2012-07-02 (HD28-Tayl interp .5)(M00018) interp 0.5000", ",", "2012-07-02 SC for interp", ",", "2012-07-02 SC for interp 2", ",", "2012-07-02 HD28 for interp 2", ",", "2012-06-29 HD28-Taylor interp 0.5000 - old", ",", "2012-07-02 M00018 modded for SC", ",", "2012-07-02 HD28-Taylor interp 0.5000 modded for SC 1", ",", "2012-07-02 HD28-Taylor interp 0.5000 modded for SC 2", ",", "2012-07-02 all four 1", ",", "2012-07-02 all four 2 (tweaked)", ",", "2012-07-02 HD28 for interp 3", ",", "2012-07-03 wakefield all", ",", "2012-07-06 HD28 to covered ref 1", ",", "2012-07-06 HD28 to covered ref 1 adapted to open ref", ",", "2012-07-06 Taylor to covered ref 1 - maybe not useful", ",", "2012-07-09 HD28 to covered ref 2", ",", "2012-07-09 M018 to covered ref 1", ",", "2012-07-09 HD28 to M018 covered ref via scaling", ",", "2012-07-10 SC to covered ref 1", ",", "2012-07-10 Taylor to covered ref 1", ",", "2012-07-10 Tay-HD28 to covered ref interp 0.5000", ",", "2012-07-10 Tay-HD28 to covered ref interp 0.6500", ",", "2012-07-10 all 4 to covered ref interp tweaked for SC and open ref", ",", "2012-07-10 all 4 to covered ref interp tweaked for SC", ",", "2012-07-11 HD28 to covered ref 2 to Open Ref", ",", "2012-07-11 M018 to covered ref 1 to open ref", ",", "2012-07-11 SC to covered ref 1 to open ref", ",", "2012-07-11 Taylor to covered ref 1 to open ref", ",", "2012-07-11 HD28+Taylor (.65) to covered ref to open ref", ",", "2012-07-11 Prev+ M00018 cov2open (.333) #12 byp for SC", ",", "2012-07-12 taylor for interp b1", ",", "2012-07-12 HD28 for interp b1", ",", "2012-07-12 Taylor just cuts", ",", "2012-07-12 taylor cuts+ 1", ",", "2012-07-13 HD28 cuts+ 1", ",", "2012-07-13 HD28+Taylor cuts+ interp 1", ",", "2012-07-13 HD28+Taylor cuts+ interp 1 tweaked for SC", ",", "2012-07-13 M00018 cuts+ 1", ",", "2012-07-13 HD28 cuts+ 2", ",", "2012-07-13 HD28 cuts+ 3", ",", "2012-07-13 HD28+Taylor cuts+ interp 2", ",", "2012-07-13 HD28+Taylor cuts+ interp 2 tweaked for SC", ",", "2012-07-16 M00018 cuts+ 2", ",", "2012-07-16 SC interp result cuts+ 1", ",", "2012-07-16", "cuts+", "interp", "HD28", "endpoint", 1, ",", "2012-07-16", "cuts+", "interp", 18, "endpoint", 1, ",", "2012-07-16 cuts+ interp SC result 1 (.25 ^.5)", ",", "2012-07-16 cuts+ interp Taylor result 1 (.4 ^.5)", ",", "2012-07-16 guitar machine cuts+ 1", ",", "2012-07-18", "cuts+", "interp", 18, "endpoint", 2, ",", "2012-07-18", "cuts+", "interp", "steve", "guit", "endpoint", 2 ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2893,13 +2919,14 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.508941,
+					"frgb" : 0.0,
 					"id" : "obj-316",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 110.0, 749.0, 59.0, 19.0 ],
+					"patching_rect" : [ 110.0, 749.0, 59.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 125.171951, 59.0, 19.0 ],
+					"presentation_rect" : [ -1.0, 125.171951, 59.0, 18.0 ],
 					"text" : "Rename"
 				}
 
@@ -2911,7 +2938,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 1.0, 0.6, 0.0, 1.0 ],
 					"id" : "obj-314",
-					"items" : [ "(undefined)", ",", "2012-06-29 taylor for interp", ",", "2012-06-29 HD28 for interp - old", ",", "2012-07-02 HD28-Taylor interp 0.5000", ",", "2012-07-02 M00018 for interp", ",", "2012-07-02 (HD28-Tayl interp .5)(M00018) interp 0.5000", ",", "2012-07-02 SC for interp", ",", "2012-07-02 SC for interp 2", ",", "2012-07-02 HD28 for interp 2", ",", "2012-06-29 HD28-Taylor interp 0.5000 - old", ",", "2012-07-02 M00018 modded for SC", ",", "2012-07-02 HD28-Taylor interp 0.5000 modded for SC 1", ",", "2012-07-02 HD28-Taylor interp 0.5000 modded for SC 2", ",", "2012-07-02 all four 1", ",", "2012-07-02 all four 2 (tweaked)", ",", "2012-07-02 HD28 for interp 3", ",", "2012-07-03 wakefield all", ",", "2012-07-06 HD28 to covered ref 1", ",", "2012-07-06 HD28 to covered ref 1 adapted to open ref", ",", "2012-07-06 Taylor to covered ref 1 - maybe not useful", ",", "2012-07-09 HD28 to covered ref 2", ",", "2012-07-09 M018 to covered ref 1", ",", "2012-07-09 HD28 to M018 covered ref via scaling", ",", "2012-07-10 SC to covered ref 1", ",", "2012-07-10 Taylor to covered ref 1", ",", "2012-07-10 Tay-HD28 to covered ref interp 0.5000", ",", "2012-07-10 Tay-HD28 to covered ref interp 0.6500", ",", "2012-07-10 all 4 to covered ref interp tweaked for SC and open ref", ",", "2012-07-10 all 4 to covered ref interp tweaked for SC", ",", "2012-07-11 HD28 to covered ref 2 to Open Ref", ",", "2012-07-11 M018 to covered ref 1 to open ref", ",", "2012-07-11 SC to covered ref 1 to open ref", ",", "2012-07-11 Taylor to covered ref 1 to open ref", ",", "2012-07-11 HD28+Taylor (.65) to covered ref to open ref", ",", "2012-07-11 Prev+ M00018 cov2open (.333) #12 byp for SC", ",", "2012-07-12 taylor for interp b1", ",", "2012-07-12 HD28 for interp b1", ",", "2012-07-12 Taylor just cuts", ",", "2012-07-12 taylor cuts+ 1", ",", "2012-07-13 HD28 cuts+ 1", ",", "2012-07-13 HD28+Taylor cuts+ interp 1", ",", "2012-07-13 HD28+Taylor cuts+ interp 1 tweaked for SC", ",", "2012-07-13 M00018 cuts+ 1", ",", "2012-07-13 HD28 cuts+ 2", ",", "2012-07-13 HD28 cuts+ 3", ",", "2012-07-13 HD28+Taylor cuts+ interp 2", ",", "2012-07-13 HD28+Taylor cuts+ interp 2 tweaked for SC", ",", "2012-07-16 M00018 cuts+ 2", ",", "2012-07-16 SC interp result cuts+ 1", ",", "2012-07-16", "cuts+", "interp", "HD28", "endpoint", 1, ",", "2012-07-16", "cuts+", "interp", 18, "endpoint", 1, ",", "2012-07-16 cuts+ interp SC result 1 (.25 ^.5)", ",", "2012-07-16 cuts+ interp Taylor result 1 (.4 ^.5)", ",", "2012-07-16 guitar machine cuts+ 1", ",", "2012-07-18", "cuts+", "interp", 18, "endpoint", 2, ",", "2012-07-18", "cuts+", "interp", "steve", "guit", "endpoint", 2, ",", "==New==" ],
+					"items" : [ "Default", ",", "==New==" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2927,14 +2954,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.616269,
+					"frgb" : 0.0,
 					"id" : "obj-313",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 39.0, 536.0, 103.0, 19.0 ],
+					"patching_rect" : [ 39.0, 536.0, 103.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 198.0, -3.192657, 66.0, 31.0 ],
+					"presentation_rect" : [ 198.0, -3.192657, 66.0, 30.0 ],
 					"text" : "Rename on Store"
 				}
 
@@ -2957,6 +2985,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-309",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2986,6 +3015,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-304",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -3020,7 +3050,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "clear" ],
-					"patching_rect" : [ 132.0, 184.0, 50.0, 20.0 ],
+					"patching_rect" : [ 132.0, 184.0, 50.0, 19.0 ],
 					"text" : "t 1 clear"
 				}
 
@@ -3034,7 +3064,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 246.0, 282.0, 93.0, 20.0 ],
+					"patching_rect" : [ 246.0, 282.0, 93.0, 19.0 ],
 					"text" : "prepend append"
 				}
 
@@ -3046,7 +3076,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 0.2, 1.0, 0.0, 1.0 ],
 					"id" : "obj-290",
-					"items" : [ "(undefined)", ",", "2012-06-29 taylor for interp", ",", "2012-06-29 HD28 for interp - old", ",", "2012-07-02 HD28-Taylor interp 0.5000", ",", "2012-07-02 M00018 for interp", ",", "2012-07-02 (HD28-Tayl interp .5)(M00018) interp 0.5000", ",", "2012-07-02 SC for interp", ",", "2012-07-02 SC for interp 2", ",", "2012-07-02 HD28 for interp 2", ",", "2012-06-29 HD28-Taylor interp 0.5000 - old", ",", "2012-07-02 M00018 modded for SC", ",", "2012-07-02 HD28-Taylor interp 0.5000 modded for SC 1", ",", "2012-07-02 HD28-Taylor interp 0.5000 modded for SC 2", ",", "2012-07-02 all four 1", ",", "2012-07-02 all four 2 (tweaked)", ",", "2012-07-02 HD28 for interp 3", ",", "2012-07-03 wakefield all", ",", "2012-07-06 HD28 to covered ref 1", ",", "2012-07-06 HD28 to covered ref 1 adapted to open ref", ",", "2012-07-06 Taylor to covered ref 1 - maybe not useful", ",", "2012-07-09 HD28 to covered ref 2", ",", "2012-07-09 M018 to covered ref 1", ",", "2012-07-09 HD28 to M018 covered ref via scaling", ",", "2012-07-10 SC to covered ref 1", ",", "2012-07-10 Taylor to covered ref 1", ",", "2012-07-10 Tay-HD28 to covered ref interp 0.5000", ",", "2012-07-10 Tay-HD28 to covered ref interp 0.6500", ",", "2012-07-10 all 4 to covered ref interp tweaked for SC and open ref", ",", "2012-07-10 all 4 to covered ref interp tweaked for SC", ",", "2012-07-11 HD28 to covered ref 2 to Open Ref", ",", "2012-07-11 M018 to covered ref 1 to open ref", ",", "2012-07-11 SC to covered ref 1 to open ref", ",", "2012-07-11 Taylor to covered ref 1 to open ref", ",", "2012-07-11 HD28+Taylor (.65) to covered ref to open ref", ",", "2012-07-11 Prev+ M00018 cov2open (.333) #12 byp for SC", ",", "2012-07-12 taylor for interp b1", ",", "2012-07-12 HD28 for interp b1", ",", "2012-07-12 Taylor just cuts", ",", "2012-07-12 taylor cuts+ 1", ",", "2012-07-13 HD28 cuts+ 1", ",", "2012-07-13 HD28+Taylor cuts+ interp 1", ",", "2012-07-13 HD28+Taylor cuts+ interp 1 tweaked for SC", ",", "2012-07-13 M00018 cuts+ 1", ",", "2012-07-13 HD28 cuts+ 2", ",", "2012-07-13 HD28 cuts+ 3", ",", "2012-07-13 HD28+Taylor cuts+ interp 2", ",", "2012-07-13 HD28+Taylor cuts+ interp 2 tweaked for SC", ",", "2012-07-16 M00018 cuts+ 2", ",", "2012-07-16 SC interp result cuts+ 1", ",", "2012-07-16", "cuts+", "interp", "HD28", "endpoint", 1, ",", "2012-07-16", "cuts+", "interp", 18, "endpoint", 1, ",", "2012-07-16 cuts+ interp SC result 1 (.25 ^.5)", ",", "2012-07-16 cuts+ interp Taylor result 1 (.4 ^.5)", ",", "2012-07-16 guitar machine cuts+ 1", ",", "2012-07-18", "cuts+", "interp", 18, "endpoint", 2, ",", "2012-07-18", "cuts+", "interp", "steve", "guit", "endpoint", 2 ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3067,7 +3097,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 311.0, 31.0, 20.0 ],
+					"patching_rect" : [ 225.0, 311.0, 31.0, 19.0 ],
 					"text" : "gate"
 				}
 
@@ -3149,7 +3179,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-55",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 715.0, 93.0, 58.0, 20.0 ],
@@ -3194,20 +3224,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-24",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1000.0, 786.0, 50.0, 18.0 ],
-					"text" : "clear"
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -3233,6 +3249,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-102", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-104", 0 ]
 				}
 
 			}
@@ -3477,15 +3502,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -4699,11 +4715,56 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-290", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-314", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-315", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-345", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "atp.dateYMD.maxpat",
-				"bootpath" : "/Applications/Max6/Cycling '74/abstractions",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
