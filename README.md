@@ -1,7 +1,7 @@
 atp.abstractions
 ===
 
-by Arvid Tomayko | [arvidtomayko.com](http://arvidtomayko.com)
+by Arvid Tomayko(-Peters) | [arvidtomayko.com](http://arvidtomayko.com)
 ---
 
 A large and growing repository of Max 5/6 abstractions, javascripts, shaders, etc I’ve made and found useful over the years. Some will be generically useful to people, others are esoteric or specific to the way I use max. Some are well documented, others are not so much. I hope some of these will be useful to people.
