@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x86"
 		}
 ,
@@ -104,7 +104,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.0, 278.0, 107.0, 20.0 ],
+					"patching_rect" : [ 100.0, 278.0, 111.0, 20.0 ],
 					"text" : "s #1"
 				}
 
@@ -146,7 +146,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 219.5, 278.0, 130.0, 20.0 ],
+					"patching_rect" : [ 219.5, 278.0, 134.0, 20.0 ],
 					"text" : "value #1"
 				}
 
@@ -167,25 +167,12 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-128",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 122.0, 209.0, 123.0, 20.0 ],
-					"text" : "print #1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "Must connect to thispatcher rightmost outlet",
 					"id" : "obj-141",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 100.0, 98.0, 25.0, 25.0 ]
 				}
 
@@ -208,15 +195,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-135", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-128", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-139", 0 ]
 				}
 
 			}
