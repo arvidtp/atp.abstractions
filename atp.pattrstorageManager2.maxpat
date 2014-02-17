@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 4,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 400.0, 44.0, 1280.0, 956.0 ],
+		"rect" : [ 1510.0, -398.0, 1280.0, 956.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -112,7 +112,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -791,7 +791,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -1124,7 +1124,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -1171,7 +1171,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 42.0, 189.5, 322.0, 18.0 ],
-									"text" : "symbol Default"
+									"text" : "symbol ==New=="
 								}
 
 							}
@@ -1550,7 +1550,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -1596,7 +1596,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 155.0, 232.0, 59.0, 20.0 ],
+									"patching_rect" : [ 158.0, 232.0, 59.0, 20.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -1624,8 +1624,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 52.0, 258.0, 122.0, 20.0 ],
-									"text" : "sprintf symout %s%s"
+									"patching_rect" : [ 52.0, 258.0, 125.0, 20.0 ],
+									"text" : "sprintf symout %s %s"
 								}
 
 							}
@@ -1652,7 +1652,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 67.0, 125.0, 272.0, 18.0 ]
+									"patching_rect" : [ 67.0, 125.0, 272.0, 18.0 ],
+									"text" : "\"2014-02-06 violin all 5 avg presence High\""
 								}
 
 							}
@@ -1886,6 +1887,7 @@
 					"fontsize" : 11.0,
 					"frgb" : 0.0,
 					"id" : "obj-42",
+					"linecount" : 6,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -1893,9 +1895,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 987.0, 835.0, 128.0, 63.0 ],
 					"presentation" : 1,
+					"presentation_linecount" : 4,
 					"presentation_rect" : [ 1.0, 0.0, 197.0, 60.0 ],
 					"rounded" : 4.0,
-					"tabmode" : 0
+					"tabmode" : 0,
+					"text" : "\"SteveMacbook:/Users/steve/Your Heaven/SEQ/Close Up FDK 002/Filters/Violin/handmade violin filters atp.json\""
 				}
 
 			}
@@ -1929,7 +1933,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "path of opened file",
 					"id" : "obj-64",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -2409,7 +2413,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 648.0, 376.0, 155.0, 15.0 ]
+					"patching_rect" : [ 648.0, 376.0, 479.0, 15.0 ],
+					"text" : "read \"SteveMacbook:/Users/steve/Your Heaven/SEQ/Close Up FDK 002/Filters/Violin/handmade violin filters atp.json\""
 				}
 
 			}
@@ -2597,7 +2602,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 421.0, 5.0, 25.0, 25.0 ]
 				}
 
@@ -2640,7 +2645,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 799.0, 74.0, 247.0, 60.0 ],
+					"patching_rect" : [ 799.0, 74.0, 247.0, 61.0 ],
 					"text" : "Args:\n1: name of json file to store in\n2: 1 = default to store current settings automatically as preset 1 on close, 0 = don't"
 				}
 
@@ -2676,7 +2681,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 647.0, 280.0, 173.0, 15.0 ]
+					"patching_rect" : [ 647.0, 280.0, 479.0, 15.0 ],
+					"text" : "write \"SteveMacbook:/Users/steve/Your Heaven/SEQ/Close Up FDK 002/Filters/Violin/handmade violin filters atp.json\""
 				}
 
 			}
@@ -2731,7 +2737,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 1.0, 0.156863, 0.062745, 1.0 ],
 					"id" : "obj-345",
-					"items" : "<empty>",
+					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "violin - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2014-02-03violin emmy mods 1", ",", "2014-02-03violin emmy mods 2", ",", "2014-02-03violin emmy mods 3 (simple)", ",", "2014-02-03violin emmy mods 4", ",", "2014-02-03violin emmy mods 5 (simple)", ",", "2014-02-03arvid avg violin", ",", "2014-02-03arvid avg violin w boost", ",", "2014-02-03arvid avg violin 2 w boost", ",", "2014-02-03 violin all 5 avg 1", ",", "2014-02-03 violin all 5 avg 2 (generic 2014a)", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-05 violin all 5 avg 2 more lows 3k cut trial 1", ",", "2014-02-06 violin all 5 avg 2 more lows 3k cut trial 1 gaincomp", ",", "2014-02-06 violin avg 5k boost trial", ",", "2014-02-06 violin all 5 avg 2 more lows 5k boost for interp", ",", "2014-02-06 violin all 5 avg presence Low", ",", "2014-02-06 violin all 5 avg presence High", ",", "2014-02-17", "violin", "all", 7, "avg", "more", "lows" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2903,7 +2909,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ],
 					"id" : "obj-315",
-					"items" : "<empty>",
+					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "violin - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2014-02-03violin emmy mods 1", ",", "2014-02-03violin emmy mods 2", ",", "2014-02-03violin emmy mods 3 (simple)", ",", "2014-02-03violin emmy mods 4", ",", "2014-02-03violin emmy mods 5 (simple)", ",", "2014-02-03arvid avg violin", ",", "2014-02-03arvid avg violin w boost", ",", "2014-02-03arvid avg violin 2 w boost", ",", "2014-02-03 violin all 5 avg 1", ",", "2014-02-03 violin all 5 avg 2 (generic 2014a)", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-05 violin all 5 avg 2 more lows 3k cut trial 1", ",", "2014-02-06 violin all 5 avg 2 more lows 3k cut trial 1 gaincomp", ",", "2014-02-06 violin avg 5k boost trial", ",", "2014-02-06 violin all 5 avg 2 more lows 5k boost for interp", ",", "2014-02-06 violin all 5 avg presence Low", ",", "2014-02-06 violin all 5 avg presence High", ",", "2014-02-17", "violin", "all", 7, "avg", "more", "lows" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2938,7 +2944,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 1.0, 0.6, 0.0, 1.0 ],
 					"id" : "obj-314",
-					"items" : [ "Default", ",", "==New==" ],
+					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "violin - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2014-02-03violin emmy mods 1", ",", "2014-02-03violin emmy mods 2", ",", "2014-02-03violin emmy mods 3 (simple)", ",", "2014-02-03violin emmy mods 4", ",", "2014-02-03violin emmy mods 5 (simple)", ",", "2014-02-03arvid avg violin", ",", "2014-02-03arvid avg violin w boost", ",", "2014-02-03arvid avg violin 2 w boost", ",", "2014-02-03 violin all 5 avg 1", ",", "2014-02-03 violin all 5 avg 2 (generic 2014a)", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-05 violin all 5 avg 2 more lows 3k cut trial 1", ",", "2014-02-06 violin all 5 avg 2 more lows 3k cut trial 1 gaincomp", ",", "2014-02-06 violin avg 5k boost trial", ",", "2014-02-06 violin all 5 avg 2 more lows 5k boost for interp", ",", "2014-02-06 violin all 5 avg presence Low", ",", "2014-02-06 violin all 5 avg presence High", ",", "2014-02-17", "violin", "all", 7, "avg", "more", "lows", ",", "==New==" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3076,7 +3082,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 0.2, 1.0, 0.0, 1.0 ],
 					"id" : "obj-290",
-					"items" : "<empty>",
+					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "violin - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2014-02-03violin emmy mods 1", ",", "2014-02-03violin emmy mods 2", ",", "2014-02-03violin emmy mods 3 (simple)", ",", "2014-02-03violin emmy mods 4", ",", "2014-02-03violin emmy mods 5 (simple)", ",", "2014-02-03arvid avg violin", ",", "2014-02-03arvid avg violin w boost", ",", "2014-02-03arvid avg violin 2 w boost", ",", "2014-02-03 violin all 5 avg 1", ",", "2014-02-03 violin all 5 avg 2 (generic 2014a)", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-05 violin all 5 avg 2 more lows 3k cut trial 1", ",", "2014-02-06 violin all 5 avg 2 more lows 3k cut trial 1 gaincomp", ",", "2014-02-06 violin avg 5k boost trial", ",", "2014-02-06 violin all 5 avg 2 more lows 5k boost for interp", ",", "2014-02-06 violin all 5 avg presence Low", ",", "2014-02-06 violin all 5 avg presence High", ",", "2014-02-17", "violin", "all", 7, "avg", "more", "lows" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4759,14 +4765,6 @@
 					"source" : [ "obj-97", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "atp.dateYMD.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
 			}
  ]
 	}
