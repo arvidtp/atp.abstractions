@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 842.0, 385.0, 640.0, 480.0 ],
+		"rect" : [ 383.0, 206.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -61,23 +61,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 412.0, 78.0, 24.0, 20.0 ],
-					"text" : "t b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-16",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 412.0, 106.0, 32.5, 18.0 ],
-					"text" : "edit"
+					"outlettype" : [ "edit" ],
+					"patching_rect" : [ 412.0, 78.0, 37.0, 20.0 ],
+					"text" : "t edit"
 				}
 
 			}
@@ -128,7 +114,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 192.25, 298.5, 73.5, 20.0 ],
+					"patching_rect" : [ 186.25, 296.0, 73.5, 20.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0
@@ -144,12 +130,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-12",
-					"linecount" : 3,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 349.0, 165.0, 252.0, 47.0 ],
-					"text" : "Send the name of a subdict into inlet 1 and it will be created inside the dict specified by the argument to this abstraction."
+					"patching_rect" : [ 349.0, 165.0, 252.0, 127.0 ],
+					"text" : "Send the name of a subdict into inlet 1 and it will be created inside the dict specified by the argument to this abstraction.\n\nArgs:\n1 - name of dict to create subdict in\n\nArvid Tomayko\narvidtomayko.com"
 				}
 
 			}
@@ -270,19 +256,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-16", 0 ]
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -376,7 +353,8 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ]
 	}
 
 }
