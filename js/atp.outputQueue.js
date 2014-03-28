@@ -44,11 +44,9 @@ function anything() {
 	
 	if (inlet == 1) {
 		if (a[0] == 1) {
-			post("start");
 			tsk.interval = interval;
 			tsk.repeat();
 		} else if (a[0] == 0) {
-			post("stop");
 			tsk.cancel();
 		} else if (a[0] === "bang") {
 			queueTick();
@@ -56,6 +54,8 @@ function anything() {
 			if(a[1] > 0) {
 				tsk.interval = interval = a[1];
 			}
+		} else if (a[0] === "clear") {
+			storage = [];
 		}
 	} else {
 		storage.push(a);
@@ -71,7 +71,6 @@ function queueTick () {
 		outlet(0,out);
 	} else if (!endNotified) {
 		outlet(1,"bang"); //done
-		//tsk.cancel();
 		endNotified = 1;
 	}
 }
