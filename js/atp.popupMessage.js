@@ -49,7 +49,7 @@ mgraphics.relative_coords = 0;
 mgraphics.autofill = 0;
 
 var myFont = "Arial";
-var mySize = 15.0;
+var mySize = 14.0;
 var myMessage = "";
 var margin = 20;
 var cornerRadius = 20;
@@ -260,45 +260,51 @@ function doWordWrap()
 		var tm = text_measure(myMessage);
 		textHeight = tm[1];	// set the text height.
 		
-		if (tm[0] <= sw) {
-			// good enough to print
-			wrapText.push(myMessage);
-		} else {
-			// have to wrap
-			tmpText = myMessage.split(" ");
-			tmpString = "";
-			var st = 0;
-			var en = -1;
-			var i = 0; //change: init i
-			
-			while (i < tmpText.length) { //changed to a while loop
-				tmpString += tmpText[i] + " ";
-				tm = text_measure(tmpString);
+		linesOfText = myMessage.split("\n"); //split by newlines
+		
+		var k;
+		for (k=0; k<linesOfText.length;k++) { //support newlines in text input
+			tm = text_measure(linesOfText[k]); //need to measure again
+			if (tm[0] <= sw) {
+				// good enough to print
+				wrapText.push(linesOfText[k]);
+			} else {
+				// have to wrap
+				tmpText = linesOfText[k].split(" ");
+				tmpString = "";
+				var st = 0;
+				var en = -1;
+				var i = 0; //change: init i
 				
-				if (tm[0] > (sw - margin*2)) { //using a margin variable instead of hard coding it
-					if (en == -1) {
-						// a really big word - just print it
-						wrapText.push(tmpString);
-						st = ++i; //change: pre-increment i. was st = i+1;
-						en = -1;
-						tmpString = "";
-					} else {
-						tmpString = "";
-						for (var j=st; j<=en; j++) {
-							tmpString += tmpText[j] + " ";
+				while (i < tmpText.length) { //changed to a while loop
+					tmpString += tmpText[i] + " ";
+					tm = text_measure(tmpString);
+					
+					if (tm[0] > (sw - margin*2)) { //using a margin variable instead of hard coding it
+						if (en == -1) {
+							// a really big word - just print it
+							wrapText.push(tmpString);
+							st = ++i; //change: pre-increment i. was st = i+1;
+							en = -1;
+							tmpString = "";
+						} else {
+							tmpString = "";
+							for (var j=st; j<=en; j++) {
+								tmpString += tmpText[j] + " ";
+							}
+							wrapText.push(tmpString);
+							tmpString = ""; //changed to clear string
+							//was tmpString = tmpText[i] + " ";
+							st = i;
+							en = -1;
 						}
-						wrapText.push(tmpString);
-						tmpString = ""; //changed to clear string
-						//was tmpString = tmpText[i] + " ";
-						st = i;
-						en = -1;
+					} else {
+						en = i++; //change: increment i here
 					}
-				} else {
-					en = i++; //change: increment i here
 				}
+				// pick up the last line
+				wrapText.push(tmpString);
 			}
-			// pick up the last line
-			wrapText.push(tmpString);
 		}
 	}
 	
