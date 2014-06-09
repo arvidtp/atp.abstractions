@@ -50,7 +50,7 @@ mgraphics.autofill = 0;
 
 var myFont = "Arial";
 var mySize = 15.0;
-var myMessage = "Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.";
+var myMessage = "";
 var margin = 20;
 var cornerRadius = 20;
 var bottom;
@@ -60,7 +60,7 @@ var edgeR;
 var swPrev = 0;
 var autoResize = 0; //set to 1 to automatically resize height of presentation_rect to fit full text
 var closeButtonClick = 0;
-var showCloseButton = 1;
+var showCloseButton = 0;
 var arrowSizeL, arrowSizeR, arrowSizeT, arrowSizeB;
 var arrowSize;
 var arrowDir = 0;

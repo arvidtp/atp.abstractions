@@ -1,7 +1,7 @@
 atp.abstractions
 ===
 
-by Arvid Tomayko(-Peters) | [arvidtomayko.com](http://arvidtomayko.com)
+by Arvid Tomayko(+/-Peters) | [arvidtomayko.com](http://arvidtomayko.com)
 ---
 
 A large and growing repository of Max 5/6 abstractions, javascripts, shaders, etc I’ve made and found useful over the years. Some will be generically useful to people, others are esoteric or specific to the way I use max. Some are well documented, others are not so much. I hope some of these will be useful to people.
@@ -31,4 +31,4 @@ Highlights:
 - atp.outputQueue.js: Add items to a queue that will be pushed out on a clock.
 - atp.popupMessage.js: A fancy text box to give nice tips or stern warnings to patch users. Wrapped text with rounded rect backdrop, auto-height fitting, speech-bubble-style arrows and a close button that hides the object.
 
-Download the whole thing [here](https://bitbucket.org/arvidtpyh/atp.abstractions/downloads)
+Download the whole thing [here](https://bitbucket.org/arvidtpyh/atp.abstractions/downloads).
