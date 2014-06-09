@@ -31,4 +31,4 @@ Highlights:
 - atp.outputQueue.js: Add items to a queue that will be pushed out on a clock.
 - atp.popupMessage.js: A fancy text box to give nice tips or stern warnings to patch users. Wrapped text with rounded rect backdrop, auto-height fitting, speech-bubble-style arrows and a close button that hides the object.
 
-To download the whole thing, click “(download)” next to the size at right
+Download the whole thing [here](https://bitbucket.org/arvidtpyh/atp.abstractions/downloads)
