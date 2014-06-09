@@ -32,6 +32,21 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
+					"id" : "obj-41",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 617.0, 11.0, 328.0, 34.0 ],
+					"text" : "developed by Arvid Tomayko - http://arvidtomayko.com\nat Your Heaven - http://yourheaven.net"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-42",
 					"linecount" : 4,
 					"maxclass" : "comment",
