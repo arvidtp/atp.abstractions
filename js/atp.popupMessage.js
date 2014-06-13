@@ -50,10 +50,10 @@ mgraphics.autofill = 0;
 
 var myFont = "Arial";
 var mySize = 14.0;
-var myMessage = "";
+var myMessage = " ";
 var margin = 20;
 var cornerRadius = 20;
-var bottom;
+var bottom = 40;
 var bottomPrev = 0;
 var sw;
 var edgeR;
