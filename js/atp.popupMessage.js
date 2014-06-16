@@ -59,6 +59,7 @@ var sw;
 var edgeR;
 var swPrev = 0;
 var autoResize = 0; //set to 1 to automatically resize height of presentation_rect to fit full text
+var fitNow = 0;
 var closeButtonClick = 0;
 var showCloseButton = 0;
 var arrowSizeL, arrowSizeR, arrowSizeT, arrowSizeB;
@@ -132,12 +133,22 @@ function paint()
 	
 	doWordWrap();
 	
-	bottom = Math.round(textHeight * wrapText.length+1.5*margin);
-	
 	if (autoResize) {
 		if ((bottom != bottomPrev) || (sw != swPrev)){
 			fitHeight("");
 		}
+	}
+	
+	if (fitNow) {
+		if (fitNow == 1) {
+			fitHeight("");
+		} else if (fitNow == 2) {
+			fitHeight("patching");
+		} else if (fitNow == 3) {
+			fitHeight("");
+			fitHeight("patching");
+		}
+		fitNow = 0;
 	}
 	
 	with (mgraphics) {
@@ -224,6 +235,28 @@ function setSize(v)
 
 function setMessage(v)
 {
+	fitNow = 0;
+	myMessage = v;
+	mgraphics.redraw();
+}
+
+function fitMessage(v)
+{
+	fitNow = 1;
+	myMessage = v;
+	mgraphics.redraw();
+}
+
+function fitMessagePatching(v)
+{
+	fitNow = 2;
+	myMessage = v;
+	mgraphics.redraw();
+}
+
+function fitMessageBoth(v)
+{
+	fitNow = 3;
 	myMessage = v;
 	mgraphics.redraw();
 }
@@ -307,7 +340,7 @@ function doWordWrap()
 			}
 		}
 	}
-	
+	bottom = Math.round(textHeight * wrapText.length+1.5*margin);
 	gc();	// leave a clean campsite...
 }		
 doWordWrap.local = 1;
