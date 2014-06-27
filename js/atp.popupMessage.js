@@ -9,6 +9,8 @@ Features:
 - text color adjustment
 - auto-fitting of object box height (not just background) to the text
   taking into consideration text wrapping, margin and arrows
+- Optional Heading text that can have a different font and size and a margin 
+  between it and the main body text
 
 Notes:
 - arrow message sets arrow. Has 3 arguments:
@@ -51,6 +53,12 @@ mgraphics.autofill = 0;
 var myFont = "Arial";
 var mySize = 14.0;
 var myMessage = " ";
+var myHeadingFont = "Arial Bold";
+var myHeadingSize = 16.0;
+var myHeading = " ";
+var headingEnable = 1;
+var headingMargin = 8;
+var headingTotalHeight = 0;
 var margin = 20;
 var cornerRadius = 20;
 var bottom = 40;
@@ -74,7 +82,11 @@ var closeButtonColor = [1., 1., 1., 1.];
 
 // variables for the actual word wrapped drawing
 var textHeight = 0;
+var mainHeight = 0;
+var headingHeight = 0;
 var wrapText = new Array();
+var wrapMain = new Array();
+var wrapHeading = new Array();
 
 arrow(0,15,20);
 updateSw();
@@ -131,7 +143,18 @@ function paint()
 	
 	var textLocation;
 	
-	doWordWrap();
+	if (headingEnable) {
+		doWordWrap(myHeading, myHeadingSize, myHeadingFont);
+		wrapHeading = wrapText;
+		headingHeight = textHeight;
+		headingTotalHeight = headingHeight*wrapHeading.length + headingMargin;
+	}
+	
+	doWordWrap(myMessage, mySize, myFont);
+	wrapMain = wrapText;
+	mainHeight = textHeight;
+	
+	bottom = Math.round(headingEnable*headingTotalHeight + mainHeight*wrapMain.length + 1.5*margin);
 	
 	if (autoResize) {
 		if ((bottom != bottomPrev) || (sw != swPrev)){
@@ -157,15 +180,28 @@ function paint()
 		fill();
 		
 		set_source_rgba(textColor[0], textColor[1], textColor[2], textColor[3]);
+		
+		if (headingEnable) {
+			select_font_face(myHeadingFont);
+			set_font_size(myHeadingSize);
+			
+			// post(wrapText.length, textHeight, '\n');
+			
+			for (var i=0; i<wrapHeading.length; i++) {
+				textLocation = headingHeight * (i + 1);
+				move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
+				text_path(wrapHeading[i]);
+				fill();
+			}
+		}
+
 		select_font_face(myFont);
 		set_font_size(mySize);
 		
-		// post(wrapText.length, textHeight, '\n');
-		
-		for (var i=0; i<wrapText.length; i++) {
-			textLocation = textHeight * (i + 1);
+		for (var i=0; i<wrapMain.length; i++) {
+			textLocation = mainHeight * (i + 1) + headingEnable*headingTotalHeight;
 			move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
-			text_path(wrapText[i]);
+			text_path(wrapMain[i]);
 			fill();
 		}
 
@@ -233,6 +269,18 @@ function setSize(v)
 	mgraphics.redraw();
 }
 
+function setHeadingFont(v)
+{
+	myHeadingFont = v;
+	mgraphics.redraw();
+}
+
+function setHeadingSize(v)
+{
+	myHeadingSize = myClip(v, 0.5, 200.0);
+	mgraphics.redraw();
+}
+
 function setMessage(v)
 {
 	fitNow = 0;
@@ -261,6 +309,34 @@ function fitMessageBoth(v)
 	mgraphics.redraw();
 }
 
+function setHeading(v)
+{
+	fitNow = 0;
+	myHeading = v;
+	mgraphics.redraw();
+}
+
+function fitHeading(v)
+{
+	fitNow = 1;
+	myHeading = v;
+	mgraphics.redraw();
+}
+
+function fitHeadingPatching(v)
+{
+	fitNow = 2;
+	myHeading = v;
+	mgraphics.redraw();
+}
+
+function fitHeadingBoth(v)
+{
+	fitNow = 3;
+	myHeading = v;
+	mgraphics.redraw();
+}
+
 function sendFontList()
 {
 	var fl = mgraphics.getfontlist();
@@ -279,7 +355,7 @@ myClip.local = 1;
 
 // Here is a quick and dirty word wrapping function...
 // improved by Arvid Tomayko 2014-06
-function doWordWrap()
+function doWordWrap(textMessage, textSize, textFont)
 {
 	var tmpText = null;
 	var tmpString = null;
@@ -287,18 +363,17 @@ function doWordWrap()
 	wrapText = new Array();
 
 	with (mgraphics) {
-		select_font_face(myFont);
-		set_font_size(mySize);
-		
-		var tm = text_measure(myMessage);
+		select_font_face(textFont);
+		set_font_size(textSize);
+		var tm = text_measure(textMessage);
 		textHeight = tm[1];	// set the text height.
 		
-		linesOfText = myMessage.split("\n"); //split by newlines
+		linesOfText = textMessage.split("\n"); //split by newlines
 		
 		var k;
 		for (k=0; k<linesOfText.length;k++) { //support newlines in text input
 			tm = text_measure(linesOfText[k]); //need to measure again
-			if (tm[0] <= sw) {
+			if (tm[0] <= (sw - margin*2)) {
 				// good enough to print
 				wrapText.push(linesOfText[k]);
 			} else {
@@ -340,13 +415,17 @@ function doWordWrap()
 			}
 		}
 	}
-	bottom = Math.round(textHeight * wrapText.length+1.5*margin);
 	gc();	// leave a clean campsite...
 }		
 doWordWrap.local = 1;
 
 function setMargin(a) {
 	margin = a;
+	mgraphics.redraw();
+}
+
+function setHeadingMargin(a) {
+	headingMargin = a;
 	mgraphics.redraw();
 }
 
@@ -475,5 +554,15 @@ function controlcolor (r,g,b,a) {
 	closeButtonColor[1] = g;
 	closeButtonColor[2] = b;
 	closeButtonColor[3] = a;
+	mgraphics.redraw();
+}
+
+function heading(a) {
+	if (a==0) {
+		headingEnable = 0;
+		headingTotalHeight = 0;
+	} else {
+		headingEnable = 1;
+	}
 	mgraphics.redraw();
 }
