@@ -88,6 +88,18 @@ var wrapText = new Array();
 var wrapMain = new Array();
 var wrapHeading = new Array();
 
+//preset styles:
+if(jsarguments.length>1) // argument 0 is the name of the js file
+{
+	if(jsarguments[1]==="yhStyle") { //arg 1 = stylePreset
+		bgColor = [1., 1., 1., 0.];
+		textColor = [0., 0., 0., 1.];
+		headingMargin = 20;
+		myHeadingSize = 18;
+		myMessageSize = 13;
+	}
+}
+
 arrow(0,15,20);
 updateSw();
 mgraphics.redraw();
