@@ -77,7 +77,7 @@ var showArrow = 0;
 var arrowDir = 0;
 var arrowWidth = 16;
 var textColor = [1., 1., 1., 1.];
-var bgColor = [0., 0., 0., 0.66667];
+var bgColor = [0., 0., 0., 0.8];
 var closeButtonColor = [1., 1., 1., 1.];
 
 // variables for the actual word wrapped drawing
