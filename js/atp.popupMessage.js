@@ -56,7 +56,7 @@ var myMessage = " ";
 var myHeadingFont = "Arial Bold";
 var myHeadingSize = 16.0;
 var myHeading = " ";
-var headingEnable = 1;
+var headingEnable = 0;
 var headingMargin = 8;
 var headingTotalHeight = 0;
 var margin = 20;
@@ -71,14 +71,16 @@ var fitNow = 0;
 var closeButtonClick = 0;
 var showCloseButton = 0;
 var arrowSizeL, arrowSizeR, arrowSizeT, arrowSizeB;
-var arrowSize;
+var arrowSize = 15;
 var arrowDir = 0;
 var showArrow = 0;
 var arrowDir = 0;
+var arrowDist = 20;
 var arrowWidth = 16;
 var textColor = [1., 1., 1., 1.];
 var bgColor = [0., 0., 0., 0.8];
 var closeButtonColor = [1., 1., 1., 1.];
+var headColor = [1., 1., 1., 1.];
 
 // variables for the actual word wrapped drawing
 var textHeight = 0;
@@ -92,17 +94,37 @@ var wrapHeading = new Array();
 if(jsarguments.length>1) // argument 0 is the name of the js file
 {
 	if(jsarguments[1]==="yhStyle") { //arg 1 = stylePreset
+		headingEnable = 1;
 		bgColor = [1., 1., 1., 0.];
 		textColor = [0., 0., 0., 1.];
+		headColor = [0., 0., 0., 1.];
 		headingMargin = 18;
 		myHeadingSize = 18;
 		myMessageSize = 13;
+	} else if(jsarguments[1]==="yhError") { //arg 1 = stylePreset
+		headingEnable = 1;
+		bgColor = [1., 1., 1., 0.];
+		textColor = [0., 0., 0., 1.];
+		headColor = [1., 0., 0., 1.];
+		headingMargin = 18;
+		myHeadingSize = 18;
+		myMessageSize = 13;
+	} else if(jsarguments[1]==="donuts") { //arg 1 = stylePreset
+		//bgColor = [1., 1., 1., 0.];
+		textColor = [1., .5, 0., 1.];
+		headColor = [1., 0., .7, 1.];
+		headingMargin = 12;
+		myHeadingSize = 18;
+		myMessageSize = 14;
+		arrowDir = 1;
+		arrowSize = 20;
+		arrowDist = 22;
 	}
 }
 
-arrow(0,15,20);
+
 updateSw();
-mgraphics.redraw();
+arrow(arrowDir, arrowSize, arrowDist);
 
 //function loadbang()
 //{
@@ -191,9 +213,8 @@ function paint()
 		rectangle_rounded(arrowSizeL, arrowSizeT, sw, bottom, cornerRadius, cornerRadius);
 		fill();
 		
-		set_source_rgba(textColor[0], textColor[1], textColor[2], textColor[3]);
-		
 		if (headingEnable) {
+			set_source_rgba(headColor[0], headColor[1], headColor[2], headColor[3]);
 			select_font_face(myHeadingFont);
 			set_font_size(myHeadingSize);
 			
@@ -206,7 +227,8 @@ function paint()
 				fill();
 			}
 		}
-
+		
+		set_source_rgba(textColor[0], textColor[1], textColor[2], textColor[3]);
 		select_font_face(myFont);
 		set_font_size(mySize);
 		
@@ -566,6 +588,14 @@ function controlcolor (r,g,b,a) {
 	closeButtonColor[1] = g;
 	closeButtonColor[2] = b;
 	closeButtonColor[3] = a;
+	mgraphics.redraw();
+}
+
+function headcolor (r,g,b,a) {
+	headColor[0] = r;
+	headColor[1] = g;
+	headColor[2] = b;
+	headColor[3] = a;
 	mgraphics.redraw();
 }
 

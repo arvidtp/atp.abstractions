@@ -68,6 +68,36 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"border" : 0,
+									"filename" : "atp.popupMessage.js",
+									"id" : "obj-4",
+									"jsarguments" : [ "donuts" ],
+									"maxclass" : "jsui",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 371.0, 279.0, 292.0, 316.0 ],
+									"presentation_rect" : [ 371.0, 281.0, 0.0, 0.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-2",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 135.0, 23.0, 52.0, 18.0 ],
+									"text" : "compile"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-7",
@@ -89,9 +119,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 64.0, 63.0, 155.0, 18.0 ],
-									"presentation_rect" : [ 162.0, 89.0, 0.0, 0.0 ],
-									"text" : "setHeading \"Preset Styles\""
+									"patching_rect" : [ 64.0, 63.0, 211.0, 18.0 ],
+									"text" : "heading 1, setHeading \"Preset Styles\""
 								}
 
 							}
@@ -100,13 +129,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-5",
-									"linecount" : 4,
+									"linecount" : 8,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 83.0, 108.0, 555.0, 59.0 ],
-									"text" : "setMessage \"There's only one preset style right now in addition to the default. It's called \\\"yhStyle\\\".\n\nTo use a preset style, enter its name as the first js argument in the object's inspector. If there is no first argument or the first argument doesn't match a preset style the default style will be used.\""
+									"patching_rect" : [ 83.0, 107.0, 608.0, 112.0 ],
+									"text" : "setMessage \"There are several preset styles right now in addition to the default:\n\nyhStyle\nyhError\ndonuts\n\nTo use a preset style, enter its name as the first js argument in the object's inspector. If there is no first argument or the first argument doesn't match a preset style the default style will be used.\""
 								}
 
 							}
@@ -121,12 +150,21 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 64.0, 226.0, 465.0, 227.0 ]
+									"patching_rect" : [ 64.0, 279.0, 292.0, 316.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
@@ -137,7 +175,25 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-6", 0 ]
@@ -689,6 +745,98 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-2",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 591.0, 255.5, 295.0, 20.0 ],
+									"text" : "separate color for header (default = 1. 1. 1. 1. (white))"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-61",
+									"maxclass" : "flonum",
+									"maximum" : 1.0,
+									"minimum" : 0.0,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 787.0, 289.5, 50.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-62",
+									"maxclass" : "flonum",
+									"maximum" : 1.0,
+									"minimum" : 0.0,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 731.0, 289.5, 50.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-63",
+									"maxclass" : "flonum",
+									"maximum" : 1.0,
+									"minimum" : 0.0,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 675.0, 289.5, 50.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-64",
+									"maxclass" : "flonum",
+									"maximum" : 1.0,
+									"minimum" : 0.0,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 619.0, 289.5, 50.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-65",
+									"maxclass" : "newobj",
+									"numinlets" : 5,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 619.0, 323.5, 139.0, 20.0 ],
+									"text" : "pak headcolor 1. 1. 1. 1."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
 									"id" : "obj-30",
 									"maxclass" : "message",
 									"numinlets" : 2,
@@ -1049,6 +1197,51 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-65", 4 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-61", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-65", 3 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-62", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-65", 2 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-63", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-65", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-64", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-65", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1098,7 +1291,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 218.0, 260.0, 272.0, 268.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 218.0, 260.0, 257.0, 107.0 ]
+					"presentation_rect" : [ 218.0, 260.0, 272.0, 89.0 ]
 				}
 
 			}
@@ -2069,7 +2262,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 617.0, 11.0, 328.0, 34.0 ],
+					"patching_rect" : [ 617.0, 11.0, 328.0, 33.0 ],
 					"text" : "developed by Arvid Tomayko - http://arvidtomayko.com\nat Your Heaven - http://yourheaven.net"
 				}
 
@@ -2656,12 +2849,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-30",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.0, 589.0, 176.0, 18.0 ],
-					"text" : "hidden 1"
+					"patching_rect" : [ 17.0, 589.0, 176.0, 31.0 ],
+					"text" : "presentation_rect 218 260 272 89"
 				}
 
 			}
