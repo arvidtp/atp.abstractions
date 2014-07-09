@@ -105,7 +105,7 @@ if(jsarguments.length>1) // argument 0 is the name of the js file
 		headingEnable = 1;
 		bgColor = [1., 1., 1., 0.];
 		textColor = [0., 0., 0., 1.];
-		headColor = [1., 0., 0., 1.];
+		headColor = [0.82, 0., 0., 1.];
 		headingMargin = 18;
 		myHeadingSize = 18;
 		myMessageSize = 13;
