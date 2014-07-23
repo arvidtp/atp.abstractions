@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 649.0, 113.0, 983.0, 721.0 ],
+		"rect" : [ 227.0, 44.0, 983.0, 721.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -140,7 +140,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -604,7 +604,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -1323,10 +1323,10 @@
 						"Dac-direct" : [ 0 ],
 						"Link-L-R" : [ 1 ],
 						"MaxMasterBusSend" : [ 1 ],
-						"audio-out-chans" : [ 0 ],
+						"audio-out-chans" : [ 15 ],
 						"limiter-enable" : [ 0 ],
-						"main[1]" : [ 127 ],
-						"main[2]" : [ 127 ]
+						"main[1]" : [ 128 ],
+						"main[2]" : [ 128 ]
 					}
 ,
 					"text" : "autopattr atpAudioOut @autorestore 0",
@@ -1368,7 +1368,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-26",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 232.0, 365.0, 46.0, 20.0 ],
@@ -1537,7 +1537,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 127.0, 10.0, 25.0, 25.0 ]
 				}
 
@@ -1549,7 +1549,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 95.0, 10.0, 25.0, 25.0 ]
 				}
 
@@ -1661,7 +1661,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -1776,7 +1776,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 404.0, 48.0, 25.0, 25.0 ]
 								}
 
@@ -2015,10 +2015,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 126.0, 125.0, 32.0, 18.0 ],
+					"patching_rect" : [ 126.0, 125.0, 32.5, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 162.0, 78.957443, 31.0, 18.0 ],
-					"text" : "127"
+					"text" : "128"
 				}
 
 			}
@@ -2940,21 +2940,6 @@
 					"source" : [ "obj-90", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "tosig",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions",
-				"patcherrelativepath" : ".",
-				"type" : "maxb",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "atp.+=.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
 			}
  ]
 	}
