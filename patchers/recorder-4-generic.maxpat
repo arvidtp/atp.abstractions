@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 1901.0, -124.0, 1440.0, 826.0 ],
+		"rect" : [ 1935.0, -105.0, 1440.0, 826.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,7 +39,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 696.0, 24.5, 273.0, 32.0 ],
-					"presentation_rect" : [ 695.0, 35.057693, 0.0, 0.0 ],
 					"text" : ";\rqr_rec_path /Users/arvid/Performansces/record/"
 				}
 
@@ -227,7 +226,7 @@
 					"patching_rect" : [ 365.0, 14.0, 313.0, 20.0 ],
 					"restore" : 					{
 						"rec-1-2" : [ 1 ],
-						"rec-11-12" : [ 0 ],
+						"rec-11-12" : [ 1 ],
 						"rec-3-4" : [ 0 ],
 						"rec-5-6" : [ 0 ],
 						"rec-7-8" : [ 0 ],
@@ -250,7 +249,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 0,
 					"patching_rect" : [ 973.0, 135.0, 78.0, 20.0 ],
-					"text" : "ctlout 119 16"
+					"text" : "ctlout 119 15"
 				}
 
 			}
@@ -1099,7 +1098,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -1783,7 +1782,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -2682,7 +2681,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -3366,7 +3365,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -4050,7 +4049,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -4734,7 +4733,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -5432,7 +5431,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
