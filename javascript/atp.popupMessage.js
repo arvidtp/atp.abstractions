@@ -70,7 +70,10 @@ var autoResize = 0; //set to 1 to automatically resize height of presentation_re
 var fitNow = 0;
 var closeButtonClick = 0;
 var showCloseButton = 0;
-var arrowSizeL, arrowSizeR, arrowSizeT, arrowSizeB;
+var arrowSizeL = 0
+var arrowSizeR = 0
+var arrowSizeT = 0
+var arrowSizeB = 0;
 var arrowSize = 15;
 var arrowDir = 0;
 var showArrow = 0;
@@ -124,7 +127,8 @@ if(jsarguments.length>1) // argument 0 is the name of the js file
 
 
 updateSw();
-arrow(arrowDir, arrowSize, arrowDist);
+mgraphics.redraw();
+//arrow(arrowDir, arrowSize, arrowDist);
 
 //function loadbang()
 //{
@@ -263,7 +267,7 @@ function paint()
 				fill();
 			}
 		} //showCloseButton
-		
+				
 		if(showArrow) {
 			//arrow drawing
 			set_source_rgba(bgColor[0], bgColor[1], bgColor[2], bgColor[3]);
@@ -503,7 +507,7 @@ function updateSw() {
 
 function arrow(dir, aSize, dist) {
 	//set up arrow properties to use for drawing
-	
+		
 	if (dir < 0) {
 		arrowDir = 0;
 	} else if (dir > 4) {
@@ -515,7 +519,7 @@ function arrow(dir, aSize, dist) {
 	if (dist < 0) {
 		dist = 0;
 	}
-	
+	arrowDist = dist;
 	arrowSize = aSize;
 	
 	if (dir == 0) {
