@@ -70,7 +70,7 @@ var autoResize = 0; //set to 1 to automatically resize height of presentation_re
 var fitNow = 0;
 var closeButtonClick = 0;
 var showCloseButton = 0;
-var arrowSizeL, arrowSizeR, arrowSizeT, arrowSizeB = 0;
+var arrowSizeL = 0, arrowSizeR = 0, arrowSizeT = 0, arrowSizeB = 0;
 var arrowSize = 15;
 var arrowX, arrowY = 0;
 var arrowDir = 0;
