@@ -443,8 +443,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 407.783325, 40.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 388.283325, 40.0, 0.0, 0.0 ]
+					"patching_rect" : [ 407.783325, 40.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -456,8 +455,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 368.783325, 40.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 343.783325, 40.0, 0.0, 0.0 ]
+					"patching_rect" : [ 368.783325, 40.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -469,8 +467,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 319.283325, 40.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 297.283325, 40.0, 0.0, 0.0 ]
+					"patching_rect" : [ 319.283325, 40.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -799,7 +796,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 91.199951, 40.0, 25.0, 25.0 ]
 				}
 
@@ -1149,7 +1146,12 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-3" : [ "live.toggle[4]", "live.toggle", 0 ]
+		}
+,
+		"dependency_cache" : [  ]
 	}
 
 }
