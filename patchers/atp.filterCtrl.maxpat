@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 2054.0, -125.0, 803.0, 735.0 ],
+		"rect" : [ 628.0, 316.0, 803.0, 735.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -450,7 +450,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 502.0, 112.0, 85.0, 20.0 ],
+					"patching_rect" : [ 502.0, 112.0, 88.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -464,7 +464,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p geEditMode"
+					"text" : "p getEditMode"
 				}
 
 			}
@@ -484,7 +484,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "to getattr",
 					"id" : "obj-52",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -501,7 +501,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 568.0, 40.0, 25.0, 25.0 ]
+					"patching_rect" : [ 571.0, 40.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -1013,7 +1013,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 319.283325, 40.0, 25.0, 25.0 ]
 				}
 
@@ -1062,7 +1062,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 50.0, 189.5, 37.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 271.833374, 26.0, 37.0, 20.0 ],
+					"presentation_rect" : [ 35.833374, 26.0, 37.0, 20.0 ],
 					"text" : "Type"
 				}
 
@@ -1078,7 +1078,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 393.616699, 320.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 201.833374, 26.0, 20.0, 20.0 ],
+					"presentation_rect" : [ 310.166748, 26.0, 20.0, 20.0 ],
 					"text" : "Q"
 				}
 
@@ -1094,7 +1094,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 202.333374, 320.0, 35.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.5, 26.0, 35.0, 20.0 ],
+					"presentation_rect" : [ 142.833374, 26.0, 35.0, 20.0 ],
 					"text" : "Freq"
 				}
 
@@ -1110,7 +1110,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 269.033325, 375.0, 62.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 125.833374, 26.0, 62.0, 20.0 ],
+					"presentation_rect" : [ 234.166748, 26.0, 62.0, 20.0 ],
 					"text" : "Gain (dB)"
 				}
 
@@ -1121,21 +1121,21 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-17",
-					"linecount" : 21,
+					"linecount" : 16,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 568.0, 290.0, 186.0, 288.0 ],
+					"patching_rect" : [ 568.0, 290.0, 196.0, 221.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 21,
-					"presentation_rect" : [ 435.0, 60.0, 186.0, 288.0 ],
-					"text" : "atp.filterCtrl\nArvid Tomayko - 2015\narvidtomayko.com\n\nNumerically control each filter of a filtergraph~. Best used as a bpatcher.\n\nArgument 1 is filter number in filtergraph.\n\nTo get feedback form filtergraph, use last outlet +1 to a [gate x] (x = num filters) to route a packed list of [f g q b] from filtergraph to correct atp.filterCtrl instance. Prepend \"set\" to just set controls and avoid a stack overflow.\n\nYou can tab between number boxes too :)"
+					"presentation_linecount" : 16,
+					"presentation_rect" : [ 435.0, 67.0, 186.0, 221.0 ],
+					"text" : "atp.filterCtrl\nArvid Tomayko - 2015\narvidtomayko.com\n\nNumerically control each filter of a filtergraph~. Best used as a bpatcher.\n\nArgument 1 is filter number in filtergraph.\n\nSee help patch for more info on how to use.\n\nYou can tab between number boxes too :)"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "list: [Freq Gain Q Bandwidth] for this filter. Can presend \"set\" to just set them",
+					"comment" : "list: [Freq, Gain, Q, Bandwidth] for this filter. Can prepend \"set\" to list to set them without output",
 					"id" : "obj-9",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -1168,6 +1168,7 @@
 					"borderoncolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"hidden" : 1,
 					"hint" : "Gain Mode",
 					"id" : "obj-3",
 					"maxclass" : "textbutton",
@@ -1178,7 +1179,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 143.699951, 140.0, 44.724976, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 357.833374, 5.0, 20.0, 20.0 ],
+					"presentation_rect" : [ 121.833374, 5.0, 20.0, 20.0 ],
 					"rounded" : 8.0,
 					"text" : "G",
 					"texton" : "G",
@@ -1226,7 +1227,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 337.116699, 320.0, 52.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 201.833374, 5.0, 69.0, 19.0 ],
+					"presentation_rect" : [ 310.166748, 5.0, 69.0, 19.0 ],
 					"varname" : "q"
 				}
 
@@ -1244,7 +1245,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 289.450073, 320.0, 52.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 125.833374, 5.0, 75.0, 19.0 ],
+					"presentation_rect" : [ 234.166748, 5.0, 75.0, 19.0 ],
 					"varname" : "gain"
 				}
 
@@ -1264,7 +1265,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 241.783325, 320.0, 52.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.5, 5.0, 90.0, 19.0 ],
+					"presentation_rect" : [ 142.833374, 5.0, 90.0, 19.0 ],
 					"varname" : "freq"
 				}
 
@@ -1300,7 +1301,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 91.199951, 189.5, 86.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 271.833374, 5.0, 85.0, 20.0 ],
+					"presentation_rect" : [ 35.833374, 5.0, 85.0, 20.0 ],
 					"varname" : "type[1]"
 				}
 
@@ -1326,7 +1327,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 91.199951, 40.0, 25.0, 25.0 ]
 				}
 
@@ -1759,6 +1760,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1828,6 +1838,14 @@
 					"source" : [ "obj-96", 0 ]
 				}
 
+			}
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "atp.onemess.maxpat",
+				"bootpath" : "/Users/arvid/Documents/Max 7/Packages/atp.abstractions/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ]
 	}
