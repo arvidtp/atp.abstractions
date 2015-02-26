@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1146.0, 165.0, 512.0, 104.0 ],
+		"rect" : [ 711.0, 867.0, 421.0, 102.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -1518,8 +1518,8 @@
 						"MaxMasterBusSend" : [ 1 ],
 						"audio-out-chans" : [ 0 ],
 						"limiter-enable" : [ 0 ],
-						"main[1]" : [ 128 ],
-						"main[2]" : [ 128 ]
+						"main[1]" : [ 115 ],
+						"main[2]" : [ 115 ]
 					}
 ,
 					"style" : "",
@@ -1717,7 +1717,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 127.0, 10.0, 25.0, 25.0 ],
 					"style" : ""
 				}
@@ -1730,7 +1730,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 95.0, 10.0, 25.0, 25.0 ],
 					"style" : ""
 				}
@@ -1985,7 +1985,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 301.0, 48.0, 25.0, 25.0 ],
 									"style" : ""
 								}
@@ -2385,6 +2385,24 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-138", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-100", 0 ]
@@ -3146,22 +3164,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "tosig.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/atp.abstractions/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "atp.+=.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/atp.abstractions/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"embedsnapshot" : 0,
 		"styles" : [ 			{
 				"name" : "Green Grocer",
 				"default" : 				{
@@ -3175,11 +3177,11 @@
 , 			{
 				"name" : "Green Lantern",
 				"default" : 				{
-					"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
-					"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
-					"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
 					"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ]
+					"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
+					"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
+					"color" : [ 0.0, 0.665647, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3188,8 +3190,8 @@
 , 			{
 				"name" : "Green Lantern Inverse",
 				"default" : 				{
-					"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
 					"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ],
+					"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
@@ -3199,7 +3201,12 @@
 , 			{
 				"name" : "videoEditor",
 				"default" : 				{
+					"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
+					"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
+					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
 					"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
+					"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -3209,12 +3216,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
-					"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
-					"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",
