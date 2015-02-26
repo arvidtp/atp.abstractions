@@ -8,15 +8,15 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 25.0, 69.0, 959.0, 759.0 ],
+		"rect" : [ 84.0, 117.0, 959.0, 759.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
 		"boxanimatetime" : 200,
@@ -29,6 +29,39 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-10",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 700.0, 401.5, 204.0, 45.0 ],
+					"text" : ";\rmax launchbrowser http://arvidtomayko.com"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.14,
+					"bubbleside" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-1",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 287.666687, 640.75, 170.0, 66.0 ],
+					"text" : "Turn border off in inspector for nicer appearance in your patches"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"bubblepoint" : 0.14,
 					"bubbleside" : 2,
@@ -39,9 +72,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 328.166687, 497.5, 170.0, 39.0 ],
-					"presentation_rect" : [ 351.666687, 465.5, 0.0, 0.0 ],
-					"text" : "individual Freq, Gain, Q inlets"
+					"patching_rect" : [ 319.166687, 500.5, 170.0, 39.0 ],
+					"text" : "Individual Freq, Gain, Q inlets"
 				}
 
 			}
@@ -57,7 +89,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 651.666687, 473.5, 230.0, 51.0 ],
-					"presentation_rect" : [ 646.916687, 480.025818, 0.0, 0.0 ],
 					"text" : "Unfortunately this object must be in the same patcher as the filtergraph~, so you need to put it in yourself."
 				}
 
@@ -74,9 +105,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 41.916687, 430.5, 185.0, 37.0 ],
-					"presentation_rect" : [ 283.916687, 431.025818, 0.0, 0.0 ],
-					"text" : "make a gate with more outlets to control more filters"
+					"patching_rect" : [ 27.916687, 425.5, 185.0, 37.0 ],
+					"text" : "Make a gate with more outlets to control more filters."
 				}
 
 			}
@@ -91,7 +121,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 338.916687, 78.025818, 267.0, 37.0 ],
+					"patching_rect" : [ 320.56665, 78.025818, 267.0, 37.0 ],
 					"text" : "You can test \"ask the filtergraph~\" filter type choice by changing this attribute first."
 				}
 
@@ -107,7 +137,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 33.5, 19.75, 124.0, 29.0 ],
-					"presentation_rect" : [ 33.5, 13.75, 0.0, 0.0 ],
 					"text" : "atp.filterCtrl"
 				}
 
@@ -133,15 +162,15 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-17",
-					"linecount" : 22,
+					"linecount" : 25,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 700.0, 129.0, 200.0, 301.0 ],
+					"patching_rect" : [ 700.0, 45.0, 205.0, 342.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 22,
-					"presentation_rect" : [ 465.0, 90.0, 186.0, 301.0 ],
-					"text" : "atp.filterCtrl\nArvid Tomayko - 2015\narvidtomayko.com\n\nNumerically control each filter of a filtergraph~. Best used as a bpatcher. \n\nUsing a getattr object as shown here, this abstraction should be able to update itself from the filtergraph~. If you need to get the current state manually from the filtergraph, just choose \"ask the filtergraph~\" form the filter type menu.\n\nArgument 1 is filter number in filtergraph.\n\nYou can tab between number boxes too :)"
+					"presentation_linecount" : 27,
+					"presentation_rect" : [ 426.75, 18.0, 161.0, 368.0 ],
+					"text" : "atp.filterCtrl\nArvid Tomayko - 2015\narvidtomayko.com\n\nNumerically control each filter of a filtergraph~. Best used as a bpatcher.\n\nArgument 1 is filter number in filtergraph.\n\nUsing a getattr object as shown here, this abstraction should be able to update itself from the filtergraph~. If you need to get the current state manually from the filtergraph, just choose \"ask the filtergraph~\" form the filter type menu.\n\n\nYou can tab between number boxes too :)\n\nRequires atp.onemess (also from atp.abstractions)"
 				}
 
 			}
@@ -162,11 +191,10 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"bwidthcolor" : [ 0.298039, 0.423529, 0.67451, 0.31 ],
-					"curvecolor" : [ 0.596847, 0.542335, 0.0, 1.0 ],
+					"curvecolor" : [ 0.827268, 0.383444, 0.0, 1.0 ],
 					"domain" : [ 20.0, 22000.0 ],
-					"fgcolor" : [ 1.0, 1.0, 0.0, 0.5 ],
-					"hfgcolor" : [ 1.0, 1.0, 0.0, 0.21 ],
+					"fgcolor" : [ 1.0, 0.637618, 0.001683, 0.77 ],
+					"hcurvecolor" : [ 1.0, 0.086, 0.086, 1.0 ],
 					"id" : "obj-35",
 					"logmarkers" : [ 10.0, 50.0, 100.0, 500.0, 1000.0, 500.0, 10000.0 ],
 					"markercolor" : [ 0.0, 0.0, 0.0, 0.42 ],
@@ -176,11 +204,11 @@
 					"numoutlets" : 7,
 					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 110.166687, 138.525818, 414.0, 178.474182 ],
+					"patching_rect" : [ 110.166687, 138.525818, 525.0, 194.474182 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 398.75, 18.988739, 711.0, 386.011261 ],
+					"presentation_rect" : [ 18.75, 18.0, 390.0, 240.0 ],
 					"range" : [ 0.0125, 64.0 ],
-					"setfilter" : [ 1, 7, 1, 0, 0, 2641.223389, 0.171222, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 2, 1, 0, 0, 214.170624, 1.778279, 1.74, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"setfilter" : [ 1, 4, 1, 0, 0, 2898.194336, 0.227114, 1.192643, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 5, 1, 0, 0, 179.0, 20.149719, 1.044698, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 					"varname" : "micMeld"
 				}
 
@@ -194,7 +222,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 315.56665, 470.0, 74.0, 20.0 ],
+					"patching_rect" : [ 301.56665, 465.0, 74.0, 20.0 ],
 					"text" : "prepend set"
 				}
 
@@ -208,7 +236,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 233.166687, 470.0, 74.0, 20.0 ],
+					"patching_rect" : [ 219.166687, 465.0, 74.0, 20.0 ],
 					"text" : "prepend set"
 				}
 
@@ -225,7 +253,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 97.166687, 592.25, 385.0, 48.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 151.488739, 380.0, 48.5 ]
+					"presentation_rect" : [ 18.0, 285.0, 390.0, 48.0 ]
 				}
 
 			}
@@ -241,7 +269,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 97.166687, 542.75, 385.0, 30.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 124.988739, 380.0, 29.5 ]
+					"presentation_rect" : [ 18.75, 257.0, 390.0, 29.5 ]
 				}
 
 			}
@@ -254,7 +282,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 258.166687, 410.0, 63.0, 20.0 ],
+					"patching_rect" : [ 194.500015, 363.0, 272.0, 20.0 ],
 					"text" : "pack f f f f"
 				}
 
@@ -268,7 +296,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 233.166687, 377.0, 32.5, 20.0 ],
+					"patching_rect" : [ 616.166687, 363.0, 32.5, 20.0 ],
 					"text" : "+ 1"
 				}
 
@@ -282,7 +310,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 233.166687, 439.0, 44.0, 20.0 ],
+					"patching_rect" : [ 219.166687, 434.0, 101.399963, 20.0 ],
 					"text" : "gate 2"
 				}
 
@@ -295,8 +323,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 589.0, 542.25, 212.0, 83.0 ],
-					"presentation_rect" : [ 619.0, 524.75, 0.0, 0.0 ]
+					"patching_rect" : [ 589.0, 542.25, 212.0, 83.0 ]
 				}
 
 			}
@@ -309,7 +336,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 537.0, 589.25, 84.0, 36.0 ],
-					"presentation_rect" : [ 522.0, 573.75, 0.0, 0.0 ],
 					"shape" : 3
 				}
 
@@ -337,7 +363,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 148.916687, 86.525818, 190.0, 20.0 ]
+					"patching_rect" : [ 130.56665, 86.525818, 190.0, 20.0 ]
 				}
 
 			}
@@ -522,14 +548,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "atp.filterCtrl.maxpat",
 				"bootpath" : "/Users/arvid/Documents/Max/Packages/atp.abstractions/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/atp.abstractions/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "atp.onemess.maxpat",
 				"bootpath" : "/Users/arvid/Documents/Max/Packages/atp.abstractions/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/atp.abstractions/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
