@@ -75,7 +75,6 @@ var arrowSize = 15;
 var arrowX, arrowY = 0;
 var arrowDir = 0;
 var showArrow = 0;
-var arrowDir = 0;
 var arrowDist = 20;
 var arrowWidth = 16;
 var textColor = [1., 1., 1., 1.];
@@ -101,7 +100,7 @@ if(jsarguments.length>1) // argument 0 is the name of the js file
 		headColor = [0., 0., 0., 1.];
 		headingMargin = 18;
 		myHeadingSize = 18;
-		myMessageSize = 13;
+		mySize = 13;
 	} else if(jsarguments[1]==="yhError") { //arg 1 = stylePreset
 		headingEnable = 1;
 		bgColor = [1., 1., 1., 0.];
@@ -109,14 +108,27 @@ if(jsarguments.length>1) // argument 0 is the name of the js file
 		headColor = [0.82, 0., 0., 1.];
 		headingMargin = 18;
 		myHeadingSize = 18;
-		myMessageSize = 13;
+		mySize = 13;
+	} else if(jsarguments[1]==="yhErrorPop") { //arg 1 = stylePreset
+		//closeButton 1, setSize 12, setMargin 18, arrow 3 15 46, heading 1, setHeadingSize 14, setMargin 13, bgcolor 1. 0. 0. 0.7, textcolor 0. 0. 0. 1., hidden 1
+		headingEnable = 1;
+		bgColor = [1., 0., 0., 0.7];
+		textColor = [0., 0., 0., 1.];
+		headColor = [1., 1., 1., 1.];
+		myHeadingSize = 14;
+		mySize = 12;
+		margin = 13;
+		showCloseButton = 1;
+		//showArrow = 1;
+		//arrowDir = 1;
+		arrow(4, 15, 20);
 	} else if(jsarguments[1]==="donuts") { //arg 1 = stylePreset
 		//bgColor = [1., 1., 1., 0.];
 		textColor = [1., .5, 0., 1.];
 		headColor = [1., 0., .7, 1.];
 		headingMargin = 12;
 		myHeadingSize = 18;
-		myMessageSize = 14;
+		mySize = 14;
 		arrowDir = 1;
 		arrowSize = 20;
 		arrowDist = 22;
