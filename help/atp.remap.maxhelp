@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 402.0, 165.0, 640.0, 480.0 ],
+		"rect" : [ 100.0, 100.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,19 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 480.0, 408.0, 97.0, 20.0 ],
+					"text" : "print unmatched"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -80,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.5, 14.0, 453.0, 208.0 ],
-					"text" : "atp.remap.js\n\nRemaps odd arguments (int, float or symbol) to the following even argument.\nMatches and remaps if first element of a list matches. Rest of list is discarded.\n\nDoes not match later elements in lists.\n\nPasses unmatches messages in their entirety.\n\nUse as a replacement for select followed by lots of message or trigger objects.\n\nby Arvid Tomayko @ Your Heaven\nyourheaven.net\narvidtomayko.com\n "
+					"text" : "atp.remap.js\n\nRemaps odd arguments (int, float or symbol) to the following even argument.\nMatches and remaps if first element of a list matches. Rest of list is discarded.\n\nDoes not match later elements in lists.\n\nPasses unmatched messages in their entirety out 2nd outlet.\n\nUse as a replacement for select followed by lots of message or trigger objects.\n\nby Arvid Tomayko @ Your Heaven\nyourheaven.net\narvidtomayko.com\n "
 				}
 
 			}
@@ -190,8 +203,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 259.0, 408.0, 34.0, 20.0 ],
-					"text" : "print"
+					"patching_rect" : [ 259.0, 408.0, 91.0, 20.0 ],
+					"text" : "print remapped"
 				}
 
 			}
@@ -213,8 +226,8 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 259.0, 367.0, 318.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "atp.remap",
@@ -227,6 +240,24 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 1 ],
 					"disabled" : 0,
