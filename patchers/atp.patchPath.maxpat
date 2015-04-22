@@ -2,10 +2,11 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 6,
-			"minor" : 1,
-			"revision" : 6,
-			"architecture" : "x86"
+			"major" : 7,
+			"minor" : 0,
+			"revision" : 3,
+			"architecture" : "x86",
+			"modernui" : 1
 		}
 ,
 		"rect" : [ 557.0, 244.0, 640.0, 386.0 ],
@@ -14,19 +15,27 @@
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
 		"statusbarvisible" : 0,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
@@ -36,7 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 247.0, 161.0, 36.0, 20.0 ],
+					"patching_rect" : [ 247.0, 161.0, 36.0, 22.0 ],
+					"style" : "",
 					"text" : "sel 0"
 				}
 
@@ -49,8 +59,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "noTrig" ],
-					"patching_rect" : [ 247.0, 135.0, 51.0, 20.0 ],
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 247.0, 135.0, 51.0, 22.0 ],
+					"style" : "",
 					"text" : "t #2 "
 				}
 
@@ -64,7 +75,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 247.0, 109.0, 60.0, 20.0 ],
+					"patching_rect" : [ 247.0, 109.0, 60.0, 22.0 ],
+					"style" : "",
 					"text" : "loadbang"
 				}
 
@@ -78,20 +90,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.0, 19.0, 34.0, 18.0 ],
+					"patching_rect" : [ 100.0, 19.0, 34.0, 22.0 ],
+					"style" : "",
 					"text" : "path"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Must connect to thispatcher rightmost outlet",
+					"comment" : "trigger getting patch path",
 					"id" : "obj-6",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 312.0, 5.0, 25.0, 25.0 ]
+					"patching_rect" : [ 312.0, 5.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -102,7 +116,8 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 339.0, 315.0, 25.0, 25.0 ]
+					"patching_rect" : [ 339.0, 315.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -115,7 +130,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 100.0, 135.0, 68.0, 20.0 ],
+					"patching_rect" : [ 100.0, 135.0, 68.0, 22.0 ],
+					"style" : "",
 					"text" : "route bang"
 				}
 
@@ -124,14 +140,14 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-7",
-					"linecount" : 16,
+					"linecount" : 23,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 386.0, 67.0, 252.0, 221.0 ],
-					"text" : "atp.patchPath\n\nGet path of patcher. - allows one to make sure they are writing files the to parent folder of THIS patch, not the folder of a more recently open patch.\n\nArgument 1:\nname of send/receive and value objects to interact with\n\nArgument 2: anything other than 0 or blank = dont trigger by default\n\nArvid Tomayko\narvidtp.net"
+					"patching_rect" : [ 385.0, 29.5, 252.0, 315.0 ],
+					"style" : "",
+					"text" : "atp.patchPath\n\nGet path of patcher. - allows one to make sure they are writing files the to parent folder of THIS patch, not the folder of a more recently open patch.\n\ninlet 1: Must connect to thispatcher rightmost outlet\ninlet 2: trigger getting patch path\n\noutlet 1: Must connect to thispatcher input\noutlet 2: Patcher Path\n\nArgument 1:\nname of send/receive and value objects to interact with\n\nArgument 2: anything other than 0 or blank = dont trigger by default\n\nArvid Tomayko\narvidtomayko.com"
 				}
 
 			}
@@ -139,13 +155,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-5",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 100.0, 304.0, 120.0, 47.0 ],
+					"style" : "",
 					"text" : "this sends at trigger too so we know value is already set"
 				}
 
@@ -159,7 +175,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 100.0, 241.0, 258.0, 20.0 ],
+					"patching_rect" : [ 100.0, 241.0, 258.0, 22.0 ],
+					"style" : "",
 					"text" : "t l l l"
 				}
 
@@ -172,7 +189,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.0, 278.0, 113.0, 20.0 ],
+					"patching_rect" : [ 100.0, 278.0, 113.0, 22.0 ],
+					"style" : "",
 					"text" : "s #1"
 				}
 
@@ -181,12 +199,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-2",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 38.0, 76.0, 329.0, 20.0 ],
+					"style" : "",
 					"text" : "[thispatcher] goes here - must be in the root patcher window"
 				}
 
@@ -200,7 +218,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.0, 176.0, 59.0, 20.0 ],
+					"patching_rect" : [ 100.0, 176.0, 59.0, 22.0 ],
+					"style" : "",
 					"text" : "tosymbol"
 				}
 
@@ -214,7 +233,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 219.5, 278.0, 136.0, 20.0 ],
+					"patching_rect" : [ 219.5, 278.0, 136.0, 22.0 ],
+					"style" : "",
 					"text" : "value #1"
 				}
 
@@ -227,7 +247,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.0, 98.0, 25.0, 25.0 ]
+					"patching_rect" : [ 100.0, 98.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -238,7 +259,8 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.0, 50.0, 25.0, 25.0 ]
+					"patching_rect" : [ 100.0, 50.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
