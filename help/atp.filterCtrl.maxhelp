@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 9,
+			"revision" : 10,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 84.0, 117.0, 959.0, 759.0 ],
+		"rect" : [ 250.0, 138.0, 959.0, 759.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -170,7 +170,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 27,
 					"presentation_rect" : [ 426.75, 18.0, 161.0, 368.0 ],
-					"text" : "atp.filterCtrl\nArvid Tomayko - 2015\narvidtomayko.com\n\nNumerically control each filter of a filtergraph~. Best used as a bpatcher.\n\nArgument 1 is filter number in filtergraph.\n\nUsing a getattr object as shown here, this abstraction should be able to update itself from the filtergraph~. If you need to get the current state manually from the filtergraph, just choose \"ask the filtergraph~\" form the filter type menu.\n\n\nYou can tab between number boxes too :)\n\nRequires atp.onemess (also from atp.abstractions)"
+					"text" : "atp.filterCtrl\nArvid Tomayko - 2015\narvidtomayko.com\n\nNumerically control each filter of a filtergraph~. Best used as a bpatcher.\n\nArgument 1 is filter number in filtergraph.\n\nUsing a getattr object as shown here, this abstraction should be able to update itself from the filtergraph~. If you need to get the current state manually from the filtergraph, just choose \"ask the filtergraph~\" from the filter type menu.\n\n\nYou can tab between number boxes too :)\n\nRequires atp.onemess (also from atp.abstractions)"
 				}
 
 			}
@@ -547,14 +547,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "atp.filterCtrl.maxpat",
-				"bootpath" : "/Users/arvid/Documents/Max/Packages/atp.abstractions/patchers",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "atp.onemess.maxpat",
-				"bootpath" : "/Users/arvid/Documents/Max/Packages/atp.abstractions/patchers",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
