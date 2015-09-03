@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 10,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 1510.0, -398.0, 1280.0, 956.0 ],
+		"rect" : [ 1680.0, -179.0, 1358.0, 942.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -29,6 +29,33 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-100",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 861.0, 171.0, 69.0, 20.0 ],
+					"presentation_rect" : [ 863.0, 169.0, 0.0, 0.0 ],
+					"text" : "opendialog"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "specify file to open",
+					"id" : "obj-99",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 893.0, 5.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -80,7 +107,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 225.0, 506.0, 158.0, 20.0 ],
+					"patching_rect" : [ 225.0, 506.0, 182.0, 20.0 ],
 					"text" : "s #1RecallName"
 				}
 
@@ -93,7 +120,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 38.0, 990.0, 154.0, 20.0 ],
+					"patching_rect" : [ 38.0, 990.0, 180.0, 20.0 ],
 					"text" : "s #1RecallMenu"
 				}
 
@@ -112,7 +139,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -179,6 +206,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-106",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -366,7 +394,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 335.0, 476.0, 154.0, 20.0 ],
+					"patching_rect" : [ 335.0, 476.0, 180.0, 20.0 ],
 					"text" : "s #1RecallMenu"
 				}
 
@@ -791,7 +819,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -1124,7 +1152,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -1550,7 +1578,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -1887,7 +1915,7 @@
 					"fontsize" : 11.0,
 					"frgb" : 0.0,
 					"id" : "obj-42",
-					"linecount" : 6,
+					"linecount" : 5,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -1895,11 +1923,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 987.0, 835.0, 128.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 4,
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 1.0, 0.0, 197.0, 60.0 ],
 					"rounded" : 4.0,
 					"tabmode" : 0,
-					"text" : "\"SteveMacbook:/Users/steve/Your Heaven/SEQ/Close Up FDK 002/Filters/Violin/handmade violin filters atp.json\""
+					"text" : "\"FusionDrive:/Users/arvid/Your Heaven/SEQ/Close Up FDK 002/Filters/yhFilters atp.json\""
 				}
 
 			}
@@ -1951,7 +1979,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 923.0, 715.0, 113.0, 18.0 ],
+					"patching_rect" : [ 923.0, 715.0, 141.0, 18.0 ],
 					"text" : "name #1"
 				}
 
@@ -2251,7 +2279,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 862.0, 159.0, 76.779297, 22.798828 ],
+					"patching_rect" : [ 861.0, 133.0, 76.779297, 22.798828 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.195641, 63.0, 64.583656, 21.798828 ],
 					"rounded" : 8.0,
@@ -2266,10 +2294,10 @@
 					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 861.0, 202.0, 69.0, 20.0 ],
-					"text" : "opendialog"
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 861.0, 202.0, 37.0, 20.0 ],
+					"text" : "nada"
 				}
 
 			}
@@ -2336,7 +2364,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 240.0, 80.0, 110.0, 20.0 ],
+					"patching_rect" : [ 240.0, 80.0, 138.0, 20.0 ],
 					"text" : "route #1"
 				}
 
@@ -2414,7 +2442,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 648.0, 376.0, 479.0, 15.0 ],
-					"text" : "read \"SteveMacbook:/Users/steve/Your Heaven/SEQ/Close Up FDK 002/Filters/Violin/handmade violin filters atp.json\""
+					"text" : "read \"FusionDrive:/Users/arvid/Your Heaven/SEQ/Close Up FDK 002/Filters/yhFilters atp.json\""
 				}
 
 			}
@@ -2645,7 +2673,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 799.0, 74.0, 247.0, 61.0 ],
+					"patching_rect" : [ 799.0, 74.0, 247.0, 60.0 ],
 					"text" : "Args:\n1: name of json file to store in\n2: 1 = default to store current settings automatically as preset 1 on close, 0 = don't"
 				}
 
@@ -2682,7 +2710,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 647.0, 280.0, 479.0, 15.0 ],
-					"text" : "write \"SteveMacbook:/Users/steve/Your Heaven/SEQ/Close Up FDK 002/Filters/Violin/handmade violin filters atp.json\""
+					"text" : "write \"FusionDrive:/Users/arvid/Your Heaven/SEQ/Close Up FDK 002/Filters/yhFilters atp.json\""
 				}
 
 			}
@@ -2737,7 +2765,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 1.0, 0.156863, 0.062745, 1.0 ],
 					"id" : "obj-345",
-					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "violin - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2014-02-03violin emmy mods 1", ",", "2014-02-03violin emmy mods 2", ",", "2014-02-03violin emmy mods 3 (simple)", ",", "2014-02-03violin emmy mods 4", ",", "2014-02-03violin emmy mods 5 (simple)", ",", "2014-02-03arvid avg violin", ",", "2014-02-03arvid avg violin w boost", ",", "2014-02-03arvid avg violin 2 w boost", ",", "2014-02-03 violin all 5 avg 1", ",", "2014-02-03 violin all 5 avg 2 (generic 2014a)", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-05 violin all 5 avg 2 more lows 3k cut trial 1", ",", "2014-02-06 violin all 5 avg 2 more lows 3k cut trial 1 gaincomp", ",", "2014-02-06 violin avg 5k boost trial", ",", "2014-02-06 violin all 5 avg 2 more lows 5k boost for interp", ",", "2014-02-06 violin all 5 avg presence Low", ",", "2014-02-06 violin all 5 avg presence High", ",", "2014-02-17", "violin", "all", 7, "avg", "more", "lows" ],
+					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "viola - 2011 7 27", ",", "violin - 2011 7 27", ",", "cello - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2011 8 24 tom DQE match with max filters 1", ",", "2011 8 24 1st filt is HHR top single biquad replacement", ",", "2011 8 24 1st filt is HHR bot single biquad replacement", ",", "2011 9 26 bass atp 1", ",", "2011 9 26 bass atp 2", ",", "2011 9 26 bass atp 3 (not so good)", ",", "2011 9 29 bass atp 4", ",", "2011 9 29 bass atp 5", ",", "2011 9 29 bass atp 6", ",", "2011 10 4 guitar attempt 1", ",", "2011 10 5 guitar steve setting", ",", "2011 10 5 guitar steve setting 2", ",", "2011 10 5 steve guitar setting 3", ",", "2011 10 20 avg kick match 1", ",", "2011 10 20 avg kick match 2", ",", "2011 10 20 avg kick match 3", ",", "Guitar no cuts 2 2011 10 26", ",", "Guitar attempt 2 2011-10-26", ",", "guitar for knobs 2 2011-11-15", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-17 violin all 7 avg more lows (generic 2014c)", ",", "2015-01-26 cello generic 2015a from fit data" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2909,7 +2937,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ],
 					"id" : "obj-315",
-					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "violin - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2014-02-03violin emmy mods 1", ",", "2014-02-03violin emmy mods 2", ",", "2014-02-03violin emmy mods 3 (simple)", ",", "2014-02-03violin emmy mods 4", ",", "2014-02-03violin emmy mods 5 (simple)", ",", "2014-02-03arvid avg violin", ",", "2014-02-03arvid avg violin w boost", ",", "2014-02-03arvid avg violin 2 w boost", ",", "2014-02-03 violin all 5 avg 1", ",", "2014-02-03 violin all 5 avg 2 (generic 2014a)", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-05 violin all 5 avg 2 more lows 3k cut trial 1", ",", "2014-02-06 violin all 5 avg 2 more lows 3k cut trial 1 gaincomp", ",", "2014-02-06 violin avg 5k boost trial", ",", "2014-02-06 violin all 5 avg 2 more lows 5k boost for interp", ",", "2014-02-06 violin all 5 avg presence Low", ",", "2014-02-06 violin all 5 avg presence High", ",", "2014-02-17", "violin", "all", 7, "avg", "more", "lows" ],
+					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "viola - 2011 7 27", ",", "violin - 2011 7 27", ",", "cello - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2011 8 24 tom DQE match with max filters 1", ",", "2011 8 24 1st filt is HHR top single biquad replacement", ",", "2011 8 24 1st filt is HHR bot single biquad replacement", ",", "2011 9 26 bass atp 1", ",", "2011 9 26 bass atp 2", ",", "2011 9 26 bass atp 3 (not so good)", ",", "2011 9 29 bass atp 4", ",", "2011 9 29 bass atp 5", ",", "2011 9 29 bass atp 6", ",", "2011 10 4 guitar attempt 1", ",", "2011 10 5 guitar steve setting", ",", "2011 10 5 guitar steve setting 2", ",", "2011 10 5 steve guitar setting 3", ",", "2011 10 20 avg kick match 1", ",", "2011 10 20 avg kick match 2", ",", "2011 10 20 avg kick match 3", ",", "Guitar no cuts 2 2011 10 26", ",", "Guitar attempt 2 2011-10-26", ",", "guitar for knobs 2 2011-11-15", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-17 violin all 7 avg more lows (generic 2014c)", ",", "2015-01-26 cello generic 2015a from fit data" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2944,7 +2972,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 1.0, 0.6, 0.0, 1.0 ],
 					"id" : "obj-314",
-					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "violin - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2014-02-03violin emmy mods 1", ",", "2014-02-03violin emmy mods 2", ",", "2014-02-03violin emmy mods 3 (simple)", ",", "2014-02-03violin emmy mods 4", ",", "2014-02-03violin emmy mods 5 (simple)", ",", "2014-02-03arvid avg violin", ",", "2014-02-03arvid avg violin w boost", ",", "2014-02-03arvid avg violin 2 w boost", ",", "2014-02-03 violin all 5 avg 1", ",", "2014-02-03 violin all 5 avg 2 (generic 2014a)", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-05 violin all 5 avg 2 more lows 3k cut trial 1", ",", "2014-02-06 violin all 5 avg 2 more lows 3k cut trial 1 gaincomp", ",", "2014-02-06 violin avg 5k boost trial", ",", "2014-02-06 violin all 5 avg 2 more lows 5k boost for interp", ",", "2014-02-06 violin all 5 avg presence Low", ",", "2014-02-06 violin all 5 avg presence High", ",", "2014-02-17", "violin", "all", 7, "avg", "more", "lows", ",", "==New==" ],
+					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "viola - 2011 7 27", ",", "violin - 2011 7 27", ",", "cello - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2011 8 24 tom DQE match with max filters 1", ",", "2011 8 24 1st filt is HHR top single biquad replacement", ",", "2011 8 24 1st filt is HHR bot single biquad replacement", ",", "2011 9 26 bass atp 1", ",", "2011 9 26 bass atp 2", ",", "2011 9 26 bass atp 3 (not so good)", ",", "2011 9 29 bass atp 4", ",", "2011 9 29 bass atp 5", ",", "2011 9 29 bass atp 6", ",", "2011 10 4 guitar attempt 1", ",", "2011 10 5 guitar steve setting", ",", "2011 10 5 guitar steve setting 2", ",", "2011 10 5 steve guitar setting 3", ",", "2011 10 20 avg kick match 1", ",", "2011 10 20 avg kick match 2", ",", "2011 10 20 avg kick match 3", ",", "Guitar no cuts 2 2011 10 26", ",", "Guitar attempt 2 2011-10-26", ",", "guitar for knobs 2 2011-11-15", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-17 violin all 7 avg more lows (generic 2014c)", ",", "2015-01-26 cello generic 2015a from fit data", ",", "==New==" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3082,7 +3110,7 @@
 					"fontsize" : 10.0,
 					"hltcolor" : [ 0.2, 1.0, 0.0, 1.0 ],
 					"id" : "obj-290",
-					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "violin - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2014-02-03violin emmy mods 1", ",", "2014-02-03violin emmy mods 2", ",", "2014-02-03violin emmy mods 3 (simple)", ",", "2014-02-03violin emmy mods 4", ",", "2014-02-03violin emmy mods 5 (simple)", ",", "2014-02-03arvid avg violin", ",", "2014-02-03arvid avg violin w boost", ",", "2014-02-03arvid avg violin 2 w boost", ",", "2014-02-03 violin all 5 avg 1", ",", "2014-02-03 violin all 5 avg 2 (generic 2014a)", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-05 violin all 5 avg 2 more lows 3k cut trial 1", ",", "2014-02-06 violin all 5 avg 2 more lows 3k cut trial 1 gaincomp", ",", "2014-02-06 violin avg 5k boost trial", ",", "2014-02-06 violin all 5 avg 2 more lows 5k boost for interp", ",", "2014-02-06 violin all 5 avg presence Low", ",", "2014-02-06 violin all 5 avg presence High", ",", "2014-02-17", "violin", "all", 7, "avg", "more", "lows" ],
+					"items" : [ "(undefined)", ",", "Settings When Last Closed", ",", "flat all peaknotch", ",", "viola - 2011 7 27", ",", "violin - 2011 7 27", ",", "cello - 2011 7 27", ",", "violin - 2011 7 28 match original", ",", "2011 8 24 tom DQE match with max filters 1", ",", "2011 8 24 1st filt is HHR top single biquad replacement", ",", "2011 8 24 1st filt is HHR bot single biquad replacement", ",", "2011 9 26 bass atp 1", ",", "2011 9 26 bass atp 2", ",", "2011 9 26 bass atp 3 (not so good)", ",", "2011 9 29 bass atp 4", ",", "2011 9 29 bass atp 5", ",", "2011 9 29 bass atp 6", ",", "2011 10 4 guitar attempt 1", ",", "2011 10 5 guitar steve setting", ",", "2011 10 5 guitar steve setting 2", ",", "2011 10 5 steve guitar setting 3", ",", "2011 10 20 avg kick match 1", ",", "2011 10 20 avg kick match 2", ",", "2011 10 20 avg kick match 3", ",", "Guitar no cuts 2 2011 10 26", ",", "Guitar attempt 2 2011-10-26", ",", "guitar for knobs 2 2011-11-15", ",", "2014-02-05 violin all 5 avg 2 more lows (generic 2014b)", ",", "2014-02-17 violin all 7 avg more lows (generic 2014c)", ",", "2015-01-26 cello generic 2015a from fit data" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3146,7 +3174,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 374.0, 67.0, 120.0, 18.0 ],
+					"patching_rect" : [ 374.0, 67.0, 148.0, 18.0 ],
 					"text" : "read #1, 1"
 				}
 
@@ -3246,6 +3274,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 0 ]
 				}
 
 			}
@@ -3405,7 +3442,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
+					"destination" : [ "obj-100", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
@@ -4763,6 +4800,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-99", 0 ]
 				}
 
 			}
