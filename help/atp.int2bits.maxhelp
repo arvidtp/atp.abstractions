@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 10,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 1363.0, -24.0, 511.0, 408.0 ],
+		"rect" : [ 100.0, 100.0, 511.0, 408.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,21 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-4",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 22.0, 340.5, 188.0, 47.0 ],
+					"text" : "Note: Direction is the opposite of the \"mode\" message to Jasch's bitlist object"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Arial",
@@ -52,7 +67,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 326.0, 22.0, 129.0, 34.0 ],
+					"patching_rect" : [ 326.0, 22.0, 129.0, 33.0 ],
 					"text" : "Arvid Tomayko | 2013\narvidtp.net"
 				}
 
@@ -77,8 +92,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 326.0, 210.0, 20.0, 20.0 ],
-					"presentation_rect" : [ 359.0, 212.0, 0.0, 0.0 ]
+					"patching_rect" : [ 326.0, 210.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -92,7 +106,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 326.0, 240.0, 73.0, 18.0 ],
-					"presentation_rect" : [ 359.0, 251.0, 0.0, 0.0 ],
 					"text" : "direction $1"
 				}
 
@@ -154,7 +167,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 311.0, 157.0, 49.0, 18.0 ],
-					"presentation_rect" : [ 388.0, 159.0, 0.0, 0.0 ],
 					"text" : "size $1"
 				}
 
@@ -209,7 +221,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 22.0, 281.0, 159.0, 18.0 ],
-					"text" : "0 0 0 1 0 0 0 0"
+					"text" : "1 1 0 0 0 0 0 0"
 				}
 
 			}
@@ -344,15 +356,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "atp.int2bits.js",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions/js",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "atp.bits2int.js",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions/js",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
