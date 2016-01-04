@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 10,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 34.0, 44.0, 956.0, 706.0 ],
+		"rect" : [ 1871.0, 63.0, 956.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,7 +42,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -77,8 +77,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 371.0, 279.0, 292.0, 316.0 ],
-									"presentation_rect" : [ 371.0, 281.0, 0.0, 0.0 ]
+									"patching_rect" : [ 371.0, 279.0, 292.0, 316.0 ]
 								}
 
 							}
@@ -309,7 +308,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -717,7 +716,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -1335,7 +1334,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -1845,7 +1844,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -3047,7 +3046,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -4193,8 +4192,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "atp.popupMessage.js",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions/js",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
