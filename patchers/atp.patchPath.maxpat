@@ -2,14 +2,13 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 0,
-			"revision" : 3,
-			"architecture" : "x86",
-			"modernui" : 1
+			"major" : 6,
+			"minor" : 1,
+			"revision" : 10,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 557.0, 244.0, 640.0, 386.0 ],
+		"rect" : [ 916.0, 133.0, 476.0, 472.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -18,24 +17,16 @@
 		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
 		"statusbarvisible" : 0,
 		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
+		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
@@ -45,8 +36,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 247.0, 161.0, 36.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 119.0, 72.0, 36.0, 20.0 ],
 					"text" : "sel 0"
 				}
 
@@ -60,8 +50,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 247.0, 135.0, 51.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 119.0, 46.0, 51.0, 20.0 ],
 					"text" : "t #2 "
 				}
 
@@ -75,8 +64,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 247.0, 109.0, 60.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 119.0, 20.0, 60.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
@@ -90,8 +78,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.0, 19.0, 34.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 119.0, 112.0, 34.0, 18.0 ],
 					"text" : "path"
 				}
 
@@ -104,8 +91,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 312.0, 5.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 163.0, 72.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -116,8 +102,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 339.0, 315.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 358.0, 408.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -130,39 +115,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 100.0, 135.0, 68.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 119.0, 228.0, 68.0, 20.0 ],
 					"text" : "route bang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-7",
-					"linecount" : 23,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 385.0, 29.5, 252.0, 315.0 ],
-					"style" : "",
-					"text" : "atp.patchPath\n\nGet path of patcher. - allows one to make sure they are writing files the to parent folder of THIS patch, not the folder of a more recently open patch.\n\ninlet 1: Must connect to thispatcher rightmost outlet\ninlet 2: trigger getting patch path\n\noutlet 1: Must connect to thispatcher input\noutlet 2: Patcher Path\n\nArgument 1:\nname of send/receive and value objects to interact with\n\nArgument 2: anything other than 0 or blank = dont trigger by default\n\nArvid Tomayko\narvidtomayko.com"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-5",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 100.0, 304.0, 120.0, 47.0 ],
-					"style" : "",
-					"text" : "this sends at trigger too so we know value is already set"
 				}
 
 			}
@@ -175,8 +129,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 100.0, 241.0, 258.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 119.0, 334.0, 258.0, 20.0 ],
 					"text" : "t l l l"
 				}
 
@@ -189,8 +142,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.0, 278.0, 113.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 119.0, 371.0, 113.0, 20.0 ],
 					"text" : "s #1"
 				}
 
@@ -199,12 +151,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-2",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 38.0, 76.0, 329.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 57.0, 169.0, 329.0, 20.0 ],
 					"text" : "[thispatcher] goes here - must be in the root patcher window"
 				}
 
@@ -218,8 +170,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.0, 176.0, 59.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 119.0, 269.0, 59.0, 20.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -233,8 +184,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 219.5, 278.0, 136.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 238.5, 371.0, 136.0, 20.0 ],
 					"text" : "value #1"
 				}
 
@@ -247,8 +197,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.0, 98.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 119.0, 191.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -259,8 +208,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.0, 50.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 119.0, 143.0, 25.0, 25.0 ]
 				}
 
 			}
