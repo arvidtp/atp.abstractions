@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 9,
+			"revision" : 10,
 			"architecture" : "x86"
 		}
 ,
@@ -32,6 +32,23 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 122.0, 26.0, 61.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 121.0, 26.0, 36.0, 20.0 ],
+					"text" : "Gain",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-37",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -42,7 +59,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -575,7 +592,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -1082,7 +1099,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 178.199951, 320.0, 61.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 143.0, 26.0, 61.0, 20.0 ],
+					"presentation_rect" : [ 158.0, 26.0, 61.0, 20.0 ],
 					"text" : "Freq (Hz)",
 					"textjustification" : 1
 				}
@@ -1099,7 +1116,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 269.033325, 375.0, 62.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 233.0, 26.0, 72.0, 20.0 ],
+					"presentation_rect" : [ 234.0, 26.0, 72.0, 20.0 ],
 					"text" : "Gain (dB)",
 					"textjustification" : 1
 				}
@@ -1137,11 +1154,13 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.90632, 0.90632, 0.90632, 1.0 ],
-					"bgoncolor" : [ 1.0, 0.592157, 0.0, 1.0 ],
+					"bgcolor" : [ 0.094118, 0.101961, 0.101961, 0.698039 ],
+					"bgoncolor" : [ 1.0, 0.525462, 0.000194, 1.0 ],
+					"bgovercolor" : [ 0.291963, 0.291963, 0.291963, 1.0 ],
+					"bgoveroncolor" : [ 0.940998, 0.492675, 0.0, 1.0 ],
+					"bordercolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"hidden" : 1,
 					"hint" : "Gain Mode",
 					"id" : "obj-3",
 					"maxclass" : "textbutton",
@@ -1152,10 +1171,13 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 143.0, 140.0, 44.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 122.0, 5.0, 20.0, 20.0 ],
+					"presentation_rect" : [ 122.0, 5.0, 35.0, 20.0 ],
 					"rounded" : 8.0,
-					"text" : "G",
-					"texton" : "G",
+					"text" : "Off",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"texton" : "On",
+					"textovercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textoveroncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.toggle"
 				}
 
@@ -1167,7 +1189,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 122.974976, 40.0, 25.0, 25.0 ]
 				}
 
@@ -1220,7 +1242,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 289.0, 320.0, 54.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 233.0, 5.0, 72.0, 20.0 ],
+					"presentation_rect" : [ 234.0, 5.0, 72.0, 20.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "gain"
 				}
@@ -1243,7 +1265,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 241.0, 320.0, 54.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 143.0, 5.0, 88.0, 20.0 ],
+					"presentation_rect" : [ 158.0, 5.0, 75.0, 20.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "freq"
 				}
@@ -1267,6 +1289,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"framecolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 					"hint" : "Filter type",
 					"id" : "obj-75",
 					"items" : [ "display", "only", ",", "lowpass", ",", "highpass", ",", "bandpass", ",", "bandstop", ",", "peaknotch", ",", "lowshelf", ",", "highshelf", ",", "resonant", ",", "allpass", ",", "-", ",", "ask", "the", "filtergraph~" ],
