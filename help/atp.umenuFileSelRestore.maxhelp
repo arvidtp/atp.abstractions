@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 595.0, 70.0, 647.0, 433.0 ],
+		"rect" : [ 100.0, 100.0, 649.0, 404.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,7 +36,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 199.416687, 236.304688, 74.0, 20.0 ],
+					"patching_rect" : [ 401.75, 290.304688, 74.0, 20.0 ],
 					"text" : "prepend set"
 				}
 
@@ -47,12 +47,14 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-29",
+					"linecount" : 5,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 199.416687, 264.304688, 172.75, 66.0 ]
+					"patching_rect" : [ 401.75, 318.304688, 208.75, 65.0 ],
+					"text" : "\"FusionDrive:/Users/arvid/Your Heaven/Audio Tests/2016-02-19 speaker tuning tests/EzQ profiles/Danny Bose on+off axis 3  (no gain comp).ezq\""
 				}
 
 			}
@@ -63,8 +65,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 171.416687, 196.804688, 20.0, 20.0 ],
-					"presentation_rect" : [ 294.416687, 239.304688, 0.0, 0.0 ]
+					"patching_rect" : [ 292.416687, 286.304688, 20.0, 20.0 ]
 				}
 
 			}
@@ -76,8 +77,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"outlinecolor" : [ 0.793168, 0.409324, 0.0, 1.0 ],
-					"patching_rect" : [ 171.416687, 158.474609, 20.0, 20.0 ],
-					"presentation_rect" : [ 295.416687, 281.304688, 0.0, 0.0 ]
+					"patching_rect" : [ 290.75, 189.304688, 20.0, 20.0 ]
 				}
 
 			}
@@ -92,8 +92,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 119.541687, 158.474609, 50.0, 20.0 ],
-					"presentation_rect" : [ 296.416687, 269.0, 0.0, 0.0 ]
+					"patching_rect" : [ 219.250015, 189.304688, 50.0, 20.0 ]
 				}
 
 			}
@@ -105,8 +104,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"outlinecolor" : [ 0.793168, 0.409324, 0.0, 1.0 ],
-					"patching_rect" : [ 100.541687, 158.474609, 20.0, 20.0 ],
-					"presentation_rect" : [ 271.416687, 269.0, 0.0, 0.0 ]
+					"patching_rect" : [ 198.250015, 189.304688, 20.0, 20.0 ]
 				}
 
 			}
@@ -120,7 +118,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 26.416687, 19.0, 310.0, 33.0 ],
+					"patching_rect" : [ 15.416687, 13.0, 310.0, 33.0 ],
 					"text" : "atp.umenuFileSelRestore"
 				}
 
@@ -135,7 +133,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 119.541687, 196.804688, 50.0, 20.0 ]
+					"patching_rect" : [ 219.541687, 286.304688, 50.0, 20.0 ]
 				}
 
 			}
@@ -146,39 +144,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 100.541687, 196.804688, 20.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-11",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 26.416687, 216.804688, 154.0, 47.0 ],
-					"presentation_rect" : [ 189.0, 357.474609, 0.0, 0.0 ],
-					"text" : "3. select an item. reopen menu to see that it is checked."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-10",
-					"linecount" : 7,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 20.916687, 317.974609, 165.0, 100.0 ],
-					"presentation_rect" : [ 221.0, 212.474609, 0.0, 0.0 ],
-					"text" : "3. hit refresh. Same file should remain checked and selected in the umenu. Normally checks would be gone and first item would be selected. Alsom note that item won't be re-output."
+					"patching_rect" : [ 198.541687, 286.304688, 20.0, 20.0 ]
 				}
 
 			}
@@ -188,12 +154,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-8",
-					"linecount" : 6,
+					"linecount" : 22,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 26.416687, 68.804688, 150.0, 87.0 ],
-					"text" : "1. Choose a folder with a few files to list\n\n2. Add or remove a file from it (not the selected file)."
+					"patching_rect" : [ 15.416687, 56.804688, 154.0, 301.0 ],
+					"text" : "1. Choose a folder with a few files to list\n\n2. Select a file in the umenu. Observe that it is checked.\n\n3. Add or remove a file from it (not the selected file).\n\n4. Click Refresh. \n\n5. Re-open umenu. Same file should remain checked and selected. Normally checks would be gone and first item would be selected. Also note that item won't be re-output from the abstraction when umenu is refreshed."
 				}
 
 			}
@@ -203,12 +169,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-2",
-					"linecount" : 18,
+					"linecount" : 19,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 415.75, 76.304688, 209.0, 248.0 ],
-					"text" : "Tries to restore and re-check last selection in umenu in a list of files after the list has been refreshed with the \"populate\" message. Obviously it will fail to do this if you remove the selected file from the folder.\n\nDoes not re-output selected item when re-populated.\n\nAlso takes care of the annoying checkitem routine for you.\n\nArvid Tomayko 2016\nhttp://arvidtomayko.com\n\nDeveloped for Your Heaven, LLC\nhttp://yourheaven.net"
+					"patching_rect" : [ 422.75, 13.0, 209.0, 261.0 ],
+					"text" : "Tries to restore and re-check last selection in umenu in a list of files after the list has been refreshed with the \"populate\" message. Also takes care of the annoying checkitem routine for you.\n\nObviously it will fail to do this if you remove the selected file from the folder.\n\nDoes not re-output selected item when re-populated.\n\nArvid Tomayko 2016\nhttp://arvidtomayko.com\n\nDeveloped for Your Heaven, LLC\nhttp://yourheaven.net"
 				}
 
 			}
@@ -221,21 +187,22 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 199.416687, 102.304688, 69.0, 20.0 ],
+					"patching_rect" : [ 252.125015, 101.804688, 69.0, 20.0 ],
 					"text" : "opendialog"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.996063, 0.805643, 0.037526, 1.0 ],
 					"fontname" : "Arial",
-					"fontsize" : 12.0,
+					"fontsize" : 14.0,
 					"id" : "obj-4",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 199.416687, 76.304688, 41.0, 18.0 ],
+					"patching_rect" : [ 252.125015, 70.304688, 46.0, 20.0 ],
 					"text" : "folder"
 				}
 
@@ -251,7 +218,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 199.416687, 158.474609, 146.0, 20.0 ],
+					"patching_rect" : [ 177.750015, 148.474609, 146.0, 20.0 ],
 					"text" : "atp.umenuFileSelRestore"
 				}
 
@@ -262,14 +229,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-75",
-					"items" : [ "11042996_10155198129550417_766271684127185798_n.jpg", ",", "11042996_10155198129550417_766271684127185798_n.jpg.pp3", ",", "Canyonlands_by_snowpeak_(1).jpg", ",", "Canyonlands_by_snowpeak_(1).jpg.pp3", ",", "explosie.jpg", ",", "February 3 1995 \"New Home A Canvas for Artistic Couple.jpg", ",", "February 3 1995 New Home A Canvas for Artistic Couple just photo.jpg", ",", "gear", ",", "gold.jpg", ",", "GUI Mods", ",", "IMG_2180.jpg", ",", "Mainstage Instrument Icoms", ",", "modest machine", ",", "noah should dye his beard.jpg", ",", "P1070078 bg blur.jpg", ",", "Photos Library.photoslibrary", ",", "smokestacks 1.jpg", ",", "trip-1-262.jpg", ",", "Tunnel_View,_Yosemite_Valley,_Yosemite_NP_-_Diliff.jpg", ",", "valley-in-canyonlands.jpg", ",", "xnconvert scripts", ",", "YH Note Spectra Plots", ",", "•+KP+Professional+Cover+copy.jpg" ],
+					"items" : [ "Danny Bose off axis 1.ezq", ",", "Danny Bose off axis 2 (no gain comp).ezq", ",", "Danny Bose on axis 1.ezq", ",", "Danny Bose on axis 4 (no gain comp).ezq", ",", "Danny Bose on+off axis 1.ezq", ",", "Danny Bose on+off axis 2.ezq", ",", "Danny Bose on+off axis 3  (no gain comp).ezq", ",", "Danny House L +bass.ezq", ",", "Danny House L.ezq", ",", "Danny House LR +bass.ezq", ",", "Danny House R +bass.ezq", ",", "Danny House R.ezq", ",", "for stereo", ",", "InfinityBlk loud yhMic.ezq", ",", "InfinityBlk walk yhMic 2.ezq", ",", "InfinityBlk walk yhMic.ezq", ",", "InfinityWd loud yhMic.ezq", ",", "InfinityWd walk yhMic 2.ezq", ",", "InfinityWd walk yhMic.ezq", ",", "Mackie450 off axis white.ezq", ",", "Mackie450 on Axis white double mid+hi res.ezq", ",", "Mackie450 on axis white.ezq", ",", "Mackie450 on v off axis.white.correction to make off axis = on axis.ezq", ",", "QSC K10 off axis white.ezq", ",", "QSC K10 on axis white.ezq", ",", "QSC K10 on v off axis.white.correction to make off axis = on axis.ezq" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 199.416687, 196.804688, 172.75, 21.0 ],
-					"prefix" : "FusionDrive:/Users/arvid/Pictures/",
+					"patching_rect" : [ 177.750015, 235.804688, 230.75, 21.0 ],
+					"prefix" : "FusionDrive:/Users/arvid/Your Heaven/Audio Tests/2016-02-19 speaker tuning tests/EzQ profiles/",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -284,7 +251,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 199.416687, 348.474609, 172.75, 39.0 ],
+					"patching_rect" : [ 177.750015, 70.304688, 67.0, 33.0 ],
 					"text" : "Refresh"
 				}
 
@@ -322,7 +289,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 1.0, 0.355299, 0.0, 0.93 ],
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -332,6 +298,7 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.0, 0.690196, 1.0, 1.0 ],
 					"destination" : [ "obj-75", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -371,7 +338,6 @@
 					"destination" : [ "obj-229", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 208.916687, 407.0, 192.0, 407.0, 192.0, 155.0, 208.916687, 155.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -396,18 +362,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.0, 0.690196, 1.0, 1.0 ],
 					"destination" : [ "obj-229", 3 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 293.125, 266.804688, 327.083344, 266.804688, 327.083344, 138.474609, 314.25, 138.474609 ],
 					"source" : [ "obj-75", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.0, 0.690196, 1.0, 1.0 ],
 					"destination" : [ "obj-229", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 187.250015, 266.804688, 261.479187, 266.804688, 261.479187, 138.474609, 271.916687, 138.474609 ],
 					"source" : [ "obj-75", 0 ]
 				}
 
