@@ -2,31 +2,40 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 6,
-			"minor" : 1,
-			"revision" : 4,
-			"architecture" : "x86"
+			"major" : 7,
+			"minor" : 2,
+			"revision" : 3,
+			"architecture" : "x64",
+			"modernui" : 1
 		}
 ,
-		"rect" : [ 67.0, 44.0, 1023.0, 726.0 ],
+		"rect" : [ 67.0, 79.0, 1023.0, 726.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
@@ -36,7 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 636.0, 582.0, 102.0, 18.0 ],
+					"patching_rect" : [ 636.0, 582.0, 102.0, 22.0 ],
+					"style" : "",
 					"text" : "verbose 0"
 				}
 
@@ -49,7 +59,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 724.0, 333.0, 20.0, 20.0 ]
+					"patching_rect" : [ 724.0, 333.0, 20.0, 20.0 ],
+					"style" : ""
 				}
 
 			}
@@ -62,7 +73,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 622.0, 375.0, 70.0, 18.0 ],
+					"patching_rect" : [ 622.0, 375.0, 70.0, 22.0 ],
+					"style" : "",
 					"text" : "verbose $1"
 				}
 
@@ -76,7 +88,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 613.0, 347.0, 73.0, 18.0 ],
+					"patching_rect" : [ 613.0, 347.0, 73.0, 22.0 ],
+					"style" : "",
 					"text" : "get verbose"
 				}
 
@@ -85,12 +98,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-60",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 654.0, 10.0, 307.0, 20.0 ],
+					"style" : "",
 					"text" : "Created by Arvid Tomayko-Peters at Your Heaven, LLC"
 				}
 
@@ -106,7 +119,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 788.0, 58.0, 124.0, 45.0 ],
+					"patching_rect" : [ 788.0, 58.0, 124.0, 49.0 ],
+					"style" : "",
 					"text" : ";\rmax launchbrowser http://arvidtp.net"
 				}
 
@@ -115,7 +129,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-67",
 					"maxclass" : "textedit",
 					"numinlets" : 1,
@@ -123,6 +136,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 785.0, 32.0, 141.0, 19.0 ],
+					"style" : "",
 					"text" : "arvid@arvidtp.net"
 				}
 
@@ -130,9 +144,8 @@
 , 			{
 				"box" : 				{
 					"align" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-64",
+					"legacytextcolor" : 1,
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -140,16 +153,19 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 656.0, 54.0, 126.0, 20.0 ],
 					"rounded" : 8.0,
-					"text" : "http://arvidtp.net"
+					"style" : "",
+					"text" : "http://arvidtp.net",
+					"textjustification" : 0,
+					"usebgoncolor" : 1,
+					"usetextovercolor" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"align" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-63",
+					"legacytextcolor" : 1,
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -157,7 +173,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 656.0, 32.0, 126.0, 20.0 ],
 					"rounded" : 8.0,
-					"text" : "http://yourheaven.net"
+					"style" : "",
+					"text" : "http://yourheaven.net",
+					"textjustification" : 0,
+					"usebgoncolor" : 1,
+					"usetextovercolor" : 1
 				}
 
 			}
@@ -172,7 +192,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 656.0, 76.0, 124.0, 45.0 ],
+					"patching_rect" : [ 656.0, 76.0, 124.0, 49.0 ],
+					"style" : "",
 					"text" : ";\rmax launchbrowser http://yourheaven.net"
 				}
 
@@ -181,13 +202,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-53",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 858.0, 347.0, 150.0, 33.0 ],
+					"style" : "",
 					"text" : "Use Nagle's Algorhithm (default)"
 				}
 
@@ -196,13 +217,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-48",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 858.0, 380.0, 150.0, 33.0 ],
+					"style" : "",
 					"text" : "Don't use Nagle's Algorhithm"
 				}
 
@@ -216,7 +237,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 286.0, 418.0, 75.0, 20.0 ],
+					"patching_rect" : [ 286.0, 418.0, 75.0, 22.0 ],
+					"style" : "",
 					"text" : "r totcpClient"
 				}
 
@@ -229,7 +251,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 774.0, 523.0, 77.0, 20.0 ],
+					"patching_rect" : [ 774.0, 523.0, 77.0, 22.0 ],
+					"style" : "",
 					"text" : "s totcpClient"
 				}
 
@@ -238,12 +261,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-40",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 871.0, 240.0, 105.0, 20.0 ],
+					"style" : "",
 					"text" : "newline only ( \\n )"
 				}
 
@@ -252,13 +275,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-37",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 870.0, 201.0, 138.0, 33.0 ],
+					"style" : "",
 					"text" : "carriage-return newline ( \\r\\n ) (default)"
 				}
 
@@ -267,13 +290,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-80",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 774.0, 290.0, 123.0, 33.0 ],
+					"style" : "",
 					"text" : "get/set noDelay (Nagle's Algorhithm)"
 				}
 
@@ -282,12 +305,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-79",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 774.0, 161.0, 114.0, 20.0 ],
+					"style" : "",
 					"text" : "get/set line endings"
 				}
 
@@ -295,90 +318,150 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.278431, 0.921569, 0.639216, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.79,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.278431, 0.921569, 0.639216, 1.0 ],
+					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"gradient" : 0,
 					"id" : "obj-77",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 774.0, 203.0, 96.0, 18.0 ],
-					"text" : "lineEnding rn"
+					"patching_rect" : [ 774.0, 203.0, 96.0, 22.0 ],
+					"style" : "",
+					"text" : "lineEnding rn",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.278431, 0.921569, 0.639216, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.79,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.278431, 0.921569, 0.639216, 1.0 ],
+					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"gradient" : 0,
 					"id" : "obj-76",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 774.0, 241.0, 96.0, 18.0 ],
-					"text" : "lineEnding n"
+					"patching_rect" : [ 774.0, 241.0, 96.0, 22.0 ],
+					"style" : "",
+					"text" : "lineEnding n",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.278431, 0.921569, 0.639216, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.79,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.278431, 0.921569, 0.639216, 1.0 ],
+					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"gradient" : 0,
 					"id" : "obj-75",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 774.0, 180.0, 94.0, 18.0 ],
-					"text" : "get lineEnding"
+					"patching_rect" : [ 774.0, 180.0, 94.0, 22.0 ],
+					"style" : "",
+					"text" : "get lineEnding",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.835294, 0.858824, 0.541176, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.79,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.835294, 0.858824, 0.541176, 1.0 ],
+					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"gradient" : 0,
 					"id" : "obj-74",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 774.0, 355.0, 83.0, 18.0 ],
-					"text" : "setNoDelay 0"
+					"patching_rect" : [ 774.0, 355.0, 83.0, 22.0 ],
+					"style" : "",
+					"text" : "setNoDelay 0",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.835294, 0.858824, 0.541176, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.79,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.835294, 0.858824, 0.541176, 1.0 ],
+					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"gradient" : 0,
 					"id" : "obj-73",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 774.0, 387.0, 83.0, 18.0 ],
-					"text" : "setNoDelay 1"
+					"patching_rect" : [ 774.0, 387.0, 83.0, 22.0 ],
+					"style" : "",
+					"text" : "setNoDelay 1",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.835294, 0.858824, 0.541176, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.79,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.835294, 0.858824, 0.541176, 1.0 ],
+					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"gradient" : 0,
 					"id" : "obj-71",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 774.0, 324.0, 73.0, 18.0 ],
-					"text" : "getNoDelay"
+					"patching_rect" : [ 774.0, 324.0, 73.0, 22.0 ],
+					"style" : "",
+					"text" : "getNoDelay",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -386,12 +469,12 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-33",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 758.0, 140.0, 95.0, 20.0 ],
+					"style" : "",
 					"text" : "Other Options:"
 				}
 
@@ -400,12 +483,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-31",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 253.0, 628.0, 67.0, 20.0 ],
+					"style" : "",
 					"text" : "for testing:"
 				}
 
@@ -414,12 +497,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-28",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 71.0, 628.0, 67.0, 20.0 ],
+					"style" : "",
 					"text" : "for testing:"
 				}
 
@@ -428,12 +511,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-6",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 835.0, 453.0, 26.0, 20.0 ],
+					"style" : "",
 					"text" : "ms"
 				}
 
@@ -442,13 +525,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-18",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 774.0, 417.0, 131.0, 33.0 ],
+					"style" : "",
 					"text" : "Connection Attempt Timeout (default 4000)"
 				}
 
@@ -458,15 +541,19 @@
 					"bgcolor" : [ 1.0, 0.360784, 0.360784, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"htricolor" : [ 0.87, 0.82, 0.24, 1.0 ],
 					"id" : "obj-13",
 					"maxclass" : "number",
 					"maximum" : 60000,
 					"minimum" : 100,
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "int", "bang" ],
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 774.0, 452.0, 62.0, 20.0 ],
+					"patching_rect" : [ 774.0, 452.0, 62.0, 22.0 ],
+					"style" : "",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"varname" : "timeOut"
 				}
 
@@ -474,15 +561,25 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 0.360784, 0.360784, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.79,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 1.0, 0.360784, 0.360784, 1.0 ],
+					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"gradient" : 0,
 					"id" : "obj-51",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 774.0, 478.0, 67.0, 18.0 ],
-					"text" : "timeout $1"
+					"patching_rect" : [ 774.0, 478.0, 67.0, 22.0 ],
+					"style" : "",
+					"text" : "timeout $1",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -490,12 +587,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-8",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 310.0, 544.0, 376.0, 20.0 ],
+					"style" : "",
 					"text" : "will send out messages about connection errors/problems/successes"
 				}
 
@@ -504,12 +601,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-23",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 6.0, 24.0, 404.0, 20.0 ],
+					"style" : "",
 					"text" : "Tested on Windows XP and Mac OS X 10.5 and 10.8, Max 5.1.x and 6.1.5",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -519,13 +616,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-14",
 					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 536.0, 443.0, 164.0, 87.0 ],
+					"style" : "",
 					"text" : "I suggest doing this, so if the server closes the socket (ie because of inactivity), the socket is automatically re-opened when you send another message.",
 					"textcolor" : [ 0.87451, 0.25098, 0.717647, 1.0 ]
 				}
@@ -541,7 +638,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 470.0, 449.0, 57.0, 20.0 ],
+					"patching_rect" : [ 470.0, 449.0, 57.0, 22.0 ],
+					"style" : "",
 					"text" : "onebang"
 				}
 
@@ -556,7 +654,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 456.0, 423.0, 32.5, 20.0 ],
+					"patching_rect" : [ 456.0, 423.0, 32.5, 22.0 ],
+					"style" : "",
 					"text" : "t l b"
 				}
 
@@ -571,7 +670,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 338.0, 567.0, 145.0, 20.0 ],
+					"patching_rect" : [ 338.0, 567.0, 145.0, 22.0 ],
+					"style" : "",
 					"text" : "sel \"server disconnected\""
 				}
 
@@ -579,15 +679,25 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.87451, 0.25098, 0.717647, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.79,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.87451, 0.25098, 0.717647, 1.0 ],
+					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"gradient" : 0,
 					"id" : "obj-42",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 470.0, 475.0, 37.0, 18.0 ],
-					"text" : "open"
+					"patching_rect" : [ 470.0, 475.0, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "open",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -595,13 +705,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-7",
 					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 360.0, 53.0, 240.0, 74.0 ],
+					"style" : "",
 					"text" : "what's new:\nNagle's Algorithm reporting corrected and sends a message out to Max, toggle verbose logging (only of Nagle's Algorithm info for now)"
 				}
 
@@ -614,7 +724,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 319.0, 523.0, 95.0, 20.0 ],
+					"patching_rect" : [ 319.0, 523.0, 95.0, 22.0 ],
+					"style" : "",
 					"text" : "print connection"
 				}
 
@@ -623,13 +734,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-98",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 453.0, 644.0, 355.0, 47.0 ],
+					"style" : "",
 					"text" : "The way I am reading lines back is might be inefficient and/or stupid - but it seems to work. I'd love some suggestions if it can be made better."
 				}
 
@@ -638,12 +749,12 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-95",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 66.0, 76.0, 219.0, 20.0 ],
+					"style" : "",
 					"text" : "To read lines back, poll it with bangs"
 				}
 
@@ -651,13 +762,16 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.768627, 0.007843, 1.0 ],
+					"checkedcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-94",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 42.0, 127.0, 20.0, 20.0 ]
+					"patching_rect" : [ 42.0, 127.0, 20.0, 20.0 ],
+					"style" : "",
+					"uncheckedcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -671,7 +785,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 427.0, 387.0, 34.0, 20.0 ],
+					"patching_rect" : [ 427.0, 387.0, 34.0, 22.0 ],
+					"style" : "",
 					"text" : "gate"
 				}
 
@@ -684,7 +799,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 204.0, 511.0, 109.0, 20.0 ],
+					"patching_rect" : [ 204.0, 511.0, 109.0, 22.0 ],
+					"style" : "",
 					"text" : "print responseLine"
 				}
 
@@ -698,7 +814,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 64.0, 537.0, 241.0, 18.0 ],
+					"patching_rect" : [ 64.0, 537.0, 241.0, 22.0 ],
+					"style" : "",
 					"text" : "lines read back will show up here"
 				}
 
@@ -713,7 +830,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 442.0, 335.0, 32.5, 20.0 ],
+					"patching_rect" : [ 442.0, 335.0, 32.5, 22.0 ],
+					"style" : "",
 					"text" : "t b l"
 				}
 
@@ -726,7 +844,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 43.0, 76.0, 20.0, 20.0 ]
+					"patching_rect" : [ 43.0, 76.0, 20.0, 20.0 ],
+					"style" : ""
 				}
 
 			}
@@ -739,7 +858,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 43.0, 99.0, 66.0, 20.0 ],
+					"patching_rect" : [ 43.0, 99.0, 66.0, 22.0 ],
+					"style" : "",
 					"text" : "qmetro 30"
 				}
 
@@ -748,12 +868,12 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 14.0,
-					"frgb" : 0.0,
 					"id" : "obj-66",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 6.0, 4.0, 397.0, 22.0 ],
+					"style" : "",
 					"text" : "Persistent Socket TCP Client mxj class - version 0.6",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -763,13 +883,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-62",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 63.0, 127.0, 492.0, 47.0 ],
+					"style" : "",
 					"text" : "or optionally send a bang after each message you send to read one line back if you know that is the only time you will get data back (and that it will be only one line). But this is not recommended",
 					"textcolor" : [ 0.0, 0.768627, 0.007843, 1.0 ]
 				}
@@ -779,13 +899,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-58",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 530.0, 270.0, 171.0, 60.0 ],
+					"style" : "",
 					"text" : "I should probably make another inlet and figure out how to make it accept anything for sending instead…"
 				}
 
@@ -794,13 +914,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-56",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 453.0, 607.0, 338.0, 33.0 ],
+					"style" : "",
 					"text" : "double click to see my messy and probably bass-ackwards source code (I have no experience whatsoever with java)"
 				}
 
@@ -809,13 +929,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-54",
 					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 293.0, 244.0, 142.0, 127.0 ],
+					"style" : "",
 					"text" : "Also send this after an address or port change to re-establish the connection to the new destination (ie if there is a socket operating, the open message closes it before opening the new one)"
 				}
 
@@ -824,12 +944,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-52",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 504.0, 355.0, 90.0, 20.0 ],
+					"style" : "",
 					"text" : "get information"
 				}
 
@@ -838,13 +958,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-50",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 629.0, 185.0, 120.0, 33.0 ],
+					"style" : "",
 					"text" : "5 Close when you are done"
 				}
 
@@ -853,13 +973,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-45",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 447.0, 185.0, 172.0, 33.0 ],
+					"style" : "",
 					"text" : "4 send stuff (for now must be a symbol preceded by send)"
 				}
 
@@ -868,12 +988,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-43",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 318.0, 185.0, 105.0, 20.0 ],
+					"style" : "",
 					"text" : "3 open the socket"
 				}
 
@@ -882,12 +1002,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-41",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 226.0, 185.0, 81.0, 20.0 ],
+					"style" : "",
 					"text" : "2 set the port"
 				}
 
@@ -901,7 +1021,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 222.0, 97.0, 18.0 ],
+					"patching_rect" : [ 555.0, 222.0, 97.0, 22.0 ],
+					"style" : "",
 					"text" : "SPUMONI"
 				}
 
@@ -910,12 +1031,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-38",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 76.0, 185.0, 103.0, 20.0 ],
+					"style" : "",
 					"text" : "1 set the address"
 				}
 
@@ -924,13 +1045,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"format" : 6,
 					"id" : "obj-36",
 					"maxclass" : "flonum",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 495.0, 222.0, 52.0, 20.0 ]
+					"patching_rect" : [ 495.0, 222.0, 52.0, 22.0 ],
+					"style" : ""
 				}
 
 			}
@@ -943,7 +1066,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 545.0, 247.0, 150.0, 18.0 ],
+					"patching_rect" : [ 545.0, 247.0, 150.0, 22.0 ],
+					"style" : "",
 					"text" : "\"the gastropod's pajamas\""
 				}
 
@@ -956,9 +1080,10 @@
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "int", "bang" ],
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 442.0, 222.0, 50.0, 20.0 ]
+					"patching_rect" : [ 442.0, 222.0, 50.0, 22.0 ],
+					"style" : ""
 				}
 
 			}
@@ -971,7 +1096,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 442.0, 308.0, 84.0, 20.0 ],
+					"patching_rect" : [ 442.0, 308.0, 84.0, 22.0 ],
+					"style" : "",
 					"text" : "prepend send"
 				}
 
@@ -985,7 +1111,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 442.0, 282.0, 59.0, 20.0 ],
+					"patching_rect" : [ 442.0, 282.0, 59.0, 22.0 ],
+					"style" : "",
 					"text" : "tosymbol"
 				}
 
@@ -999,7 +1126,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 699.0, 223.0, 39.0, 18.0 ],
+					"patching_rect" : [ 699.0, 223.0, 39.0, 22.0 ],
+					"style" : "",
 					"text" : "close"
 				}
 
@@ -1013,7 +1141,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 318.0, 222.0, 37.0, 18.0 ],
+					"patching_rect" : [ 318.0, 222.0, 37.0, 22.0 ],
+					"style" : "",
 					"text" : "open"
 				}
 
@@ -1027,7 +1156,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 223.0, 244.0, 61.0, 18.0 ],
+					"patching_rect" : [ 223.0, 244.0, 61.0, 22.0 ],
+					"style" : "",
 					"text" : "port 7126"
 				}
 
@@ -1041,7 +1171,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 223.0, 222.0, 61.0, 18.0 ],
+					"patching_rect" : [ 223.0, 222.0, 61.0, 22.0 ],
+					"style" : "",
 					"text" : "port 7125"
 				}
 
@@ -1054,7 +1185,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.0, 680.0, 60.0, 20.0 ],
+					"patching_rect" : [ 75.0, 680.0, 60.0, 22.0 ],
+					"style" : "",
 					"text" : "print Five"
 				}
 
@@ -1068,7 +1200,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 75.0, 646.0, 165.0, 20.0 ],
+					"patching_rect" : [ 75.0, 646.0, 165.0, 22.0 ],
+					"style" : "",
 					"text" : "mxj net.tcp.recv @port 7125"
 				}
 
@@ -1082,7 +1215,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 563.0, 375.0, 51.0, 18.0 ],
+					"patching_rect" : [ 563.0, 375.0, 51.0, 22.0 ],
+					"style" : "",
 					"text" : "get port"
 				}
 
@@ -1096,7 +1230,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 72.0, 244.0, 120.0, 18.0 ],
+					"patching_rect" : [ 72.0, 244.0, 120.0, 22.0 ],
+					"style" : "",
 					"text" : "address 192.168.1.7"
 				}
 
@@ -1110,7 +1245,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 486.0, 375.0, 73.0, 18.0 ],
+					"patching_rect" : [ 486.0, 375.0, 73.0, 22.0 ],
+					"style" : "",
 					"text" : "get address"
 				}
 
@@ -1124,7 +1260,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 73.0, 222.0, 102.0, 18.0 ],
+					"patching_rect" : [ 73.0, 222.0, 102.0, 22.0 ],
+					"style" : "",
 					"text" : "address localhost"
 				}
 
@@ -1137,7 +1274,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 351.0, 499.0, 110.0, 20.0 ],
+					"patching_rect" : [ 351.0, 499.0, 110.0, 22.0 ],
+					"style" : "",
 					"text" : "print tcpClient_info"
 				}
 
@@ -1150,7 +1288,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 254.0, 680.0, 55.0, 20.0 ],
+					"patching_rect" : [ 254.0, 680.0, 55.0, 22.0 ],
+					"style" : "",
 					"text" : "print Six"
 				}
 
@@ -1164,13 +1303,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 254.0, 646.0, 161.0, 20.0 ],
+					"patching_rect" : [ 254.0, 646.0, 161.0, 22.0 ],
+					"style" : "",
 					"text" : "mxj net.tcp.recv @port 7126"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-2",
@@ -1178,7 +1319,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 286.0, 471.0, 84.0, 20.0 ],
+					"patching_rect" : [ 286.0, 471.0, 84.0, 22.0 ],
+					"style" : "",
 					"text" : "mxj tcpClient"
 				}
 
@@ -1192,13 +1334,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 536.0, 696.0, 120.0, 20.0 ],
+					"patching_rect" : [ 536.0, 696.0, 120.0, 22.0 ],
+					"style" : "",
 					"text" : "mxj quickie tcpClient"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"angle" : 0.0,
 					"background" : 1,
 					"grad1" : [ 0.27, 0.35, 0.47, 1.0 ],
 					"grad2" : [ 0.85, 0.85, 0.85, 1.0 ],
@@ -1208,6 +1352,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 3.0, 1.0, 597.0, 46.0 ],
+					"proportion" : 0.39,
+					"style" : "",
 					"varname" : "autohelp_top_panel"
 				}
 
@@ -1221,7 +1367,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 150.5, 410.0, 50.0, 18.0 ],
+					"patching_rect" : [ 150.5, 410.0, 50.0, 22.0 ],
+					"style" : "",
 					"text" : "zap"
 				}
 
@@ -1689,7 +1836,8 @@
 
 			}
  ],
-		"dependency_cache" : [  ]
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }

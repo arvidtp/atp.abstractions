@@ -3,9 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 4,
-			"architecture" : "x86",
+			"minor" : 2,
+			"revision" : 3,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -46,7 +46,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 89.0, 378.0, 63.0, 22.0 ],
-					"presentation_rect" : [ 90.0, 378.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "set loop.1"
 				}
@@ -609,13 +608,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 4,
-							"architecture" : "x86",
+							"minor" : 2,
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 48.0, 78.0, 549.0, 614.0 ],
+						"rect" : [ 48.0, 79.0, 549.0, 614.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -642,7 +641,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -728,9 +726,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 4,
-											"architecture" : "x86",
+											"minor" : 2,
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -1094,9 +1092,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 4,
-											"architecture" : "x86",
+											"minor" : 2,
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -1498,9 +1496,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 4,
-											"architecture" : "x86",
+											"minor" : 2,
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -1864,9 +1862,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 4,
-											"architecture" : "x86",
+											"minor" : 2,
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2214,7 +2212,7 @@
 									"destination" : [ "obj-10", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 219.833328, 95.0, 304.5, 95.0 ],
+									"midpoints" : [ 219.833333, 95.0, 304.5, 95.0 ],
 									"source" : [ "obj-2", 1 ]
 								}
 
@@ -2270,7 +2268,7 @@
 									"destination" : [ "obj-33", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 218.833328, 234.0, 303.5, 234.0 ],
+									"midpoints" : [ 218.833333, 234.0, 303.5, 234.0 ],
 									"source" : [ "obj-28", 1 ]
 								}
 
@@ -3279,7 +3277,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 313.348846, 506.399994, 74.034882, 22.0 ],
+					"patching_rect" : [ 313.348846, 506.399994, 75.0, 22.0 ],
 					"style" : "",
 					"triscale" : 0.9
 				}
@@ -3651,6 +3649,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -4483,12 +4482,8 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "mxj.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"embedsnapshot" : 0
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }

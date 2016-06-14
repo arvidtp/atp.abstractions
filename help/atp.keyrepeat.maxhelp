@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 3,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -95,7 +95,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 203.0, 99.0, 29.0, 22.0 ],
+					"patching_rect" : [ 203.0, 99.0, 30.0, 22.0 ],
 					"style" : "",
 					"text" : "Y"
 				}
@@ -164,13 +164,13 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 171.0, 328.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 78.0, 232.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -190,13 +190,13 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 314.0, 246.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 464.0, 234.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -216,13 +216,13 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 314.0, 328.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 340.0, 234.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -274,6 +274,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -397,7 +398,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "atp.keyrepeat.maxpat",
-				"bootpath" : "./Max 6.1/Cycling '74/atp.abstractions/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/atp.abstractions/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

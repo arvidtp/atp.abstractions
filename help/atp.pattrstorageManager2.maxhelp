@@ -2,10 +2,11 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 6,
-			"minor" : 1,
-			"revision" : 4,
-			"architecture" : "x86"
+			"major" : 7,
+			"minor" : 2,
+			"revision" : 3,
+			"architecture" : "x64",
+			"modernui" : 1
 		}
 ,
 		"rect" : [ 300.0, 304.0, 640.0, 480.0 ],
@@ -14,30 +15,38 @@
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-15",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 28.0, 12.0, 150.0, 47.0 ],
+					"style" : "",
 					"text" : "atp.pattrstorageManager2\nArvid Tomayko\narvidtp.net"
 				}
 
@@ -46,13 +55,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"format" : 6,
 					"id" : "obj-13",
 					"maxclass" : "flonum",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 78.0, 212.0, 50.0, 20.0 ],
+					"patching_rect" : [ 78.0, 212.0, 50.0, 22.0 ],
+					"style" : "",
 					"varname" : "flonum"
 				}
 
@@ -65,9 +76,10 @@
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "int", "bang" ],
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 78.0, 147.0, 50.0, 20.0 ],
+					"patching_rect" : [ 78.0, 147.0, 50.0, 22.0 ],
+					"style" : "",
 					"varname" : "number[1]"
 				}
 
@@ -80,9 +92,10 @@
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "int", "bang" ],
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 78.0, 106.0, 50.0, 20.0 ],
+					"patching_rect" : [ 78.0, 106.0, 50.0, 22.0 ],
+					"style" : "",
 					"varname" : "number"
 				}
 
@@ -96,7 +109,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 161.0, 408.0, 223.0, 20.0 ],
+					"patching_rect" : [ 161.0, 408.0, 223.0, 22.0 ],
 					"restore" : 					{
 						"flonum" : [ 0.0 ],
 						"number" : [ 0 ],
@@ -104,8 +117,9 @@
 						"toggle" : [ 0 ]
 					}
 ,
+					"style" : "",
 					"text" : "autopattr @autoname 1 @autorestore 0",
-					"varname" : "u298004036"
+					"varname" : "u150005020"
 				}
 
 			}
@@ -118,6 +132,7 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 539.0, 115.0, 20.0, 20.0 ],
+					"style" : "",
 					"varname" : "toggle"
 				}
 
@@ -129,19 +144,28 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 410.5, 115.0, 20.0, 20.0 ]
+					"patching_rect" : [ 410.5, 115.0, 20.0, 20.0 ],
+					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-2",
+					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "atp.pattrstorageManager2.maxpat",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 282.0, 152.0, 276.0, 170.0 ]
+					"patching_rect" : [ 282.0, 152.0, 276.0, 170.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -154,15 +178,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 282.0, 335.0, 155.0, 20.0 ],
+					"patching_rect" : [ 282.0, 335.0, 155.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"storage_rect" : [ 766, 44, 1220, 302 ]
 					}
 ,
+					"style" : "",
 					"text" : "pattrstorage @savemode 0",
-					"varname" : "u687004041"
+					"varname" : "u351005018"
 				}
 
 			}
@@ -207,19 +232,24 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "atp.pattrstorageManager2.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 7/Packages/atp.abstractions/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "nada.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/atp.abstractions/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "atp.dateYMD.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/atp.abstractions",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 7/Packages/atp.abstractions/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
- ]
+ ],
+		"autosave" : 0
 	}
 
 }
