@@ -4,7 +4,7 @@ atp.abstractions
 by Arvid Tomayko(+/-Peters) | [arvidtomayko.com](http://arvidtomayko.com)
 ---
 
-A large and growing repository of Max 5/6 abstractions, javascripts, shaders, etc I’ve made and found useful over the years. Some will be generically useful to people, others are esoteric or specific to the way I use max. Some are well documented, others are not so much. I hope some of these will be useful to people.
+A large and growing repository of Max 5/6/7 abstractions, javascripts, shaders, etc I’ve made and found useful over the years. Some will be generically useful to people, others may be a bit esoteric. Some are well documented, others are not so much. I make these public in the hope these will be useful to people building stuff in Max.
 
 Highlights:
 ---
@@ -14,10 +14,9 @@ Highlights:
 - a standard audio output bpatcher for patches
 - javascripts for converting between hex, binary and int
 - a javascript that quantizes to musical scales
-- time/datestamping
+- various time/datestamping objects
 - Apple multitouch trackpad input conditioning – tries to map finger data intelligently to one parameter per finger
 - td.rota shader with offset values absolute rather than relative to rotation
-- an example multitrack recorder bpatcher for all channels of a MOTU Ultralite
 - javascripts to scroll within a patch or send a patch window to the back
 - ~equal loudness pan and balance objects
 - various path operations:
