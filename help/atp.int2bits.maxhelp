@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 511.0, 408.0 ],
+		"rect" : [ 1954.0, -24.0, 511.0, 408.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,13 +41,37 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-4",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 340.5, 188.0, 47.0 ],
+					"patching_rect" : [ 22.0, 334.5, 222.0, 33.0 ],
 					"style" : "",
-					"text" : "Note: Direction is the opposite of the \"mode\" message to Jasch's bitlist object"
+					"text" : "Note: Direction is opposite of the \"mode\" message in Jasch's bitlist object"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 358.0, 118.0, 139.0, 20.0 ],
+					"style" : "",
+					"text" : "Number of bits to output"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 246.0, 71.0, 152.0, 20.0 ],
+					"style" : "",
+					"text" : "0 = MSb first, 1 = MSb last"
 				}
 
 			}
@@ -89,7 +113,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 243.0, 79.0, 20.0, 20.0 ],
+					"patching_rect" : [ 224.0, 71.0, 20.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -139,6 +163,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-13",
@@ -163,11 +188,13 @@
 					"fontsize" : 12.0,
 					"id" : "obj-12",
 					"maxclass" : "number",
+					"maximum" : 32,
+					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 311.0, 118.0, 50.0, 22.0 ],
+					"patching_rect" : [ 311.0, 118.0, 42.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -239,15 +266,15 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 22.0, 281.0, 159.0, 22.0 ],
+					"patching_rect" : [ 22.0, 285.0, 159.0, 22.0 ],
 					"style" : "",
-					"text" : "1 1 0 0 0 0 0 0"
+					"text" : "0 0 0 1 1 0 1 0"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
+					"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-1",

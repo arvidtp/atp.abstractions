@@ -6,7 +6,7 @@
 
 //8 bits by default (size 8)
 //2nd argument is number of bits output
-//size message changes number of bits output
+//size message changes number of bits output - must be 1 - 32
 
 //by Arvid Tomayko | 2013 | arvidtp.net
 //thanks to Your Heaven | yourheaven.net
@@ -45,5 +45,11 @@ function direction(a) {
 }
 
 function size(a) {
-	bits = a;
+	if (a < 1) {
+		bits = 1;
+	} else if (a > 32) {
+		bits = 32;
+	} else {
+		bits = a;
+	}
 }
