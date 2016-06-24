@@ -18,16 +18,18 @@ Highlights:
 - Apple multitouch trackpad input conditioning – tries to map finger data intelligently to one parameter per finger
 - td.rota shader with offset values absolute rather than relative to rotation
 - javascripts to scroll within a patch or send a patch window to the back
-- ~equal loudness pan and balance objects
+- equal loudness (approx) pan and balance objects
 - various path operations:
     - get parent folder of patch
     - check if a file exists anywhere in max’s searchpath
-    - return the path of the current patch so saved files dont go willy-nilly to the last place used in Max’s searchpath
+    - return the path of the current patch (eg so saved files dont go willy-nilly to the last place used in Max’s searchpath)
     - remove file extensions
-- operate on value objects
+- operate on value objects in place
 - quick data recorder/looper bpatcher
 - bpatchers for managing preset slots and JSON files for pattrstorage
 - atp.outputQueue.js: Add items to a queue that will be pushed out on a clock.
 - atp.popupMessage.js: A fancy text box to give nice tips or stern warnings to patch users. Wrapped text with rounded rect backdrop, auto-height fitting, speech-bubble-style arrows and a close button that hides the object.
+- keyboard shortcuts for inlet ( **[** ) and outlet ( **]** )
+- atp.filterCtrl: smart bpatcher for numerical control each biquad filter in a filtergraph~
 
 Download the whole thing [here](https://bitbucket.org/arvidtpyh/atp.abstractions/downloads).
