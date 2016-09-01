@@ -1,0 +1,15 @@
+Chromatic, 0 1 2 3 4 5 6 7 8 9 10 11;
+Major, 0 2 4 5 7 9 11;
+"Natural Minor", 0 2 3 5 7 8 10;
+"Harmonic Minor", 0 2 3 5 7 8 11;
+"Melodic Minor", 0 2 3 5 7 9 11;
+"Major Pentatonic", 0 2 4 7 9;
+"Minor Pentatonic", 0 3 5 7 10;
+"Minor Pentatonic 2", 0 2 3 7 9;
+Blues, 0 3 5 6 7 10;
+Diminished, 0 2 3 5 6 8 9 11;
+"Whole Tone", 0 2 4 6 8 10;
+Milankovitch, 0 2 3 7 8 10;
+Arabian, 0 1 4 6 7 8 11;
+Quartertone, 0 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 7.5 8 8.5 9 9.5 10 10.5 11 11.5;
+Custom, 0;
