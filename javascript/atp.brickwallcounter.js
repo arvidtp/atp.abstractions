@@ -6,32 +6,32 @@ var maxVal = 10;
 var minVal = 0;
 
 outlets = 2;
-//outlet 1: count
-//outlet 2: notifies when hitting max or min
+// outlet 1: count
+// outlet 2: notifies when hitting max or min
 
-function inc() {
-	//increment and output
+function inc () {
+	// increment and output
 	if ((cnt + 1) <= maxVal) {
 		cnt++;
 	} else if (cnt < minVal) {
 		cnt = minVal;
- 	} else {
+  } else {
 		cnt = maxVal;
 	}
 	if (cnt < minVal) {
 		cnt = minVal;
 	}
 	outputMinMax();
-	outlet(0,cnt);
+	outlet(0, cnt);
 }
 
-function bang() {
-	//bang also increments
+function bang () {
+	// bang also increments
 	inc();
 }
 
-function dec() {
-	//decrement and output
+function dec () {
+	// decrement and output
 	if ((cnt - 1) >= minVal) {
 		cnt--;
 	} else {
@@ -41,21 +41,21 @@ function dec() {
 		cnt = maxVal;
 	}
 	outputMinMax();
-	outlet(0,cnt);
+	outlet(0, cnt);
 }
 
-function maximum(a) {
-	//set max value
+function maximum (a) {
+	// set max value
 	maxVal = a;
 }
 
-function minimum(a) {
-	//set min value
+function minimum (a) {
+	// set min value
 	minVal = a;
 }
 
-function set(a) {
-	//go to a value without output
+function set (a) {
+	// go to a value without output
 	if (a < minVal) {
 		cnt = minVal;
 	} else if (a > maxVal) {
@@ -65,46 +65,46 @@ function set(a) {
 	}
 }
 
-function jumpTo(a) {
-	//go to a value and output
+function jumpTo (a) {
+	// go to a value and output
 	set(a);
-	outputMinMax()
-	outlet(0,cnt);
+	outputMinMax();
+	outlet(0, cnt);
 }
 
-function jumpToMin() {
-	//go to min value and output
+function jumpToMin () {
+	// go to min value and output
 	cnt = minVal;
-	outputMinMax()
-	outlet(0,cnt);
+	outputMinMax();
+	outlet(0, cnt);
 }
 
-function reset() {
+function reset () {
 	jumpToMin();
 }
 
-function jumpToMax() {
-	//go to max value and output
+function jumpToMax () {
+	// go to max value and output
 	cnt = maxVal;
-	outputMinMax()
-	outlet(0,cnt);
+	outputMinMax();
+	outlet(0, cnt);
 }
 
-function setMax() {
+function setMax () {
 	cnt = maxVal;
 }
 
-function setMin() {
+function setMin () {
 	cnt = minVal;
 }
 
-function outputMinMax() {
-	//right outlet notification of status with regard to "walls"
-	if (cnt == maxVal) {
-		outlet(1,"max");
-	} else if (cnt == minVal) {
-		outlet(1,"min");
+function outputMinMax () {
+	// right outlet notification of status with regard to "walls"
+	if (cnt === maxVal) {
+		outlet(1, 'max');
+	} else if (cnt === minVal) {
+		outlet(1, 'min');
 	} else {
-		outlet(1,"middle");
+		outlet(1, 'middle');
 	}
 }

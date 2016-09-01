@@ -1,4 +1,4 @@
-function bang() {
+function bang () {
 	this.patcher.wind.sendtoback();
-	outlet(0,1);
+	outlet(0, 1);
 }
