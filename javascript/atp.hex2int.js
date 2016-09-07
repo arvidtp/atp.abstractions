@@ -7,12 +7,11 @@ You can send in a list a long as all hex members are prefaced with "#"
 ie "#3F #7e #23…"
 */
 
-function anything ()
-{
+function anything () {
 	var v = [];
 	var i;
 	var a = arrayfromargs(messagename, arguments);
-	for(i = 0; i < a.length; i++) {
+	for (i = 0; i < a.length; i++) {
 		if (typeof a[i] === 'string' || myVar instanceof String) { // if string
 			a[i] = a[i].replace('#', '0x');
 			v[i] = parseInt(a[i], 16);

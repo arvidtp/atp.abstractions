@@ -5,8 +5,7 @@ var scale = new Array();
 var myval;
 var keyOffset;
 
-function msg_float (rawPitch)
-{
+function msg_float (rawPitch) {
 	var intPortion;
 	var testingValue;
 	var scaleDegreeFound;
@@ -25,9 +24,9 @@ function msg_float (rawPitch)
 	// post("int pitch " + intPortion + "\n");
 
 	if (scale.length > 3) { // if we don't have a scale, don't do this over and over
-		while(!scaleDegreeFound) {
-			for(i = 0; i < scale.length; i++) {
-	 			if (testingValue === scale[i]) {
+		while (!scaleDegreeFound) {
+			for (i = 0; i < scale.length; i++) {
+				if (testingValue === scale[i]) {
 					scaleDegreeFound = 1;
 					scaleDegreeFloor = i;
 					break;
@@ -64,8 +63,7 @@ function key (v) {
 	// post("key " + keyOffset + "\n");
 }
 
-function list ()
-{
+function list () {
 	scale = arrayfromargs(arguments);
 	// add ghost of top degree of scale at beginning
 	scale.unshift(scale.slice(-1) - 12);
@@ -76,14 +74,12 @@ function list ()
 	// bang();
 }
 
-function msg_int (thing)
-{
+function msg_int (thing) {
 	scale.length = 1;
 	scale[0] = thing;
 	// post("scale list " + scale + "\n");
 }
 
-function bang ()
-{
+function bang () {
 	// outlet(0,"myvalue","is",myval);
 }

@@ -11,13 +11,13 @@ thanks to Your Heaven | yourheaven.net
 
 var mode = 0; // default direction
 
-if (jsarguments.length > 1)
+if (jsarguments.length > 1) {
 	mode = jsarguments[1]; // first argument is mode
 	// 0 = high to low
 	// 1 = low to high
+}
 
-function list ()
-{
+function list () {
 	var inputList = arrayfromargs(arguments);
 	var output = 0;
 	var i;

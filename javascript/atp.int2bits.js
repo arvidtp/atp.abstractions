@@ -14,16 +14,17 @@
 var mode = 0; // default direction
 var bits = 8;
 
-if (jsarguments.length > 1)
+if (jsarguments.length > 1) {
 	mode = jsarguments[1]; // first argument is mode
 	// 0 = high to low
 	// 1 = low to high
+}
 
-if (jsarguments.length > 2)
+if (jsarguments.length > 2) {
 	bits = jsarguments[2]; // 2nd argument is number of bits to output
+}
 
-function msg_int (a)
-{
+function msg_int (a) {
 	var outputList = [];
 	var i;
 

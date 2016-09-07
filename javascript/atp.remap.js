@@ -26,7 +26,7 @@ function anything (a) {
 	var matched = false;
 
 	if ((messagename !== 'msg_int') && (messagename !== 'msg_float')) {
-		//a = arrayfromargs(messagename, arguments);
+		// a = arrayfromargs(messagename, arguments);
 		a = messagename;
 	}
 	for (i = 0; i < args.length; i += 2) {

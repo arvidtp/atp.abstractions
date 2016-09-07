@@ -15,7 +15,7 @@ function inc () {
 		cnt++;
 	} else if (cnt < minVal) {
 		cnt = minVal;
-  } else {
+	} else {
 		cnt = maxVal;
 	}
 	if (cnt < minVal) {

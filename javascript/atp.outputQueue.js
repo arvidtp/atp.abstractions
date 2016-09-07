@@ -28,14 +28,12 @@ var storage = [];
 var interval = 20; // default 20ms interval
 var endNotified = 1;
 
-if(jsarguments.length > 1) // argument 0 is the name of the js file
-{
-   interval = jsarguments[1]; // arg 1 = initial interval
+if (jsarguments.length > 1) { // argument 0 is the name of the js file
+  interval = jsarguments[1]; // arg 1 = initial interval
 }
 
-if(jsarguments.length > 2) // if 2nd argument
-{
-   if (jsarguments[2]) { // start up automatically if not 0
+if (jsarguments.length > 2) { // if 2nd argument
+  if (jsarguments[2]) { // start up automatically if not 0
 		tsk.interval = interval; // set it up
 		tsk.repeat(); // start it
 	}
