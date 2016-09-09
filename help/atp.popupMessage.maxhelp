@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 3,
-			"architecture" : "x64",
+			"revision" : 4,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 164.0, 152.0, 956.0, 706.0 ],
+		"rect" : [ 238.0, 155.0, 956.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,8 +51,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 3,
-							"architecture" : "x64",
+							"revision" : 4,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -303,6 +303,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"hidden" : 1,
 					"id" : "obj-86",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -310,7 +311,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 499.0, 513.0, 154.0, 33.0 ],
 					"style" : "",
-					"text" : "same thing works when changng the heading:"
+					"text" : "fitHeading not implemented yet"
 				}
 
 			}
@@ -319,6 +320,7 @@
 					"color" : [ 1.0, 0.0, 0.915968, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"hidden" : 1,
 					"id" : "obj-85",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -329,8 +331,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 3,
-							"architecture" : "x64",
+							"revision" : 4,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -428,7 +430,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 182.5, 381.0, 528.0, 31.0 ],
+									"patching_rect" : [ 182.5, 381.0, 528.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.\""
 								}
@@ -443,7 +445,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 137.25, 381.0, 32.5, 18.0 ],
+									"patching_rect" : [ 137.25, 381.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "\" \""
 								}
@@ -458,7 +460,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 137.25, 435.0, 92.0, 18.0 ],
+									"patching_rect" : [ 137.25, 435.0, 92.0, 22.0 ],
 									"style" : "",
 									"text" : "setHeader $1"
 								}
@@ -474,7 +476,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 132.5, 53.0, 653.0, 31.0 ],
+									"patching_rect" : [ 132.5, 53.0, 653.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.\""
 								}
@@ -489,7 +491,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 51.5, 53.0, 32.5, 18.0 ],
+									"patching_rect" : [ 51.5, 53.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "\" \""
 								}
@@ -504,7 +506,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 51.5, 99.0, 132.0, 18.0 ],
+									"patching_rect" : [ 51.5, 99.0, 132.0, 22.0 ],
 									"style" : "",
 									"text" : "fitHeaderPatching $1"
 								}
@@ -520,7 +522,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 153.25, 265.0, 567.0, 31.0 ],
+									"patching_rect" : [ 153.25, 265.0, 567.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.\""
 								}
@@ -535,7 +537,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 108.0, 265.0, 32.5, 18.0 ],
+									"patching_rect" : [ 108.0, 265.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "\" \""
 								}
@@ -550,7 +552,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 108.0, 319.0, 101.0, 18.0 ],
+									"patching_rect" : [ 108.0, 319.0, 101.0, 22.0 ],
 									"style" : "",
 									"text" : "fitHeaderBoth $1"
 								}
@@ -566,7 +568,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 137.25, 156.0, 567.0, 31.0 ],
+									"patching_rect" : [ 137.25, 156.0, 567.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.\""
 								}
@@ -581,7 +583,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 92.0, 156.0, 32.5, 18.0 ],
+									"patching_rect" : [ 92.0, 156.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "\" \""
 								}
@@ -596,7 +598,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 92.0, 210.0, 76.0, 18.0 ],
+									"patching_rect" : [ 92.0, 210.0, 76.0, 22.0 ],
 									"style" : "",
 									"text" : "fitHeader $1"
 								}
@@ -755,8 +757,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 3,
-							"architecture" : "x64",
+							"revision" : 4,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -815,7 +817,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 787.0, 289.5, 50.0, 20.0 ],
+									"patching_rect" : [ 787.0, 289.5, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -833,7 +835,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 731.0, 289.5, 50.0, 20.0 ],
+									"patching_rect" : [ 731.0, 289.5, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -851,7 +853,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 675.0, 289.5, 50.0, 20.0 ],
+									"patching_rect" : [ 675.0, 289.5, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -869,7 +871,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 619.0, 289.5, 50.0, 20.0 ],
+									"patching_rect" : [ 619.0, 289.5, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -883,7 +885,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 619.0, 323.5, 139.0, 20.0 ],
+									"patching_rect" : [ 619.0, 323.5, 139.0, 22.0 ],
 									"style" : "",
 									"text" : "pak headcolor 1. 1. 1. 1."
 								}
@@ -898,7 +900,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 632.0, 190.0, 70.0, 18.0 ],
+									"patching_rect" : [ 632.0, 190.0, 70.0, 22.0 ],
 									"style" : "",
 									"text" : "heading $1"
 								}
@@ -970,7 +972,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 462.0, 159.0, 50.0, 20.0 ],
+									"patching_rect" : [ 462.0, 159.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -999,7 +1001,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 462.0, 190.0, 125.0, 18.0 ],
+									"patching_rect" : [ 462.0, 190.0, 125.0, 22.0 ],
 									"style" : "",
 									"text" : "setHeadingMargin $1"
 								}
@@ -1014,7 +1016,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 193.5, 76.0, 70.0, 18.0 ],
+									"patching_rect" : [ 193.5, 76.0, 70.0, 22.0 ],
 									"style" : "",
 									"text" : "\"Arial Bold\""
 								}
@@ -1102,7 +1104,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 305.0, 190.0, 111.0, 18.0 ],
+									"patching_rect" : [ 305.0, 190.0, 111.0, 22.0 ],
 									"style" : "",
 									"text" : "setHeadingSize $1"
 								}
@@ -1119,7 +1121,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 305.0, 159.0, 50.0, 20.0 ],
+									"patching_rect" : [ 305.0, 159.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1133,7 +1135,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 151.5, 190.0, 112.0, 18.0 ],
+									"patching_rect" : [ 151.5, 190.0, 112.0, 22.0 ],
 									"style" : "",
 									"text" : "setHeadingFont $1"
 								}
@@ -1149,7 +1151,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 111.0, 159.0, 100.0, 20.0 ],
+									"patching_rect" : [ 111.0, 159.0, 100.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1163,7 +1165,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 111.0, 103.0, 50.0, 18.0 ],
+									"patching_rect" : [ 111.0, 103.0, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "clear"
 								}
@@ -1353,9 +1355,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 218.0, 260.0, 272.0, 268.0 ],
+					"patching_rect" : [ 218.0, 260.0, 272.0, 152.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 218.0, 260.0, 272.0, 89.0 ]
+					"presentation_rect" : [ 165.0, 486.0, 272.0, 152.0 ]
 				}
 
 			}
@@ -1400,12 +1402,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 3,
-							"architecture" : "x64",
+							"revision" : 4,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 2130.0, -336.0, 657.0, 671.0 ],
+						"rect" : [ 2130.0, -145.0, 657.0, 671.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1441,7 +1443,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 281.0, 188.0, 60.0, 20.0 ],
+									"patching_rect" : [ 281.0, 188.0, 60.0, 22.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -1482,7 +1484,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 256.0, 309.0, 272.0, 18.0 ],
+									"patching_rect" : [ 256.0, 309.0, 272.0, 22.0 ],
 									"style" : "",
 									"text" : "\"100 Years of Solitude - Gabriel García Márquez\""
 								}
@@ -1497,7 +1499,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 149.5, 392.0, 182.0, 18.0 ],
+									"patching_rect" : [ 149.5, 392.0, 182.0, 22.0 ],
 									"style" : "",
 									"text" : "\"Neuromancer - William Gibson\""
 								}
@@ -1512,7 +1514,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 43.0, 576.0, 92.0, 18.0 ],
+									"patching_rect" : [ 43.0, 576.0, 92.0, 22.0 ],
 									"style" : "",
 									"text" : "setHeading $1"
 								}
@@ -1527,7 +1529,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 43.0, 545.0, 59.0, 20.0 ],
+									"patching_rect" : [ 43.0, 545.0, 59.0, 22.0 ],
 									"style" : "",
 									"text" : "tosymbol"
 								}
@@ -1542,7 +1544,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 43.0, 452.0, 75.0, 18.0 ],
+									"patching_rect" : [ 43.0, 452.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "\"Moby Dick\""
 								}
@@ -1605,7 +1607,7 @@
 									"numinlets" : 4,
 									"numoutlets" : 4,
 									"outlettype" : [ "bang", "bang", "bang", "" ],
-									"patching_rect" : [ 43.0, 224.0, 338.5, 20.0 ],
+									"patching_rect" : [ 43.0, 224.0, 338.5, 22.0 ],
 									"style" : "",
 									"text" : "sel 1 2 0"
 								}
@@ -1620,7 +1622,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "int" ],
-									"patching_rect" : [ 43.0, 188.0, 73.0, 20.0 ],
+									"patching_rect" : [ 43.0, 188.0, 73.0, 22.0 ],
 									"style" : "",
 									"text" : "counter 0 2"
 								}
@@ -1647,7 +1649,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 43.0, 116.0, 71.0, 20.0 ],
+									"patching_rect" : [ 43.0, 116.0, 71.0, 22.0 ],
 									"style" : "",
 									"text" : "metro 3333"
 								}
@@ -1933,8 +1935,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 3,
-							"architecture" : "x64",
+							"revision" : 4,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2032,7 +2034,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 182.5, 381.0, 528.0, 31.0 ],
+									"patching_rect" : [ 182.5, 381.0, 528.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.\""
 								}
@@ -2047,7 +2049,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 137.25, 381.0, 32.5, 18.0 ],
+									"patching_rect" : [ 137.25, 381.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "\" \""
 								}
@@ -2062,7 +2064,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 137.25, 435.0, 92.0, 18.0 ],
+									"patching_rect" : [ 137.25, 435.0, 92.0, 22.0 ],
 									"style" : "",
 									"text" : "setMessage $1"
 								}
@@ -2078,7 +2080,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 132.5, 53.0, 653.0, 31.0 ],
+									"patching_rect" : [ 132.5, 53.0, 653.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.\""
 								}
@@ -2093,7 +2095,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 51.5, 53.0, 32.5, 18.0 ],
+									"patching_rect" : [ 51.5, 53.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "\" \""
 								}
@@ -2108,7 +2110,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 51.5, 99.0, 132.0, 18.0 ],
+									"patching_rect" : [ 51.5, 99.0, 132.0, 22.0 ],
 									"style" : "",
 									"text" : "fitMessagePatching $1"
 								}
@@ -2124,7 +2126,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 153.25, 265.0, 567.0, 31.0 ],
+									"patching_rect" : [ 153.25, 265.0, 567.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.\""
 								}
@@ -2139,7 +2141,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 108.0, 265.0, 32.5, 18.0 ],
+									"patching_rect" : [ 108.0, 265.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "\" \""
 								}
@@ -2154,7 +2156,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 108.0, 319.0, 110.0, 18.0 ],
+									"patching_rect" : [ 108.0, 319.0, 110.0, 22.0 ],
 									"style" : "",
 									"text" : "fitMessageBoth $1"
 								}
@@ -2170,7 +2172,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 137.25, 156.0, 567.0, 31.0 ],
+									"patching_rect" : [ 137.25, 156.0, 567.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.\""
 								}
@@ -2185,7 +2187,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 92.0, 156.0, 32.5, 18.0 ],
+									"patching_rect" : [ 92.0, 156.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "\" \""
 								}
@@ -2200,7 +2202,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 92.0, 210.0, 85.0, 18.0 ],
+									"patching_rect" : [ 92.0, 210.0, 85.0, 22.0 ],
 									"style" : "",
 									"text" : "fitMessage $1"
 								}
@@ -2995,14 +2997,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-30",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.0, 589.0, 176.0, 35.0 ],
+					"patching_rect" : [ 17.0, 589.0, 176.0, 22.0 ],
 					"style" : "",
-					"text" : "presentation_rect 218 260 272 89"
+					"text" : "patching_rect 218 260 272 152"
 				}
 
 			}
@@ -3205,8 +3206,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 3,
-							"architecture" : "x64",
+							"revision" : 4,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3246,7 +3247,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 174.0, 69.0, 60.0, 20.0 ],
+									"patching_rect" : [ 174.0, 69.0, 60.0, 22.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -3262,7 +3263,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 174.0, 106.0, 447.0, 31.0 ],
+									"patching_rect" : [ 174.0, 106.0, 447.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.\""
 								}
@@ -3304,7 +3305,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 256.0, 309.0, 399.0, 72.0 ],
+									"patching_rect" : [ 256.0, 309.0, 399.0, 76.0 ],
 									"style" : "",
 									"text" : "\"At that time Macondo was a village of twenty adobe houses, built on the bank of a river of clear water that ran along a bed of polished stones, which were white and enormous, like prehistoric eggs. The world was so recent that many things lacked names, and in order to indicate them it was necessary to point. \""
 								}
@@ -3319,7 +3320,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 149.5, 392.0, 422.0, 18.0 ],
+									"patching_rect" : [ 149.5, 392.0, 422.0, 22.0 ],
 									"style" : "",
 									"text" : "\"The sky above the port was the color of television, tuned to a dead channel.\""
 								}
@@ -3334,7 +3335,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 43.0, 576.0, 92.0, 18.0 ],
+									"patching_rect" : [ 43.0, 576.0, 92.0, 22.0 ],
 									"style" : "",
 									"text" : "setMessage $1"
 								}
@@ -3349,7 +3350,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 43.0, 545.0, 59.0, 20.0 ],
+									"patching_rect" : [ 43.0, 545.0, 59.0, 22.0 ],
 									"style" : "",
 									"text" : "tosymbol"
 								}
@@ -3364,7 +3365,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 43.0, 452.0, 108.0, 18.0 ],
+									"patching_rect" : [ 43.0, 452.0, 108.0, 22.0 ],
 									"style" : "",
 									"text" : "\"Call me Ishmael.\""
 								}
@@ -3427,7 +3428,7 @@
 									"numinlets" : 4,
 									"numoutlets" : 4,
 									"outlettype" : [ "bang", "bang", "bang", "" ],
-									"patching_rect" : [ 43.0, 224.0, 338.5, 20.0 ],
+									"patching_rect" : [ 43.0, 224.0, 338.5, 22.0 ],
 									"style" : "",
 									"text" : "sel 1 2 0"
 								}
@@ -3442,7 +3443,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "int" ],
-									"patching_rect" : [ 43.0, 188.0, 73.0, 20.0 ],
+									"patching_rect" : [ 43.0, 188.0, 73.0, 22.0 ],
 									"style" : "",
 									"text" : "counter 0 2"
 								}
@@ -3469,7 +3470,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 43.0, 117.0, 71.0, 20.0 ],
+									"patching_rect" : [ 43.0, 117.0, 71.0, 22.0 ],
 									"style" : "",
 									"text" : "metro 4000"
 								}

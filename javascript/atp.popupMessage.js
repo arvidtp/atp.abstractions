@@ -212,11 +212,11 @@ function paint()
 	
 	if (fitNow) {
 		if (fitNow == 1) {
-			fitHeight("");
+			fitHeight("presentation");
 		} else if (fitNow == 2) {
 			fitHeight("patching");
 		} else if (fitNow == 3) {
-			fitHeight("");
+			fitHeight("presentation");
 			fitHeight("patching");
 		}
 		fitNow = 0;
@@ -491,17 +491,19 @@ function fitHeight(a) {
 	//(not just background) to the text
 	
 	var target;
+	var target_rect = [];
 	
 	if (a === "patching") {
 		target = "patching_rect";
 	} else {
 		target = "presentation_rect";
 	}
+	target_rect = box.getattr(target);
 	//tell someone about it:
-	outlet(0, target, box.rect[0], box.rect[1], edgeR, bottom+arrowSizeB+arrowSizeT);
+	outlet(0, target, target_rect[0], target_rect[1], edgeR, bottom+arrowSizeB+arrowSizeT);
 	bottomPrev = bottom;
 	swPrev = sw;
-	box.message(target, box.rect[0], box.rect[1], edgeR, bottom+arrowSizeB+arrowSizeT);
+	box.message(target, target_rect[0], target_rect[1], edgeR, bottom+arrowSizeB+arrowSizeT);
 }
 
 function closeButton(a) {
