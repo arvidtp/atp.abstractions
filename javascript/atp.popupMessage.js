@@ -190,6 +190,8 @@ function paint()
 	updateSw();
 	
 	var textLocation;
+	var isBold = 0;
+	var prevChar;
 	
 	if (headingEnable) {
 		doWordWrap(myHeading, myHeadingSize, myHeadingFont);
@@ -237,7 +239,19 @@ function paint()
 			for (var i=0; i<wrapHeading.length; i++) {
 				textLocation = headingHeight * (i + 1);
 				move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
-				text_path(wrapHeading[i]);
+				for (var j = 0; j < wrapHeading[i].length; j++) {
+					var theChar = wrapHeading[i][j];
+					if (theChar === '®') { //supersript ®
+						set_font_size(myHeadingSize * 0.7);
+						rel_move_to(0, headingHeight * -0.3);
+						text_path(theChar);
+						set_font_size(myHeadingSize);
+						rel_move_to(0, headingHeight * 0.3);
+					} else {
+						text_path(theChar);
+					}
+				}
+				// text_path(wrapHeading[i]);
 				fill();
 			}
 		}
@@ -249,7 +263,28 @@ function paint()
 		for (var i=0; i<wrapMain.length; i++) {
 			textLocation = mainHeight * (i + 1) + headingEnable*headingTotalHeight;
 			move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
-			text_path(wrapMain[i]);
+			for (var j = 0; j < wrapMain[i].length; j++) {
+				theChar = wrapMain[i][j];
+				if (theChar === '®') { //supersript ®
+					set_font_size(mySize * 0.7);
+					rel_move_to(0, mainHeight * -0.3);
+					text_path(theChar);
+					set_font_size(mySize);
+					rel_move_to(0, mainHeight * 0.3);
+				} else if (theChar === '_') { //underscore toggles Bold text
+					if (!isBold) {
+						select_font_face(myFont + ' Bold');
+						isBold = 1;
+					} else {
+						select_font_face(myFont);
+						isBold = 0;
+					}
+				} else {
+					text_path(theChar);
+				}
+				prevChar = theChar;
+			}
+			// text_path(wrapMain[i]);
 			fill();
 		}
 
