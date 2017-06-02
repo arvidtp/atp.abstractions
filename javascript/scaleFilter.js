@@ -68,7 +68,7 @@ function list () {
 	// add ghost of top degree of scale at beginning
 	scale.unshift(scale.slice(-1) - 12);
 	// add octave and ghost of 2nd scale degree to end
-	scale.push(12, 12 + scale[2]);
+	scale.push(12 + scale[1], 12 + scale[2]);
 	// post("scale list " + scale + "\n");
 	// myval = scale;
 	// bang();

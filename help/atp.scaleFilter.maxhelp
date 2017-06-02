@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
+			"minor" : 3,
 			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 108.0, 114.0, 1054.0, 537.0 ],
+		"rect" : [ 117.0, 391.0, 1054.0, 537.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 462.5, 84.0, 135.0, 20.0 ],
+					"presentation_rect" : [ 441.333344, 78.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Output scale definitions"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bubble" : 1,
 					"bubblepoint" : 0.3,
@@ -120,7 +133,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 396.333344, 74.0, 41.0, 22.0 ],
+					"patching_rect" : [ 417.5, 83.0, 41.0, 22.0 ],
 					"style" : "",
 					"text" : "dump"
 				}
@@ -132,7 +145,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 396.333344, 357.0, 74.0, 22.0 ],
+					"patching_rect" : [ 385.833344, 348.333313, 74.0, 22.0 ],
 					"style" : "",
 					"text" : "print Scales"
 				}
@@ -157,7 +170,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 435.333344, 44.0, 121.0, 20.0 ],
+					"patching_rect" : [ 456.5, 45.0, 121.0, 20.0 ],
 					"style" : "",
 					"text" : "See scale definitions"
 				}
@@ -170,7 +183,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 396.333344, 44.0, 37.0, 22.0 ],
+					"patching_rect" : [ 417.5, 45.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "open"
 				}
@@ -227,13 +240,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-4",
-					"linecount" : 26,
+					"linecount" : 28,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 766.0, 27.333313, 253.0, 355.0 ],
+					"patching_rect" : [ 752.0, 20.333313, 284.0, 382.0 ],
 					"style" : "",
-					"text" : "atp.scaleFilter\n\nArvid Tomayko | http://arvidtomayko.com\n\nTake a floating point MIDI pitch in and output a MIDI pitch quantized to an equal tempered or other musical scale.\n\nAuto-populates the scale type menu from the coll file atp.scaleFilter_scales.txt. You can add your own scales to it.\n\nAlways rounds up when halfway between notes in the specified scale, so it works best with unquanitized float input rather than integer input.\n\nScales are defined in half steps starting with 0 as root/tonic. Don't include octave. eg a major scale is \n\"0 2 4 5 7 9 11\"\n\nKey/Tonic menu in this example is ordered in circle of 5ths. You don't have to do it this way, but you can because the abstraction doesn't care about the order of the key names."
+					"text" : "atp.scaleFilter\n\nArvid Tomayko | http://arvidtomayko.com\n\nTake a floating point MIDI pitch in and output a MIDI pitch quantized to an equal tempered or other musical scale.\n\nAuto-populates the scale type menu from the coll file atp.scaleFilter_scales.txt. You can add your own scales to it.\n\nAlways rounds up when halfway between notes in the specified scale, so it works best with unquanitized float input rather than integer input.\n\nScales are defined in half steps starting with 0 as root/tonic. Don't include octave. eg a major scale is \n\"0 2 4 5 7 9 11\"\n\nKey/Tonic menu in this example is ordered in circle of 5ths. You don't have to do it this way, but you can because the abstraction doesn't care about the order of the key names.\n\nYour last used custom scale will be stored until it is changed, so you can easily recall the last custom scale after switching to a predefined scale."
 				}
 
 			}
@@ -247,7 +260,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 174.333344, 196.333313, 50.0, 22.0 ],
-					"presentation_rect" : [ 176.333344, 191.333313, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -262,7 +274,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 174.333344, 380.333313, 50.0, 22.0 ],
-					"presentation_rect" : [ 176.333344, 404.333313, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -290,7 +301,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 50.0, 209.833344, 111.0, 33.0 ],
-					"presentation_rect" : [ 139.0, 231.333313, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "MIDI pitch in\n(can even be float)"
 				}
@@ -404,7 +414,6 @@
 					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
-					"fontsize" : 12.0,
 					"hint" : "Choose a Tonic or Key",
 					"id" : "obj-231",
 					"items" : [ "C", ",", "G", ",", "D", ",", "A", ",", "E", ",", "B", ",", "F#", ",", "Db", ",", "Ab", ",", "Eb", ",", "Bb", ",", "F" ],
@@ -434,7 +443,6 @@
 					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
-					"fontsize" : 12.0,
 					"hint" : "Choose a musical scale type",
 					"id" : "obj-234",
 					"items" : [ "Chromatic", ",", "Major", ",", "Natural Minor", ",", "Harmonic Minor", ",", "Melodic Minor", ",", "Major Pentatonic", ",", "Minor Pentatonic", ",", "Minor Pentatonic 2", ",", "Blues", ",", "Diminished", ",", "Whole Tone", ",", "Milankovitch", ",", "Arabian", ",", "Quartertone", ",", "Custom" ],
@@ -488,8 +496,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-117", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-101", 4 ]
 				}
 
@@ -497,8 +503,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 376.958344, 322.166656, 498.124985, 322.166656, 498.124985, 152.333313, 520.416626, 152.333313 ],
 					"source" : [ "obj-101", 3 ]
 				}
@@ -507,8 +511,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-231", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 340.208344, 322.166656, 264.875015, 322.166656, 264.875015, 197.833344, 282.916687, 197.833344 ],
 					"source" : [ "obj-101", 1 ]
 				}
@@ -517,8 +519,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-234", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 358.583344, 322.166656, 351.125, 322.166656, 351.125, 197.833344, 372.416656, 197.833344 ],
 					"source" : [ "obj-101", 2 ]
 				}
@@ -527,8 +527,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-101", 0 ]
 				}
 
@@ -536,8 +534,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-234", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-106", 0 ]
 				}
 
@@ -545,8 +541,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-123", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-107", 0 ]
 				}
 
@@ -554,8 +548,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-108", 0 ]
 				}
 
@@ -563,8 +555,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 6 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-111", 0 ]
 				}
 
@@ -572,8 +562,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 7 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"midpoints" : [ 427.0, 77.083328, 395.333344, 77.083328 ],
 					"source" : [ "obj-114", 0 ]
 				}
 
@@ -581,8 +570,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 7 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"midpoints" : [ 427.0, 117.083328, 395.333344, 117.083328 ],
 					"source" : [ "obj-119", 0 ]
 				}
 
@@ -590,8 +578,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-108", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-121", 0 ]
 				}
 
@@ -599,8 +585,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-13", 1 ]
 				}
 
@@ -608,8 +592,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -617,8 +599,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-231", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-227", 0 ]
 				}
 
@@ -626,8 +606,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-231", 1 ]
 				}
 
@@ -635,8 +613,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-231", 0 ]
 				}
 
@@ -644,8 +620,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-234", 1 ]
 				}
 
@@ -653,8 +627,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-234", 0 ]
 				}
 
@@ -662,8 +634,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-107", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -671,8 +641,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 5 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-40", 0 ]
 				}
 
@@ -680,8 +648,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -690,18 +656,21 @@
 		"dependency_cache" : [ 			{
 				"name" : "atp.scaleFilter.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/atp.abstractions/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "atp.scaleFilter_scales.txt",
 				"bootpath" : "~/Documents/Max 7/Packages/atp.abstractions/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scaleFilter.js",
 				"bootpath" : "~/Documents/Max 7/Packages/atp.abstractions/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
