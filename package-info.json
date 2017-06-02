@@ -1,0 +1,32 @@
+{
+	"author" : "Arvid Tomayko",
+	"authors" : [  ],
+	"description" : "Abstractions, javascripts, shaders, etc I’ve made and found useful over the years. Some will be generically useful to people, others may be a bit esoteric. Some are well documented, others are not so much.",
+	"displayname" : "",
+	"extends" : "",
+	"extensible" : 0,
+	"homepatcher" : "",
+	"max_version_max" : "none",
+	"max_version_min" : "6.1.0",
+	"name" : "atp.abstractions",
+	"os" : 	{
+		"macintosh" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "none"
+		}
+,
+		"windows" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "none"
+		}
+
+	}
+,
+	"package_extra" : 	{
+
+	}
+,
+	"tags" : [ "mutlitouch", "control", "dictionaries", "timestamp", "balloon", "popup messages", "biquads", "filter UI", "audio", "hexidecimal" ],
+	"version" : "1.0.0",
+	"website" : "http://www.arvidtomayko.com"
+}
