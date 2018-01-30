@@ -1,0 +1,54 @@
+{
+	"pattrstorage" : 	{
+		"name" : "u451011483",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "2018-01-29 sleepy android",
+				"data" : 				{
+					"flonum" : [ 0.07 ],
+					"live.dial" : [ 127.0 ],
+					"number" : [ -15 ],
+					"number[1]" : [ -55 ],
+					"number[2]" : [  ],
+					"slidersAreTasty" : [ 24 ],
+					"toggle" : [ 0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "we need more androids",
+				"data" : 				{
+					"flonum" : [ 2.25 ],
+					"live.dial" : [ 0.0 ],
+					"number" : [ 0 ],
+					"number[1]" : [ 0 ],
+					"number[2]" : [  ],
+					"slidersAreTasty" : [ 90 ],
+					"toggle" : [ 0 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"name" : "bouncy android",
+				"data" : 				{
+					"flonum" : [ 0.07 ],
+					"live.dial" : [ 67.0 ],
+					"number" : [ -15 ],
+					"number[1]" : [ 327 ],
+					"number[2]" : [  ],
+					"slidersAreTasty" : [ 83 ],
+					"toggle" : [ 0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
