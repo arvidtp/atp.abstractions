@@ -112,7 +112,7 @@ if(jsarguments.length>1) // argument 0 is the name of the js file
 	} else if(jsarguments[1]==="yhErrorPop") { //arg 1 = stylePreset
 		//closeButton 1, setSize 12, setMargin 18, arrow 3 15 46, heading 1, setHeadingSize 14, setMargin 13, bgcolor 1. 0. 0. 0.7, textcolor 0. 0. 0. 1., hidden 1
 		headingEnable = 1;
-		bgColor = [1., 0., 0., 0.7];
+		bgColor = [1., 0., 0., 0.8];
 		textColor = [0., 0., 0., 1.];
 		headColor = [1., 1., 1., 1.];
 		myHeadingSize = 14;
