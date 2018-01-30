@@ -39,6 +39,33 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "name of chosen preset",
+					"id" : "obj-14",
+					"index" : 4,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1035.0, 961.0, 30.0, 30.0 ],
+					"presentation_rect" : [ 1318.0, 950.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "index of chosen preset",
+					"id" : "obj-4",
+					"index" : 3,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 987.0, 961.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bordercolor" : [ 0.317647, 0.654902, 0.976471, 0.0 ],
 					"id" : "obj-27",
 					"ignoreclick" : 1,
@@ -91,7 +118,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 848.0, 415.899414, 63.0, 22.0 ],
-					"presentation_rect" : [ 849.5, 415.899414, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "hidden $1"
 				}
@@ -131,7 +157,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 612.0, 675.0, 63.0, 22.0 ],
-					"presentation_rect" : [ 643.5, 686.899414, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "hidden $1"
 				}
@@ -1329,6 +1354,9 @@
 , 							{
 								"name" : "Classic Gray 1",
 								"default" : 								{
+									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
+									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ],
+									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1339,11 +1367,8 @@
 										"autogradient" : 0
 									}
 ,
-									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
-									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1352,8 +1377,8 @@
 , 							{
 								"name" : "Green Grocer",
 								"default" : 								{
-									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"elementcolor" : [ 0.055315, 0.304887, 0.042868, 1.0 ]
+									"elementcolor" : [ 0.055315, 0.304887, 0.042868, 1.0 ],
+									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1362,11 +1387,11 @@
 , 							{
 								"name" : "Green Lantern",
 								"default" : 								{
+									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
 									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
-									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ]
+									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1375,9 +1400,9 @@
 , 							{
 								"name" : "Green Lantern Inverse",
 								"default" : 								{
+									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ],
 									"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1386,6 +1411,8 @@
 , 							{
 								"name" : "videoEditor",
 								"default" : 								{
+									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
+									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1396,12 +1423,10 @@
 										"autogradient" : 0
 									}
 ,
-									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
 									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
 									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ]
+									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2143,6 +2168,9 @@
 , 							{
 								"name" : "Classic Gray 1",
 								"default" : 								{
+									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
+									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ],
+									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2153,11 +2181,8 @@
 										"autogradient" : 0
 									}
 ,
-									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
-									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2166,8 +2191,8 @@
 , 							{
 								"name" : "Green Grocer",
 								"default" : 								{
-									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"elementcolor" : [ 0.055315, 0.304887, 0.042868, 1.0 ]
+									"elementcolor" : [ 0.055315, 0.304887, 0.042868, 1.0 ],
+									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2176,11 +2201,11 @@
 , 							{
 								"name" : "Green Lantern",
 								"default" : 								{
+									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
 									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
-									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ]
+									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2189,9 +2214,9 @@
 , 							{
 								"name" : "Green Lantern Inverse",
 								"default" : 								{
+									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ],
 									"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2200,6 +2225,8 @@
 , 							{
 								"name" : "videoEditor",
 								"default" : 								{
+									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
+									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2210,12 +2237,10 @@
 										"autogradient" : 0
 									}
 ,
-									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
 									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
 									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ]
+									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2741,6 +2766,9 @@
 , 							{
 								"name" : "Classic Gray 1",
 								"default" : 								{
+									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
+									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ],
+									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2751,11 +2779,8 @@
 										"autogradient" : 0
 									}
 ,
-									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
-									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2764,8 +2789,8 @@
 , 							{
 								"name" : "Green Grocer",
 								"default" : 								{
-									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"elementcolor" : [ 0.055315, 0.304887, 0.042868, 1.0 ]
+									"elementcolor" : [ 0.055315, 0.304887, 0.042868, 1.0 ],
+									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2774,11 +2799,11 @@
 , 							{
 								"name" : "Green Lantern",
 								"default" : 								{
+									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
 									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
-									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ]
+									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2787,9 +2812,9 @@
 , 							{
 								"name" : "Green Lantern Inverse",
 								"default" : 								{
+									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ],
 									"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2798,6 +2823,8 @@
 , 							{
 								"name" : "videoEditor",
 								"default" : 								{
+									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
+									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2808,12 +2835,10 @@
 										"autogradient" : 0
 									}
 ,
-									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
 									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
 									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ]
+									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4851,14 +4876,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"order" : 1,
-					"source" : [ "obj-290", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-150", 0 ],
 					"order" : 2,
 					"source" : [ "obj-290", 0 ]
 				}
@@ -4866,7 +4883,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-151", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"order" : 0,
 					"source" : [ "obj-290", 1 ]
 				}
@@ -4874,7 +4891,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-59", 0 ],
+					"destination" : [ "obj-150", 0 ],
+					"order" : 3,
+					"source" : [ "obj-290", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-151", 0 ],
+					"order" : 1,
+					"source" : [ "obj-290", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
 					"order" : 0,
 					"source" : [ "obj-290", 0 ]
 				}
@@ -4882,8 +4915,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-90", 0 ],
+					"destination" : [ "obj-59", 0 ],
 					"order" : 1,
+					"source" : [ "obj-290", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"order" : 2,
 					"source" : [ "obj-290", 1 ]
 				}
 
@@ -5426,6 +5467,9 @@
 , 			{
 				"name" : "Classic Gray 1",
 				"default" : 				{
+					"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
+					"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ],
+					"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -5436,11 +5480,8 @@
 						"autogradient" : 0
 					}
 ,
-					"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
-					"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5449,8 +5490,8 @@
 , 			{
 				"name" : "Green Grocer",
 				"default" : 				{
-					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"elementcolor" : [ 0.055315, 0.304887, 0.042868, 1.0 ]
+					"elementcolor" : [ 0.055315, 0.304887, 0.042868, 1.0 ],
+					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5459,11 +5500,11 @@
 , 			{
 				"name" : "Green Lantern",
 				"default" : 				{
+					"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
 					"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
 					"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
-					"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ]
+					"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5472,9 +5513,9 @@
 , 			{
 				"name" : "Green Lantern Inverse",
 				"default" : 				{
+					"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ],
 					"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5483,6 +5524,8 @@
 , 			{
 				"name" : "videoEditor",
 				"default" : 				{
+					"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
+					"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -5493,12 +5536,10 @@
 						"autogradient" : 0
 					}
 ,
-					"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
 					"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
 					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-					"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ]
+					"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
