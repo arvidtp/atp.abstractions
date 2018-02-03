@@ -248,7 +248,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 6.5, 26.0, 308.0, 154.0 ],
 					"style" : "",
-					"text" : "vastly improved over atp.pattrstorageManager2,and doesn't block the scheduler!\n\nArvid Tomayko | arvidtomayko.com\n2018-01\n\nArgs:\n1: name of json file to store in\n2: 1 = default to store current settings automatically as preset 1 on close, 0 = don't\n3: 1 = auto-save on store, 0 = don't"
+					"text" : "vastly improved over atp.pattrstorageManager2,and doesn't block the scheduler!\n\nArvid Tomayko | arvidtomayko.com\n2018-02\n\nArgs:\n1: name of json file to store in\n2: 1 = default to store current settings automatically as preset 1 on close, 0 = don't\n3: 1 = auto-save on store, 0 = don't"
 				}
 
 			}
@@ -312,18 +312,18 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 16.5, 399.0, 223.0, 22.0 ],
 					"restore" : 					{
-						"flonum" : [ 2.25 ],
+						"flonum" : [ 0.0 ],
 						"live.dial" : [ 0.0 ],
 						"number" : [ 0 ],
 						"number[1]" : [ 0 ],
-						"number[2]" : [ 2 ],
-						"slidersAreTasty" : [ 90 ],
+						"number[2]" : [ 0 ],
+						"slidersAreTasty" : [ 0 ],
 						"toggle" : [ 0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr @autoname 1 @autorestore 0",
-					"varname" : "u310007584"
+					"varname" : "u011008285"
 				}
 
 			}
@@ -393,7 +393,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @savemode 0",
-					"varname" : "u301007582"
+					"varname" : "u225008283"
 				}
 
 			}
@@ -513,34 +513,6 @@
 				"bootpath" : "~/Documents/Max 7/Packages/atp.abstractions/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ej.dialog.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/ejies/patchers",
-				"patcherrelativepath" : "../../ejies/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ej.dialog.png",
-				"bootpath" : "~/Documents/Max 7/Packages/ejies/media/images",
-				"patcherrelativepath" : "../../ejies/media/images",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ej.ok.png",
-				"bootpath" : "~/Documents/Max 7/Packages/ejies/media/images",
-				"patcherrelativepath" : "../../ejies/media/images",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ej.cancel.png",
-				"bootpath" : "~/Documents/Max 7/Packages/ejies/media/images",
-				"patcherrelativepath" : "../../ejies/media/images",
-				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
