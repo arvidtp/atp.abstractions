@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"openrect" : [ 34.0, 78.0, 272.0, 166.0 ],
+		"openrect" : [ 34.0, 78.0, 272.0, 185.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,74 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-89",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 484.0, 457.0, 35.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 163.105927, 35.0, 20.0 ],
+					"style" : "",
+					"text" : "Next"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-71",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 428.75, 447.0, 43.0, 22.0 ],
+					"style" : "",
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-68",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 428.75, 415.899414, 29.5, 22.0 ],
+					"style" : "",
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"allowdrag" : 0,
+					"bgcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0,
+					"bgfillcolor_color" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
+					"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "color",
+					"id" : "obj-57",
+					"items" : [ 0, "-", "<<< temp slot >>> (not saved)", ",", 1, "-", "====== Pre Show ====== (TODO)", ",", 2, "-", "Funnels 1 loop", ",", 3, "-", "Funnels 2 (end)", ",", 4, "-", "Offwhite-Emerald loop", ",", 5, "-", "Grand Mouth loop 1", ",", 6, "-", "Grand Mouth loop 2", ",", 7, "-", "Throbbing Gristle loop", ",", 8, "-", "shify-nine.99 cue", ",", 9, "-", "Throbbing Girstle Run Away", ",", 10, "-", "Bag inflation loop", ",", 11, "-", "Anna shopvac stupidSynth", ",", 12, "-", "silence - loop quick fade out", ",", 13, "-", "Lungs loop", ",", 14, "-", "silence (Im coming out there to see…)", ",", 15, "-", "me me me me", ",", 16, "-", "Peepers", ",", 17, "-", "Seeking a Light loop", ",", 18, "-", "Fat Suit loop 1", ",", 19, "-", "Fat Suit loop 2", ",", 20, "-", "swell transition normal", ",", 21, "-", "Purple Bib loop", ",", 22, "-", "silence Now", ",", 23, "-", "Pink Triangle start - videotrack", ",", 24, "-", "Pink Triangle Rotate", ",", 25, "-", "Slinkies TODO", ",", 26, "-", "Ring of Fire loop", ",", 27, "-", "Golden Triangle loop", ",", 28, "-", "Golden Triangle Resolution", ",", 29, "-", "======= End Of Show =======", ",", 30, "-", "======= MPU =======", ",", 31, "-", "default", ",", 32, "-", "generalized setup 1", ",", 33, "-", "throbbing Gristle 1 (only MPU1 so far)", ",", 34, "-", "throbbing Gristle 2 (only MPU1 so far)", ",", 35, "-", "masterFIlter mpu settings 1", ",", 36, "-", "Arps 1-28", ",", 37, "-", "2018-01-28 b", ",", 38, "-", "2018-01-28 c", ",", 39, "-", "crazy cello MPUs", ",", 40, "-", "======= VideoTrack =======", ",", 41, "-", "good mid-stage video tracking settings", ",", 42, "-", "video calliope", ",", 43, "-", "video reso haze", ",", 44, "-", "video underwater (penta Maj)", ",", 45, "-", "video glass bells (penta Maj)", ",", 46, "-", "video glass bells (penta Min)", ",", 47, "-", "======= Other =======", ",", 48, "-", "silence - loop 10s fade out", ",", 49, "-", "logic filters 2", ",", 50, "-", "filtering logic 1", ",", 51, "-", "filtering logic 2", ",", 52, "-", "filtering logic 3", ",", 53, "-", "====== Transitions ======", ",", 54, "-", "swell transition harmonized", ",", 55, "-", "swell transition fast and low" ],
+					"labelclick" : 1,
+					"maxclass" : "umenu",
+					"menumode" : 2,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 428.75, 485.0, 176.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 38.0, 163.105927, 228.0, 22.0 ],
+					"style" : "",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
@@ -656,7 +724,7 @@
 									"bgfillcolor_proportion" : 0.39,
 									"bgfillcolor_type" : "color",
 									"id" : "obj-95",
-									"items" : [ 0, "-", "<<< temp slot >>> (not saved)", ",", 1, "-", "====== Pre Show ====== (TODO)", ",", 2, "-", "Funnels 1 loop", ",", 3, "-", "Funnels 2 (end)", ",", 4, "-", "Offwhite-Emerald loop", ",", 5, "-", "Grand Mouth loop 1", ",", 6, "-", "Grand Mouth loop 2", ",", 7, "-", "Throbbing Gristle loop", ",", 8, "-", "shify-nine.99 cue TODO", ",", 9, "-", "Bag inflation loop", ",", 10, "-", "silence - loop 1s fade out", ",", 11, "-", "Anna shopvac stupidSynth", ",", 12, "-", "Lungs loop", ",", 13, "-", "silence (Im coming out there to see…)", ",", 14, "-", "Seeking a Light loop", ",", 15, "-", "Fat Suit loop 1", ",", 16, "-", "Fat Suit loop 2", ",", 17, "-", "Slinkies TODO", ",", 18, "-", "swell transition normal", ",", 19, "-", "Purple Bib loop", ",", 20, "-", "silence Now", ",", 21, "-", "Pink Triangle start - videotrack", ",", 22, "-", "Pink Triangle Rotate", ",", 23, "-", "Ring of Fire loop", ",", 24, "-", "Golden Triangle loop", ",", 25, "-", "Golden Triangle Resolution", ",", 26, "-", "======= End Of Show =======", ",", 27, "-", "======= MPU =======", ",", 28, "-", "default", ",", 29, "-", "generalized setup 1", ",", 30, "-", "throbbing Gristle 1 (only MPU1 so far)", ",", 31, "-", "throbbing Gristle 2 (only MPU1 so far)", ",", 32, "-", "masterFIlter mpu settings 1", ",", 33, "-", "Arps 1-28", ",", 34, "-", "2018-01-28 b", ",", 35, "-", "2018-01-28 c", ",", 36, "-", "crazy cello MPUs", ",", 37, "-", "======= VideoTrack =======", ",", 38, "-", "good mid-stage video tracking settings", ",", 39, "-", "video calliope", ",", 40, "-", "video reso haze", ",", 41, "-", "video underwater (penta Maj)", ",", 42, "-", "video glass bells (penta Maj)", ",", 43, "-", "video glass bells (penta Min)", ",", 44, "-", "======= Other =======", ",", 45, "-", "silence - loop 10s fade out", ",", 46, "-", "logic filters 2", ",", 47, "-", "filtering logic 1", ",", 48, "-", "filtering logic 2", ",", 49, "-", "filtering logic 3", ",", 50, "-", "====== Transitions ======", ",", 51, "-", "swell transition harmonized", ",", 52, "-", "swell transition fast and low" ],
+									"items" : [ 0, "-", "<<< temp slot >>> (not saved)", ",", 1, "-", "====== Pre Show ====== (TODO)", ",", 2, "-", "Funnels 1 loop", ",", 3, "-", "Funnels 2 (end)", ",", 4, "-", "Offwhite-Emerald loop", ",", 5, "-", "Grand Mouth loop 1", ",", 6, "-", "Grand Mouth loop 2", ",", 7, "-", "Throbbing Gristle loop", ",", 8, "-", "shify-nine.99 cue", ",", 9, "-", "Throbbing Girstle Run Away", ",", 10, "-", "Bag inflation loop", ",", 11, "-", "Anna shopvac stupidSynth", ",", 12, "-", "silence - loop quick fade out", ",", 13, "-", "Lungs loop", ",", 14, "-", "silence (Im coming out there to see…)", ",", 15, "-", "me me me me", ",", 16, "-", "Peepers", ",", 17, "-", "Seeking a Light loop", ",", 18, "-", "Fat Suit loop 1", ",", 19, "-", "Fat Suit loop 2", ",", 20, "-", "swell transition normal", ",", 21, "-", "Purple Bib loop", ",", 22, "-", "silence Now", ",", 23, "-", "Pink Triangle start - videotrack", ",", 24, "-", "Pink Triangle Rotate", ",", 25, "-", "Slinkies TODO", ",", 26, "-", "Ring of Fire loop", ",", 27, "-", "Golden Triangle loop", ",", 28, "-", "Golden Triangle Resolution", ",", 29, "-", "======= End Of Show =======", ",", 30, "-", "======= MPU =======", ",", 31, "-", "default", ",", 32, "-", "generalized setup 1", ",", 33, "-", "throbbing Gristle 1 (only MPU1 so far)", ",", 34, "-", "throbbing Gristle 2 (only MPU1 so far)", ",", 35, "-", "masterFIlter mpu settings 1", ",", 36, "-", "Arps 1-28", ",", 37, "-", "2018-01-28 b", ",", 38, "-", "2018-01-28 c", ",", 39, "-", "crazy cello MPUs", ",", 40, "-", "======= VideoTrack =======", ",", 41, "-", "good mid-stage video tracking settings", ",", 42, "-", "video calliope", ",", 43, "-", "video reso haze", ",", 44, "-", "video underwater (penta Maj)", ",", 45, "-", "video glass bells (penta Maj)", ",", 46, "-", "video glass bells (penta Min)", ",", 47, "-", "======= Other =======", ",", 48, "-", "silence - loop 10s fade out", ",", 49, "-", "logic filters 2", ",", 50, "-", "filtering logic 1", ",", 51, "-", "filtering logic 2", ",", 52, "-", "filtering logic 3", ",", 53, "-", "====== Transitions ======", ",", 54, "-", "swell transition harmonized", ",", 55, "-", "swell transition fast and low" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -699,7 +767,7 @@
 									"bgfillcolor_proportion" : 0.39,
 									"bgfillcolor_type" : "color",
 									"id" : "obj-97",
-									"items" : [ 0, "-", "<<< temp slot >>> (not saved)", ",", 1, "-", "====== Pre Show ====== (TODO)", ",", 2, "-", "Funnels 1 loop", ",", 3, "-", "Funnels 2 (end)", ",", 4, "-", "Offwhite-Emerald loop", ",", 5, "-", "Grand Mouth loop 1", ",", 6, "-", "Grand Mouth loop 2", ",", 7, "-", "Throbbing Gristle loop", ",", 8, "-", "shify-nine.99 cue TODO", ",", 9, "-", "Bag inflation loop", ",", 10, "-", "silence - loop 1s fade out", ",", 11, "-", "Anna shopvac stupidSynth", ",", 12, "-", "Lungs loop", ",", 13, "-", "silence (Im coming out there to see…)", ",", 14, "-", "Seeking a Light loop", ",", 15, "-", "Fat Suit loop 1", ",", 16, "-", "Fat Suit loop 2", ",", 17, "-", "Slinkies TODO", ",", 18, "-", "swell transition normal", ",", 19, "-", "Purple Bib loop", ",", 20, "-", "silence Now", ",", 21, "-", "Pink Triangle start - videotrack", ",", 22, "-", "Pink Triangle Rotate", ",", 23, "-", "Ring of Fire loop", ",", 24, "-", "Golden Triangle loop", ",", 25, "-", "Golden Triangle Resolution", ",", 26, "-", "======= End Of Show =======", ",", 27, "-", "======= MPU =======", ",", 28, "-", "default", ",", 29, "-", "generalized setup 1", ",", 30, "-", "throbbing Gristle 1 (only MPU1 so far)", ",", 31, "-", "throbbing Gristle 2 (only MPU1 so far)", ",", 32, "-", "masterFIlter mpu settings 1", ",", 33, "-", "Arps 1-28", ",", 34, "-", "2018-01-28 b", ",", 35, "-", "2018-01-28 c", ",", 36, "-", "crazy cello MPUs", ",", 37, "-", "======= VideoTrack =======", ",", 38, "-", "good mid-stage video tracking settings", ",", 39, "-", "video calliope", ",", 40, "-", "video reso haze", ",", 41, "-", "video underwater (penta Maj)", ",", 42, "-", "video glass bells (penta Maj)", ",", 43, "-", "video glass bells (penta Min)", ",", 44, "-", "======= Other =======", ",", 45, "-", "silence - loop 10s fade out", ",", 46, "-", "logic filters 2", ",", 47, "-", "filtering logic 1", ",", 48, "-", "filtering logic 2", ",", 49, "-", "filtering logic 3", ",", 50, "-", "====== Transitions ======", ",", 51, "-", "swell transition harmonized", ",", 52, "-", "swell transition fast and low" ],
+									"items" : [ 0, "-", "<<< temp slot >>> (not saved)", ",", 1, "-", "====== Pre Show ====== (TODO)", ",", 2, "-", "Funnels 1 loop", ",", 3, "-", "Funnels 2 (end)", ",", 4, "-", "Offwhite-Emerald loop", ",", 5, "-", "Grand Mouth loop 1", ",", 6, "-", "Grand Mouth loop 2", ",", 7, "-", "Throbbing Gristle loop", ",", 8, "-", "shify-nine.99 cue", ",", 9, "-", "Throbbing Girstle Run Away", ",", 10, "-", "Bag inflation loop", ",", 11, "-", "Anna shopvac stupidSynth", ",", 12, "-", "silence - loop quick fade out", ",", 13, "-", "Lungs loop", ",", 14, "-", "silence (Im coming out there to see…)", ",", 15, "-", "me me me me", ",", 16, "-", "Peepers", ",", 17, "-", "Seeking a Light loop", ",", 18, "-", "Fat Suit loop 1", ",", 19, "-", "Fat Suit loop 2", ",", 20, "-", "swell transition normal", ",", 21, "-", "Purple Bib loop", ",", 22, "-", "silence Now", ",", 23, "-", "Pink Triangle start - videotrack", ",", 24, "-", "Pink Triangle Rotate", ",", 25, "-", "Slinkies TODO", ",", 26, "-", "Ring of Fire loop", ",", 27, "-", "Golden Triangle loop", ",", 28, "-", "Golden Triangle Resolution", ",", 29, "-", "======= End Of Show =======", ",", 30, "-", "======= MPU =======", ",", 31, "-", "default", ",", 32, "-", "generalized setup 1", ",", 33, "-", "throbbing Gristle 1 (only MPU1 so far)", ",", 34, "-", "throbbing Gristle 2 (only MPU1 so far)", ",", 35, "-", "masterFIlter mpu settings 1", ",", 36, "-", "Arps 1-28", ",", 37, "-", "2018-01-28 b", ",", 38, "-", "2018-01-28 c", ",", 39, "-", "crazy cello MPUs", ",", 40, "-", "======= VideoTrack =======", ",", 41, "-", "good mid-stage video tracking settings", ",", 42, "-", "video calliope", ",", 43, "-", "video reso haze", ",", 44, "-", "video underwater (penta Maj)", ",", 45, "-", "video glass bells (penta Maj)", ",", 46, "-", "video glass bells (penta Min)", ",", 47, "-", "======= Other =======", ",", 48, "-", "silence - loop 10s fade out", ",", 49, "-", "logic filters 2", ",", 50, "-", "filtering logic 1", ",", 51, "-", "filtering logic 2", ",", 52, "-", "filtering logic 3", ",", 53, "-", "====== Transitions ======", ",", 54, "-", "swell transition harmonized", ",", 55, "-", "swell transition fast and low" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1072,7 +1140,7 @@
 									"bgfillcolor_proportion" : 0.39,
 									"bgfillcolor_type" : "color",
 									"id" : "obj-4",
-									"items" : [ 0, "-", "<<< temp slot >>> (not saved)", ",", 1, "-", "====== Pre Show ====== (TODO)", ",", 2, "-", "Funnels 1 loop", ",", 3, "-", "Funnels 2 (end)", ",", 4, "-", "Offwhite-Emerald loop", ",", 5, "-", "Grand Mouth loop 1", ",", 6, "-", "Grand Mouth loop 2", ",", 7, "-", "Throbbing Gristle loop", ",", 8, "-", "shify-nine.99 cue TODO", ",", 9, "-", "Bag inflation loop", ",", 10, "-", "silence - loop 1s fade out", ",", 11, "-", "Anna shopvac stupidSynth", ",", 12, "-", "Lungs loop", ",", 13, "-", "silence (Im coming out there to see…)", ",", 14, "-", "Seeking a Light loop", ",", 15, "-", "Fat Suit loop 1", ",", 16, "-", "Fat Suit loop 2", ",", 17, "-", "Slinkies TODO", ",", 18, "-", "swell transition normal", ",", 19, "-", "Purple Bib loop", ",", 20, "-", "silence Now", ",", 21, "-", "Pink Triangle start - videotrack", ",", 22, "-", "Pink Triangle Rotate", ",", 23, "-", "Ring of Fire loop", ",", 24, "-", "Golden Triangle loop", ",", 25, "-", "Golden Triangle Resolution", ",", 26, "-", "======= End Of Show =======", ",", 27, "-", "======= MPU =======", ",", 28, "-", "default", ",", 29, "-", "generalized setup 1", ",", 30, "-", "throbbing Gristle 1 (only MPU1 so far)", ",", 31, "-", "throbbing Gristle 2 (only MPU1 so far)", ",", 32, "-", "masterFIlter mpu settings 1", ",", 33, "-", "Arps 1-28", ",", 34, "-", "2018-01-28 b", ",", 35, "-", "2018-01-28 c", ",", 36, "-", "crazy cello MPUs", ",", 37, "-", "======= VideoTrack =======", ",", 38, "-", "good mid-stage video tracking settings", ",", 39, "-", "video calliope", ",", 40, "-", "video reso haze", ",", 41, "-", "video underwater (penta Maj)", ",", 42, "-", "video glass bells (penta Maj)", ",", 43, "-", "video glass bells (penta Min)", ",", 44, "-", "======= Other =======", ",", 45, "-", "silence - loop 10s fade out", ",", 46, "-", "logic filters 2", ",", 47, "-", "filtering logic 1", ",", 48, "-", "filtering logic 2", ",", 49, "-", "filtering logic 3", ",", 50, "-", "====== Transitions ======", ",", 51, "-", "swell transition harmonized", ",", 52, "-", "swell transition fast and low" ],
+									"items" : [ 0, "-", "<<< temp slot >>> (not saved)", ",", 1, "-", "====== Pre Show ====== (TODO)", ",", 2, "-", "Funnels 1 loop", ",", 3, "-", "Funnels 2 (end)", ",", 4, "-", "Offwhite-Emerald loop", ",", 5, "-", "Grand Mouth loop 1", ",", 6, "-", "Grand Mouth loop 2", ",", 7, "-", "Throbbing Gristle loop", ",", 8, "-", "shify-nine.99 cue", ",", 9, "-", "Throbbing Girstle Run Away", ",", 10, "-", "Bag inflation loop", ",", 11, "-", "Anna shopvac stupidSynth", ",", 12, "-", "silence - loop quick fade out", ",", 13, "-", "Lungs loop", ",", 14, "-", "silence (Im coming out there to see…)", ",", 15, "-", "me me me me", ",", 16, "-", "Peepers", ",", 17, "-", "Seeking a Light loop", ",", 18, "-", "Fat Suit loop 1", ",", 19, "-", "Fat Suit loop 2", ",", 20, "-", "swell transition normal", ",", 21, "-", "Purple Bib loop", ",", 22, "-", "silence Now", ",", 23, "-", "Pink Triangle start - videotrack", ",", 24, "-", "Pink Triangle Rotate", ",", 25, "-", "Slinkies TODO", ",", 26, "-", "Ring of Fire loop", ",", 27, "-", "Golden Triangle loop", ",", 28, "-", "Golden Triangle Resolution", ",", 29, "-", "======= End Of Show =======", ",", 30, "-", "======= MPU =======", ",", 31, "-", "default", ",", 32, "-", "generalized setup 1", ",", 33, "-", "throbbing Gristle 1 (only MPU1 so far)", ",", 34, "-", "throbbing Gristle 2 (only MPU1 so far)", ",", 35, "-", "masterFIlter mpu settings 1", ",", 36, "-", "Arps 1-28", ",", 37, "-", "2018-01-28 b", ",", 38, "-", "2018-01-28 c", ",", 39, "-", "crazy cello MPUs", ",", 40, "-", "======= VideoTrack =======", ",", 41, "-", "good mid-stage video tracking settings", ",", 42, "-", "video calliope", ",", 43, "-", "video reso haze", ",", 44, "-", "video underwater (penta Maj)", ",", 45, "-", "video glass bells (penta Maj)", ",", 46, "-", "video glass bells (penta Min)", ",", 47, "-", "======= Other =======", ",", 48, "-", "silence - loop 10s fade out", ",", 49, "-", "logic filters 2", ",", 50, "-", "filtering logic 1", ",", 51, "-", "filtering logic 2", ",", 52, "-", "filtering logic 3", ",", 53, "-", "====== Transitions ======", ",", 54, "-", "swell transition harmonized", ",", 55, "-", "swell transition fast and low" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1115,7 +1183,7 @@
 									"bgfillcolor_proportion" : 0.39,
 									"bgfillcolor_type" : "color",
 									"id" : "obj-290",
-									"items" : [ 0, "-", "<<< temp slot >>> (not saved)", ",", 1, "-", "====== Pre Show ====== (TODO)", ",", 2, "-", "Funnels 1 loop", ",", 3, "-", "Funnels 2 (end)", ",", 4, "-", "Offwhite-Emerald loop", ",", 5, "-", "Grand Mouth loop 1", ",", 6, "-", "Grand Mouth loop 2", ",", 7, "-", "Throbbing Gristle loop", ",", 8, "-", "shify-nine.99 cue TODO", ",", 9, "-", "Bag inflation loop", ",", 10, "-", "silence - loop 1s fade out", ",", 11, "-", "Anna shopvac stupidSynth", ",", 12, "-", "Lungs loop", ",", 13, "-", "silence (Im coming out there to see…)", ",", 14, "-", "Seeking a Light loop", ",", 15, "-", "Fat Suit loop 1", ",", 16, "-", "Fat Suit loop 2", ",", 17, "-", "Slinkies TODO", ",", 18, "-", "swell transition normal", ",", 19, "-", "Purple Bib loop", ",", 20, "-", "silence Now", ",", 21, "-", "Pink Triangle start - videotrack", ",", 22, "-", "Pink Triangle Rotate", ",", 23, "-", "Ring of Fire loop", ",", 24, "-", "Golden Triangle loop", ",", 25, "-", "Golden Triangle Resolution", ",", 26, "-", "======= End Of Show =======", ",", 27, "-", "======= MPU =======", ",", 28, "-", "default", ",", 29, "-", "generalized setup 1", ",", 30, "-", "throbbing Gristle 1 (only MPU1 so far)", ",", 31, "-", "throbbing Gristle 2 (only MPU1 so far)", ",", 32, "-", "masterFIlter mpu settings 1", ",", 33, "-", "Arps 1-28", ",", 34, "-", "2018-01-28 b", ",", 35, "-", "2018-01-28 c", ",", 36, "-", "crazy cello MPUs", ",", 37, "-", "======= VideoTrack =======", ",", 38, "-", "good mid-stage video tracking settings", ",", 39, "-", "video calliope", ",", 40, "-", "video reso haze", ",", 41, "-", "video underwater (penta Maj)", ",", 42, "-", "video glass bells (penta Maj)", ",", 43, "-", "video glass bells (penta Min)", ",", 44, "-", "======= Other =======", ",", 45, "-", "silence - loop 10s fade out", ",", 46, "-", "logic filters 2", ",", 47, "-", "filtering logic 1", ",", 48, "-", "filtering logic 2", ",", 49, "-", "filtering logic 3", ",", 50, "-", "====== Transitions ======", ",", 51, "-", "swell transition harmonized", ",", 52, "-", "swell transition fast and low" ],
+									"items" : [ 0, "-", "<<< temp slot >>> (not saved)", ",", 1, "-", "====== Pre Show ====== (TODO)", ",", 2, "-", "Funnels 1 loop", ",", 3, "-", "Funnels 2 (end)", ",", 4, "-", "Offwhite-Emerald loop", ",", 5, "-", "Grand Mouth loop 1", ",", 6, "-", "Grand Mouth loop 2", ",", 7, "-", "Throbbing Gristle loop", ",", 8, "-", "shify-nine.99 cue", ",", 9, "-", "Throbbing Girstle Run Away", ",", 10, "-", "Bag inflation loop", ",", 11, "-", "Anna shopvac stupidSynth", ",", 12, "-", "silence - loop quick fade out", ",", 13, "-", "Lungs loop", ",", 14, "-", "silence (Im coming out there to see…)", ",", 15, "-", "me me me me", ",", 16, "-", "Peepers", ",", 17, "-", "Seeking a Light loop", ",", 18, "-", "Fat Suit loop 1", ",", 19, "-", "Fat Suit loop 2", ",", 20, "-", "swell transition normal", ",", 21, "-", "Purple Bib loop", ",", 22, "-", "silence Now", ",", 23, "-", "Pink Triangle start - videotrack", ",", 24, "-", "Pink Triangle Rotate", ",", 25, "-", "Slinkies TODO", ",", 26, "-", "Ring of Fire loop", ",", 27, "-", "Golden Triangle loop", ",", 28, "-", "Golden Triangle Resolution", ",", 29, "-", "======= End Of Show =======", ",", 30, "-", "======= MPU =======", ",", 31, "-", "default", ",", 32, "-", "generalized setup 1", ",", 33, "-", "throbbing Gristle 1 (only MPU1 so far)", ",", 34, "-", "throbbing Gristle 2 (only MPU1 so far)", ",", 35, "-", "masterFIlter mpu settings 1", ",", 36, "-", "Arps 1-28", ",", 37, "-", "2018-01-28 b", ",", 38, "-", "2018-01-28 c", ",", 39, "-", "crazy cello MPUs", ",", 40, "-", "======= VideoTrack =======", ",", 41, "-", "good mid-stage video tracking settings", ",", 42, "-", "video calliope", ",", 43, "-", "video reso haze", ",", 44, "-", "video underwater (penta Maj)", ",", 45, "-", "video glass bells (penta Maj)", ",", 46, "-", "video glass bells (penta Min)", ",", 47, "-", "======= Other =======", ",", 48, "-", "silence - loop 10s fade out", ",", 49, "-", "logic filters 2", ",", 50, "-", "filtering logic 1", ",", 51, "-", "filtering logic 2", ",", 52, "-", "filtering logic 3", ",", 53, "-", "====== Transitions ======", ",", 54, "-", "swell transition harmonized", ",", 55, "-", "swell transition fast and low" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1684,9 +1752,9 @@
 , 							{
 								"name" : "Classic Gray 1",
 								"default" : 								{
-									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
 									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
 									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ],
 									"bgfillcolor" : 									{
@@ -1717,11 +1785,11 @@
 , 							{
 								"name" : "Green Lantern",
 								"default" : 								{
-									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
+									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ]
+									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1730,8 +1798,8 @@
 , 							{
 								"name" : "Green Lantern Inverse",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ]
 								}
 ,
@@ -1741,11 +1809,10 @@
 , 							{
 								"name" : "videoEditor",
 								"default" : 								{
-									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
-									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
+									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
 									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -1756,7 +1823,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1796,7 +1864,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1954.0, 78.0, 654.0, 786.0 ],
+						"rect" : [ 1954.0, 79.0, 654.0, 786.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1823,7 +1891,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -2142,9 +2209,9 @@
 , 							{
 								"name" : "Classic Gray 1",
 								"default" : 								{
-									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
 									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
 									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ],
 									"bgfillcolor" : 									{
@@ -2175,11 +2242,11 @@
 , 							{
 								"name" : "Green Lantern",
 								"default" : 								{
-									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
+									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ]
+									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2188,8 +2255,8 @@
 , 							{
 								"name" : "Green Lantern Inverse",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ]
 								}
 ,
@@ -2199,11 +2266,10 @@
 , 							{
 								"name" : "videoEditor",
 								"default" : 								{
-									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
-									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
+									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
 									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -2214,7 +2280,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2371,8 +2438,8 @@
 					"id" : "obj-84",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
-					"numoutlets" : 4,
-					"outlettype" : [ "clear", "clear", "int", "bang" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "clear", "clear", "int", "bang", "int" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -2383,7 +2450,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 2328.0, 92.0, 619.0, 751.0 ],
+						"rect" : [ 2262.0, -143.0, 619.0, 751.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2410,7 +2477,34 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 398.0, 534.0, 29.5, 22.0 ],
+									"style" : "",
+									"text" : "+ 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-7",
+									"index" : 5,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 420.0, 607.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-9",
@@ -2803,6 +2897,15 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-74", 0 ],
+									"order" : 1,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"order" : 0,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -3053,6 +3156,13 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
  ],
 						"styles" : [ 							{
 								"name" : "AudioStatus_Menu",
@@ -3075,9 +3185,9 @@
 , 							{
 								"name" : "Classic Gray 1",
 								"default" : 								{
-									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
 									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
 									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ],
 									"bgfillcolor" : 									{
@@ -3108,11 +3218,11 @@
 , 							{
 								"name" : "Green Lantern",
 								"default" : 								{
-									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
+									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ]
+									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3121,8 +3231,8 @@
 , 							{
 								"name" : "Green Lantern Inverse",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ]
 								}
 ,
@@ -3132,11 +3242,10 @@
 , 							{
 								"name" : "videoEditor",
 								"default" : 								{
-									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
-									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
+									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
 									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -3147,7 +3256,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3234,7 +3344,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 754.0, 141.399414, 64.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 267.0, 162.0 ],
+					"presentation_rect" : [ 414.0, 297.0, 267.0, 162.0 ],
 					"rounded" : 0.0
 				}
 
@@ -3297,7 +3407,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 938.0, 453.0, 88.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 155.0, 86.0, 95.0, 60.0 ],
+					"presentation_rect" : [ 372.0, 224.0, 95.0, 60.0 ],
 					"rounded" : 8.0,
 					"style" : "",
 					"text" : "Delete All",
@@ -3374,7 +3484,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 736.0, 571.0, 81.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 86.0, 95.0, 60.0 ],
+					"presentation_rect" : [ 240.0, 342.0, 95.0, 60.0 ],
 					"rounded" : 8.0,
 					"style" : "",
 					"text" : "Cancel",
@@ -3420,7 +3530,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 841.0, 570.0, 77.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 267.0, 162.0 ],
+					"presentation_rect" : [ 707.0, 138.0, 267.0, 162.0 ],
 					"style" : ""
 				}
 
@@ -3942,7 +4052,6 @@
 					"bordercolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"id" : "obj-179",
 					"keymode" : 1,
-					"linecount" : 2,
 					"lines" : 1,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
@@ -3953,7 +4062,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 38.0, 142.105927, 228.0, 19.899414 ],
 					"style" : "",
-					"text" : "silence (Im coming out there to see…)",
+					"text" : "Purple Bib loop",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -4386,9 +4495,9 @@
 , 							{
 								"name" : "Classic Gray 1",
 								"default" : 								{
-									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
 									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
 									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ],
 									"bgfillcolor" : 									{
@@ -4419,11 +4528,11 @@
 , 							{
 								"name" : "Green Lantern",
 								"default" : 								{
-									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
+									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ]
+									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4432,8 +4541,8 @@
 , 							{
 								"name" : "Green Lantern Inverse",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ]
 								}
 ,
@@ -4443,11 +4552,10 @@
 , 							{
 								"name" : "videoEditor",
 								"default" : 								{
-									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
-									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
+									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
 									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -4458,7 +4566,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5226,9 +5335,9 @@
 , 							{
 								"name" : "Classic Gray 1",
 								"default" : 								{
-									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
 									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
 									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ],
 									"bgfillcolor" : 									{
@@ -5259,11 +5368,11 @@
 , 							{
 								"name" : "Green Lantern",
 								"default" : 								{
-									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
+									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ]
+									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5272,8 +5381,8 @@
 , 							{
 								"name" : "Green Lantern Inverse",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ]
 								}
 ,
@@ -5283,11 +5392,10 @@
 , 							{
 								"name" : "videoEditor",
 								"default" : 								{
-									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
-									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
+									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
 									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -5298,7 +5406,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5711,9 +5820,9 @@
 , 							{
 								"name" : "Classic Gray 1",
 								"default" : 								{
-									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
 									"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
 									"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ],
 									"bgfillcolor" : 									{
@@ -5744,11 +5853,11 @@
 , 							{
 								"name" : "Green Lantern",
 								"default" : 								{
-									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
+									"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 									"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ]
+									"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5757,8 +5866,8 @@
 , 							{
 								"name" : "Green Lantern Inverse",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ]
 								}
 ,
@@ -5768,11 +5877,10 @@
 , 							{
 								"name" : "videoEditor",
 								"default" : 								{
-									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
-									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 									"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
+									"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
 									"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -5783,7 +5891,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6542,7 +6651,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 125.0, 8.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -6614,7 +6723,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
 					"id" : "obj-290",
-					"items" : [ 0, "-", "<<< temp slot >>> (not saved)", ",", 1, "-", "====== Pre Show ====== (TODO)", ",", 2, "-", "Funnels 1 loop", ",", 3, "-", "Funnels 2 (end)", ",", 4, "-", "Offwhite-Emerald loop", ",", 5, "-", "Grand Mouth loop 1", ",", 6, "-", "Grand Mouth loop 2", ",", 7, "-", "Throbbing Gristle loop", ",", 8, "-", "shify-nine.99 cue TODO", ",", 9, "-", "Bag inflation loop", ",", 10, "-", "silence - loop 1s fade out", ",", 11, "-", "Anna shopvac stupidSynth", ",", 12, "-", "Lungs loop", ",", 13, "-", "silence (Im coming out there to see…)", ",", 14, "-", "Seeking a Light loop", ",", 15, "-", "Fat Suit loop 1", ",", 16, "-", "Fat Suit loop 2", ",", 17, "-", "Slinkies TODO", ",", 18, "-", "swell transition normal", ",", 19, "-", "Purple Bib loop", ",", 20, "-", "silence Now", ",", 21, "-", "Pink Triangle start - videotrack", ",", 22, "-", "Pink Triangle Rotate", ",", 23, "-", "Ring of Fire loop", ",", 24, "-", "Golden Triangle loop", ",", 25, "-", "Golden Triangle Resolution", ",", 26, "-", "======= End Of Show =======", ",", 27, "-", "======= MPU =======", ",", 28, "-", "default", ",", 29, "-", "generalized setup 1", ",", 30, "-", "throbbing Gristle 1 (only MPU1 so far)", ",", 31, "-", "throbbing Gristle 2 (only MPU1 so far)", ",", 32, "-", "masterFIlter mpu settings 1", ",", 33, "-", "Arps 1-28", ",", 34, "-", "2018-01-28 b", ",", 35, "-", "2018-01-28 c", ",", 36, "-", "crazy cello MPUs", ",", 37, "-", "======= VideoTrack =======", ",", 38, "-", "good mid-stage video tracking settings", ",", 39, "-", "video calliope", ",", 40, "-", "video reso haze", ",", 41, "-", "video underwater (penta Maj)", ",", 42, "-", "video glass bells (penta Maj)", ",", 43, "-", "video glass bells (penta Min)", ",", 44, "-", "======= Other =======", ",", 45, "-", "silence - loop 10s fade out", ",", 46, "-", "logic filters 2", ",", 47, "-", "filtering logic 1", ",", 48, "-", "filtering logic 2", ",", 49, "-", "filtering logic 3", ",", 50, "-", "====== Transitions ======", ",", 51, "-", "swell transition harmonized", ",", 52, "-", "swell transition fast and low" ],
+					"items" : [ 0, "-", "<<< temp slot >>> (not saved)", ",", 1, "-", "====== Pre Show ====== (TODO)", ",", 2, "-", "Funnels 1 loop", ",", 3, "-", "Funnels 2 (end)", ",", 4, "-", "Offwhite-Emerald loop", ",", 5, "-", "Grand Mouth loop 1", ",", 6, "-", "Grand Mouth loop 2", ",", 7, "-", "Throbbing Gristle loop", ",", 8, "-", "shify-nine.99 cue", ",", 9, "-", "Throbbing Girstle Run Away", ",", 10, "-", "Bag inflation loop", ",", 11, "-", "Anna shopvac stupidSynth", ",", 12, "-", "silence - loop quick fade out", ",", 13, "-", "Lungs loop", ",", 14, "-", "silence (Im coming out there to see…)", ",", 15, "-", "me me me me", ",", 16, "-", "Peepers", ",", 17, "-", "Seeking a Light loop", ",", 18, "-", "Fat Suit loop 1", ",", 19, "-", "Fat Suit loop 2", ",", 20, "-", "swell transition normal", ",", 21, "-", "Purple Bib loop", ",", 22, "-", "silence Now", ",", 23, "-", "Pink Triangle start - videotrack", ",", 24, "-", "Pink Triangle Rotate", ",", 25, "-", "Slinkies TODO", ",", 26, "-", "Ring of Fire loop", ",", 27, "-", "Golden Triangle loop", ",", 28, "-", "Golden Triangle Resolution", ",", 29, "-", "======= End Of Show =======", ",", 30, "-", "======= MPU =======", ",", 31, "-", "default", ",", 32, "-", "generalized setup 1", ",", 33, "-", "throbbing Gristle 1 (only MPU1 so far)", ",", 34, "-", "throbbing Gristle 2 (only MPU1 so far)", ",", 35, "-", "masterFIlter mpu settings 1", ",", 36, "-", "Arps 1-28", ",", 37, "-", "2018-01-28 b", ",", 38, "-", "2018-01-28 c", ",", 39, "-", "crazy cello MPUs", ",", 40, "-", "======= VideoTrack =======", ",", 41, "-", "good mid-stage video tracking settings", ",", 42, "-", "video calliope", ",", 43, "-", "video reso haze", ",", 44, "-", "video underwater (penta Maj)", ",", 45, "-", "video glass bells (penta Maj)", ",", 46, "-", "video glass bells (penta Min)", ",", 47, "-", "======= Other =======", ",", 48, "-", "silence - loop 10s fade out", ",", 49, "-", "logic filters 2", ",", 50, "-", "filtering logic 1", ",", 51, "-", "filtering logic 2", ",", 52, "-", "filtering logic 3", ",", 53, "-", "====== Transitions ======", ",", 54, "-", "swell transition harmonized", ",", 55, "-", "swell transition fast and low" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -7294,7 +7403,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-290", 0 ]
 				}
 
@@ -7302,7 +7411,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-150", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-290", 0 ]
 				}
 
@@ -7325,6 +7434,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
+					"order" : 2,
+					"source" : [ "obj-290", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-68", 0 ],
 					"order" : 1,
 					"source" : [ "obj-290", 0 ]
 				}
@@ -7725,6 +7842,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-290", 0 ],
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-131", 0 ],
 					"source" : [ "obj-58", 0 ]
 				}
@@ -7776,8 +7900,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-71", 0 ],
+					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-162", 0 ],
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-71", 0 ]
 				}
 
 			}
@@ -7947,6 +8085,22 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
+					"order" : 1,
+					"source" : [ "obj-84", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-84", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"order" : 0,
 					"source" : [ "obj-84", 1 ]
 				}
 
@@ -8022,9 +8176,9 @@
 , 			{
 				"name" : "Classic Gray 1",
 				"default" : 				{
-					"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.915677, 0.915677, 0.915677, 1.0 ],
 					"accentcolor" : [ 0.539031, 0.555365, 0.555365, 1.0 ],
 					"elementcolor" : [ 0.920998, 0.920998, 0.920998, 1.0 ],
 					"bgfillcolor" : 					{
@@ -8055,11 +8209,11 @@
 , 			{
 				"name" : "Green Lantern",
 				"default" : 				{
-					"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 					"color" : [ 0.0, 0.665647, 0.0, 1.0 ],
+					"bgcolor" : [ 0.0, 0.435294, 0.0, 1.0 ],
 					"accentcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ]
+					"elementcolor" : [ 0.613943, 1.0, 0.0, 1.0 ],
+					"selectioncolor" : [ 0.831373, 1.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -8068,8 +8222,8 @@
 , 			{
 				"name" : "Green Lantern Inverse",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"color" : [ 0.613943, 1.0, 0.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"elementcolor" : [ 0.0, 0.665647, 0.0, 1.0 ]
 				}
 ,
@@ -8079,11 +8233,10 @@
 , 			{
 				"name" : "videoEditor",
 				"default" : 				{
-					"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ],
-					"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
-					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"color" : [ 0.183995, 0.910435, 0.147968, 1.0 ],
+					"textcolor_inverse" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"bgcolor" : [ 0.176977, 0.176977, 0.176977, 1.0 ],
 					"elementcolor" : [ 0.292112, 0.292112, 0.292112, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -8094,7 +8247,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"selectioncolor" : [ 0.815686, 0.858824, 0.34902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
