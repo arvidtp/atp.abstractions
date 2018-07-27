@@ -44,7 +44,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 174.0, 119.0, 43.0, 22.0 ],
-					"presentation_rect" : [ 174.0, 119.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "snake"
 				}
@@ -114,6 +113,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-72",
@@ -184,11 +184,11 @@
 		"styles" : [ 			{
 				"name" : "yhGuiStepButton",
 				"default" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.117647, 0.545098, 0.996078, 1.0 ],
 					"accentcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"elementcolor" : [ 0.118976, 0.543167, 0.997531, 1.0 ],
-					"bgcolor" : [ 0.117647, 0.545098, 0.996078, 1.0 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -197,12 +197,12 @@
 , 			{
 				"name" : "yhGuiStepButton-1",
 				"default" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.117647, 0.545098, 0.996078, 1.0 ],
 					"accentcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"elementcolor" : [ 0.118976, 0.543167, 0.997531, 1.0 ],
-					"bgcolor" : [ 0.117647, 0.545098, 0.996078, 1.0 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontsize" : [ 16.0 ]
+					"fontsize" : [ 16.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
