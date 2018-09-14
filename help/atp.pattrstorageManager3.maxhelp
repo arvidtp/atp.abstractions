@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,11 +38,75 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 37.0, 202.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "Example UI objects"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.38,
+					"bubbleside" : 3,
+					"id" : "obj-27",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 227.0, 318.5, 82.25, 37.0 ],
+					"presentation_rect" : [ 224.0, 318.5, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "2. Click Recall"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.77,
+					"bubbleside" : 3,
+					"id" : "obj-26",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 227.0, 280.5, 82.25, 37.0 ],
+					"presentation_rect" : [ 180.0, 252.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "1. Choose Preset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.1,
+					"bubbleside" : 0,
+					"id" : "obj-25",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 532.0, 406.0, 115.25, 52.0 ],
+					"presentation_rect" : [ 448.75, 409.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "click to cue up next preset in list",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 478.0, 469.0, 74.0, 22.0 ],
+					"patching_rect" : [ 478.0, 484.0, 74.0, 22.0 ],
 					"style" : "",
 					"text" : "print INDEX"
 				}
@@ -54,7 +118,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 561.0, 469.0, 72.0, 22.0 ],
+					"patching_rect" : [ 561.0, 484.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "print NAME"
 				}
@@ -70,7 +134,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 66.75, 433.0, 221.0, 52.0 ],
+					"patching_rect" : [ 68.75, 428.0, 221.0, 52.0 ],
 					"style" : "",
 					"text" : "hint: you can also drag and drop json files onto it",
 					"textjustification" : 1
@@ -82,12 +146,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-19",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 579.5, 152.0, 76.0, 20.0 ],
+					"patching_rect" : [ 579.5, 139.0, 80.0, 33.0 ],
 					"style" : "",
-					"text" : "recall preset"
+					"text" : "recall preset\nimmediately"
 				}
 
 			}
@@ -248,7 +313,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 6.5, 26.0, 308.0, 154.0 ],
 					"style" : "",
-					"text" : "vastly improved over atp.pattrstorageManager2,and doesn't block the scheduler!\n\nArvid Tomayko | arvidtomayko.com\n2018-02\n\nArgs:\n1: name of json file to store in\n2: 1 = default to store current settings automatically as preset 1 on close, 0 = don't\n3: 1 = auto-save on store, 0 = don't"
+					"text" : "vastly improved over atp.pattrstorageManager2, and doesn't block the scheduler!\n\nArvid Tomayko | arvidtomayko.com\n2018-02\n\nArgs:\n1: name of json file to store in\n2: 1 = default to store current settings automatically as preset 1 on close, 0 = don't\n3: 1 = auto-save on store, 0 = don't"
 				}
 
 			}
@@ -312,18 +377,18 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 16.5, 399.0, 223.0, 22.0 ],
 					"restore" : 					{
-						"flonum" : [ 0.0 ],
-						"live.dial" : [ 0.0 ],
-						"number" : [ 0 ],
-						"number[1]" : [ 0 ],
-						"number[2]" : [ 0 ],
-						"slidersAreTasty" : [ 0 ],
+						"flonum" : [ 0.07 ],
+						"live.dial" : [ 67.0 ],
+						"number" : [ -15 ],
+						"number[1]" : [ 327 ],
+						"number[2]" : [ 8 ],
+						"slidersAreTasty" : [ 83 ],
 						"toggle" : [ 0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr @autoname 1 @autorestore 0",
-					"varname" : "u011008285"
+					"varname" : "u363009161"
 				}
 
 			}
@@ -369,7 +434,7 @@
 					"numoutlets" : 4,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "int", "" ],
-					"patching_rect" : [ 312.0, 242.0, 268.0, 163.0 ],
+					"patching_rect" : [ 312.0, 227.0, 268.0, 187.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -384,7 +449,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 312.0, 448.0, 155.0, 22.0 ],
+					"patching_rect" : [ 312.0, 463.0, 155.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 45, 425, 402 ],
 						"parameter_enable" : 0,
@@ -393,7 +458,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @savemode 0",
-					"varname" : "u225008283"
+					"varname" : "u839009159"
 				}
 
 			}
@@ -404,7 +469,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 342.75, 419.0, 91.0, 22.0 ],
+					"patching_rect" : [ 342.75, 434.0, 91.0, 22.0 ],
 					"style" : "",
 					"text" : "storagewindow"
 				}
@@ -414,7 +479,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 321.5, 483.0, 299.0, 483.0, 299.0, 229.0, 321.5, 229.0 ],
+					"midpoints" : [ 321.5, 499.0, 299.0, 499.0, 299.0, 215.0, 321.5, 215.0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
