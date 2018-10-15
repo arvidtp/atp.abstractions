@@ -4,7 +4,7 @@ atp.abstractions
 by Arvid Tomayko | [arvidtomayko.com](http://arvidtomayko.com)
 ---
 
-A growing repository of Max 5/6/7 abstractions, javascripts, shaders, etc I’ve made and found useful over the years. Some will be generically useful to people, others may be a bit esoteric. Some are well documented, others are not so much. I hope they will help you build stuff in Max!
+A growing repository of Max abstractions, javascripts, shaders, etc I’ve made and found useful over the years. Some will be generically useful to people, others may be a bit esoteric. Some are well documented, others are not so much. I hope they will help you build stuff in Max! Most are compatible with Max 5, but some will require Max 6 or 7. Compatible with Max 8.
 
 Installation:
 ---
@@ -12,10 +12,10 @@ Installation:
 Unzip the archive if necessary. Move the atp.abstractions folder into your Max Packages folder located at:
 
 - Mac:
-	- User: /Users/**[yourname]**/Documents/Max 7/Packages
+	- User: /Users/**[yourname]**/Documents/Max 8/Packages
 	- Global: /Users/Shared/Max 7/Packages
 - Windows:
-	- User: C:\Users\\**[yourname]**\Documents\Max 7\Packages
+	- User: C:\Users\\**[yourname]**\Documents\Max 8\Packages
 	- Global: C:\ProgramData\Max 7\Packages
 
 Highlights:
