@@ -40,6 +40,9 @@ To Do:
 
 - keep text from hitting close button with small margin sizes
 
+- compute word wrap and heights for both presentation_rect and patching_rect widths so we can fit to both. 
+  Or Maybe compare box.rect to presentation_rect and patching_rect and see which it is currently?
+
 */
 
 
@@ -110,7 +113,8 @@ if(jsarguments.length>1) // argument 0 is the name of the js file
 		myHeadingSize = 18;
 		mySize = 13;
 	} else if(jsarguments[1]==="yhErrorPop") { //arg 1 = stylePreset
-		//closeButton 1, setSize 12, setMargin 18, arrow 3 15 46, heading 1, setHeadingSize 14, setMargin 13, bgcolor 1. 0. 0. 0.7, textcolor 0. 0. 0. 1., hidden 1
+		// closeButton 1, setSize 12, setMargin 18, arrow 3 15 46, heading 1, setHeadingSize 14, 
+		// setMargin 13, bgcolor 1. 0. 0. 0.7, textcolor 0. 0. 0. 1., hidden 1
 		headingEnable = 1;
 		bgColor = [1., 0., 0., 0.8];
 		textColor = [0., 0., 0., 1.];
@@ -535,10 +539,10 @@ function fitHeight(a) {
 	}
 	target_rect = box.getattr(target);
 	//tell someone about it:
-	outlet(0, target, target_rect[0], target_rect[1], edgeR, bottom+arrowSizeB+arrowSizeT);
+	outlet(0, target, target_rect[0], target_rect[1], target_rect[2], bottom+arrowSizeB+arrowSizeT);
 	bottomPrev = bottom;
 	swPrev = sw;
-	box.message(target, target_rect[0], target_rect[1], edgeR, bottom+arrowSizeB+arrowSizeT);
+	box.message(target, target_rect[0], target_rect[1], target_rect[2], bottom+arrowSizeB+arrowSizeT);
 }
 
 function closeButton(a) {
