@@ -9,7 +9,7 @@ Features:
 - text color adjustment
 - auto-fitting of object box height (not just background) to the text
   taking into consideration text wrapping, margin and arrows
-- Optional Heading text that can have a different font and size and a margin 
+- Optional Heading text that can have a different font and size and a margin
   between it and the main body text
 
 Notes:
@@ -22,7 +22,7 @@ Notes:
 		4 = bottom
 	2 - size (length of arrow)
 	3 - distance from origin (top or left)
-	
+
 - arrow width adjusted separately
 
 - autoFitHeight: auto resize presentation mode object box to text when resized
@@ -40,7 +40,7 @@ To Do:
 
 - keep text from hitting close button with small margin sizes
 
-- compute word wrap and heights for both presentation_rect and patching_rect widths so we can fit to both. 
+- compute word wrap and heights for both presentation_rect and patching_rect widths so we can fit to both.
   Or Maybe compare box.rect to presentation_rect and patching_rect and see which it is currently?
 
 */
@@ -113,7 +113,7 @@ if(jsarguments.length>1) // argument 0 is the name of the js file
 		myHeadingSize = 18;
 		mySize = 13;
 	} else if(jsarguments[1]==="yhErrorPop") { //arg 1 = stylePreset
-		// closeButton 1, setSize 12, setMargin 18, arrow 3 15 46, heading 1, setHeadingSize 14, 
+		// closeButton 1, setSize 12, setMargin 18, arrow 3 15 46, heading 1, setHeadingSize 14,
 		// setMargin 13, bgcolor 1. 0. 0. 0.7, textcolor 0. 0. 0. 1., hidden 1
 		headingEnable = 1;
 		bgColor = [1., 0., 0., 0.8];
@@ -136,6 +136,12 @@ if(jsarguments.length>1) // argument 0 is the name of the js file
 		arrowDir = 1;
 		arrowSize = 20;
 		arrowDist = 22;
+	} else if(jsarguments[1]==="yhNote") { //arg 1 = stylePreset
+		myHeadingSize = 13;
+		mySize = 12;
+		margin = 14;
+		arrow(1, 15, 20);
+		showCloseButton = 1;
 	}
 }
 
@@ -181,41 +187,41 @@ ondrag.local = 1;
 function checkCloseButton(x,y) {
 	//see if we're clicking on close button or not
 	var a = 0;
-	
+
 	if ( (x > (edgeR-20-arrowSizeR)) && (x < (edgeR-arrowSizeR)) && (y < (20+arrowSizeT)) && (y > arrowSizeT) ) {
 		a = 1;
 	}
-	
+
 	return a;
 }
 
 function paint()
 {
 	updateSw();
-	
+
 	var textLocation;
 	var isBold = 0;
 	var prevChar;
-	
+
 	if (headingEnable) {
 		doWordWrap(myHeading, myHeadingSize, myHeadingFont);
 		wrapHeading = wrapText;
 		headingHeight = textHeight;
 		headingTotalHeight = headingHeight*wrapHeading.length + headingMargin;
 	}
-	
+
 	doWordWrap(myMessage, mySize, myFont);
 	wrapMain = wrapText;
 	mainHeight = textHeight;
-	
+
 	bottom = Math.round(headingEnable*headingTotalHeight + mainHeight*wrapMain.length + 1.5*margin);
-	
+
 	if (autoResize) {
 		if ((bottom != bottomPrev) || (sw != swPrev)){
 			fitHeight("");
 		}
 	}
-	
+
 	if (fitNow) {
 		if (fitNow == 1) {
 			fitHeight("presentation");
@@ -227,19 +233,19 @@ function paint()
 		}
 		fitNow = 0;
 	}
-	
+
 	with (mgraphics) {
 		set_source_rgba(bgColor[0], bgColor[1], bgColor[2], bgColor[3]);
 		rectangle_rounded(arrowSizeL, arrowSizeT, sw, bottom, cornerRadius, cornerRadius);
 		fill();
-		
+
 		if (headingEnable) {
 			set_source_rgba(headColor[0], headColor[1], headColor[2], headColor[3]);
 			select_font_face(myHeadingFont);
 			set_font_size(myHeadingSize);
-			
+
 			// post(wrapText.length, textHeight, '\n');
-			
+
 			for (var i=0; i<wrapHeading.length; i++) {
 				textLocation = headingHeight * (i + 1);
 				move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
@@ -259,11 +265,11 @@ function paint()
 				fill();
 			}
 		}
-		
+
 		set_source_rgba(textColor[0], textColor[1], textColor[2], textColor[3]);
 		select_font_face(myFont);
 		set_font_size(mySize);
-		
+
 		for (var i=0; i<wrapMain.length; i++) {
 			textLocation = mainHeight * (i + 1) + headingEnable*headingTotalHeight;
 			move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
@@ -298,7 +304,7 @@ function paint()
 			set_line_width(1.5);
 			set_source_rgba(closeButtonColor[0], closeButtonColor[1], closeButtonColor[2], closeButtonColor[3]*.75);
 			stroke();
-			
+
 			//close button X
 			set_source_rgba(closeButtonColor[0], closeButtonColor[1], closeButtonColor[2], closeButtonColor[3]);
 			set_line_width(2);
@@ -308,7 +314,7 @@ function paint()
 			move_to(edgeR-7-arrowSizeR,7+arrowSizeT);
 			line_to(edgeR-15-arrowSizeR,15+arrowSizeT);
 			stroke();
-			
+
 			//highlight close button
 			if (closeButtonClick) {
 				ellipse(edgeR-20-arrowSizeR,2+arrowSizeT, 18, 18);
@@ -316,7 +322,7 @@ function paint()
 				fill();
 			}
 		} //showCloseButton
-				
+
 		if(showArrow) {
 			//arrow drawing
 			set_source_rgba(bgColor[0], bgColor[1], bgColor[2], bgColor[3]);
@@ -340,7 +346,7 @@ function paint()
 			close_path();
 			fill();
 		}
-		
+
 	}
 }
 
@@ -370,7 +376,7 @@ function setHeadingSize(v)
 
 function setMessage(v)
 {
-	fitNow = 0;
+	// fitNow = 0; // setting this here makes fitting not happen if sent at same time as a fitMessage message. So we leave it as-is.
 	myMessage = v;
 	mgraphics.redraw();
 }
@@ -398,7 +404,7 @@ function fitMessageBoth(v)
 
 function setHeading(v)
 {
-	fitNow = 0;
+	// fitNow = 0; // setting this here makes fitting not happen if sent at same time as a fitMessage message. So we leave it as-is.
 	myHeading = v;
 	mgraphics.redraw();
 }
@@ -428,7 +434,7 @@ function sendFontList()
 {
 	var fl = mgraphics.getfontlist();
 	outlet(1, "clear");
-	
+
 	for (var i=0; i<fl.length; i++) {
 		outlet(1, "append", fl[i]);
 	}
@@ -446,7 +452,7 @@ function doWordWrap(textMessage, textSize, textFont)
 {
 	var tmpText = null;
 	var tmpString = null;
-	
+
 	wrapText = new Array();
 
 	with (mgraphics) {
@@ -454,9 +460,9 @@ function doWordWrap(textMessage, textSize, textFont)
 		set_font_size(textSize);
 		var tm = text_measure(textMessage);
 		textHeight = tm[1];	// set the text height.
-		
+
 		linesOfText = textMessage.split("\n"); //split by newlines
-		
+
 		var k;
 		for (k=0; k<linesOfText.length;k++) { //support newlines in text input
 			tm = text_measure(linesOfText[k]); //need to measure again
@@ -470,11 +476,11 @@ function doWordWrap(textMessage, textSize, textFont)
 				var st = 0;
 				var en = -1;
 				var i = 0; //change: init i
-				
+
 				while (i < tmpText.length) { //changed to a while loop
 					tmpString += tmpText[i] + " ";
 					tm = text_measure(tmpString);
-					
+
 					if (tm[0] > (sw - margin*2)) { //using a margin variable instead of hard coding it
 						if (en == -1) {
 							// a really big word - just print it
@@ -503,7 +509,7 @@ function doWordWrap(textMessage, textSize, textFont)
 		}
 	}
 	gc();	// leave a clean campsite...
-}		
+}
 doWordWrap.local = 1;
 
 function setMargin(a) {
@@ -526,12 +532,12 @@ function autoFitHeight(a) {
 }
 
 function fitHeight(a) {
-	//fit the height of the presentation mode object box 
+	//fit the height of the presentation mode object box
 	//(not just background) to the text
-	
+
 	var target;
 	var target_rect = [];
-	
+
 	if (a === "patching") {
 		target = "patching_rect";
 	} else {
@@ -558,7 +564,7 @@ function updateSw() {
 
 function arrow(dir, aSize, dist) {
 	//set up arrow properties to use for drawing
-		
+
 	if (dir < 0) {
 		arrowDir = 0;
 	} else if (dir > 4) {
@@ -566,13 +572,13 @@ function arrow(dir, aSize, dist) {
 	} else {
 		arrowDir = dir;
 	}
-	
+
 	if (dist < 0) {
 		dist = 0;
 	}
 	arrowDist = dist;
 	arrowSize = aSize;
-	
+
 	if (dir == 0) {
 		showArrow = 0;
 		arrowSizeL = 0;
