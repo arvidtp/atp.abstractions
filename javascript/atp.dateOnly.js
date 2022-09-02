@@ -22,3 +22,11 @@ function formatted() {
 	datestring.push(d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2));
 	outlet(0, datestring);
 }
+
+function testable() {
+	var d = new Date();
+	var datestring = [];
+	datestring.push(d.getFullYear()+("0"+(d.getMonth()+1)).slice(-2)+("0" + d.getDate()).slice(-2));
+	var a = parseInt(datestring, 10);
+	outlet(0, a);
+}
