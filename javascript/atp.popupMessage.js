@@ -33,6 +33,8 @@ Notes:
 - sendFontList: you need to send it this message to get a list of fonts.
   Not done at loadbang by default.
 
+- max height of 4080px enforced in fitting of height to text. Taller than this makes redraw really slow in Max.
+
 To Do:
 
 - when arrowDir = 4 (bottom), text box should snap to bottom of object box
@@ -535,6 +537,7 @@ function fitHeight(a) {
 	
 	var target;
 	var target_rect = [];
+	var finalHeight;
 	
 	if (a === "patching") {
 		target = "patching_rect";
@@ -542,11 +545,18 @@ function fitHeight(a) {
 		target = "presentation_rect";
 	}
 	target_rect = box.getattr(target);
+	
+	finalHeight = bottom+arrowSizeB+arrowSizeT;
+	if (finalHeight > 4080) { // jsui redraw gets really slow if taller than this
+		finalHeight = 4080;
+	}
+	
 	//tell someone about it:
-	outlet(0, target, target_rect[0], target_rect[1], target_rect[2], bottom+arrowSizeB+arrowSizeT);
+	outlet(0, target, target_rect[0], target_rect[1], target_rect[2], finalHeight);
+	box.message(target, target_rect[0], target_rect[1], target_rect[2], finalHeight);
+	
 	bottomPrev = bottom;
 	swPrev = sw;
-	box.message(target, target_rect[0], target_rect[1], target_rect[2], bottom+arrowSizeB+arrowSizeT);
 }
 
 function closeButton(a) {
