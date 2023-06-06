@@ -49,7 +49,11 @@ To Do:
 
 
 this.inlets = 1;
-this.outlets = 2;
+this.outlets = 3;
+
+setoutletassist(0,"stuff reported by object");
+setoutletassist(1,"font list");
+setoutletassist(2,"percentage of text visible (handy for setting up a scrollbar)");
 
 mgraphics.init();
 mgraphics.relative_coords = 0;
@@ -220,6 +224,14 @@ function paint()
 	mainHeight = textHeight;
 	
 	bottom = Math.round(headingEnable*headingTotalHeight + mainHeight*wrapMain.length + 1.5*margin);
+	
+	var scrollBarPercentVisible = (box_rect[3]/bottom) * 100.;
+	
+	if (scrollBarPercentVisible > 100.) {
+		scrollBarPercentVisible = 100;
+	}
+	
+	outlet(2, scrollBarPercentVisible)
 	
 	if (autoResize) {
 		if ((bottom != bottomPrev) || (sw != swPrev)){
@@ -690,7 +702,12 @@ function heading(a) {
 
 function vScroll(a) {
 	var box_rect = box.getattr("presentation_rect");
+	var scroll_max = bottom-box_rect[3];
 	
-	scroll = a*(bottom-box_rect[3])/100;
+	if (scroll_max < 0) {
+		scroll_max = 0;
+	}
+	
+	scroll = a*scroll_max/100;
 	mgraphics.redraw();
 }
