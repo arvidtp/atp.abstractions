@@ -95,6 +95,8 @@ var wrapText = new Array();
 var wrapMain = new Array();
 var wrapHeading = new Array();
 
+var scroll = 0;
+
 //preset styles:
 if(jsarguments.length>1) // argument 0 is the name of the js file
 {
@@ -249,7 +251,7 @@ function paint()
 			// post(wrapText.length, textHeight, '\n');
 			
 			for (var i=0; i<wrapHeading.length; i++) {
-				textLocation = headingHeight * (i + 1);
+				textLocation = headingHeight * (i + 1) - scroll;
 				move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
 				for (var j = 0; j < wrapHeading[i].length; j++) {
 					var theChar = wrapHeading[i][j];
@@ -273,7 +275,7 @@ function paint()
 		set_font_size(mySize);
 		
 		for (var i=0; i<wrapMain.length; i++) {
-			textLocation = mainHeight * (i + 1) + headingEnable*headingTotalHeight;
+			textLocation = mainHeight * (i + 1) + headingEnable*headingTotalHeight - scroll;
 			move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
 			for (var j = 0; j < wrapMain[i].length; j++) {
 				theChar = wrapMain[i][j];
@@ -675,5 +677,12 @@ function heading(a) {
 	} else {
 		headingEnable = 1;
 	}
+	mgraphics.redraw();
+}
+
+function vScroll(a) {
+	var box_rect = box.getattr("presentation_rect");
+	
+	scroll = a*(bottom-box_rect[3])/100;
 	mgraphics.redraw();
 }
