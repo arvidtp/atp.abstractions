@@ -206,6 +206,7 @@ function paint()
 	var textLocation;
 	var isBold = 0;
 	var prevChar;
+	var box_rect = box.getattr("presentation_rect");
 	
 	if (headingEnable) {
 		doWordWrap(myHeading, myHeadingSize, myHeadingFont);
@@ -252,17 +253,19 @@ function paint()
 			
 			for (var i=0; i<wrapHeading.length; i++) {
 				textLocation = headingHeight * (i + 1) - scroll;
-				move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
-				for (var j = 0; j < wrapHeading[i].length; j++) {
-					var theChar = wrapHeading[i][j];
-					if (theChar === '®') { //supersript ®
-						set_font_size(myHeadingSize * 0.7);
-						rel_move_to(0, headingHeight * -0.3);
-						text_path(theChar);
-						set_font_size(myHeadingSize);
-						rel_move_to(0, headingHeight * 0.3);
-					} else {
-						text_path(theChar);
+				if ((textLocation >= headingHeight*-1.) && (textLocation <= box_rect[3])) {
+					move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
+					for (var j = 0; j < wrapHeading[i].length; j++) {
+						var theChar = wrapHeading[i][j];
+						if (theChar === '®') { //supersript ®
+							set_font_size(myHeadingSize * 0.7);
+							rel_move_to(0, headingHeight * -0.3);
+							text_path(theChar);
+							set_font_size(myHeadingSize);
+							rel_move_to(0, headingHeight * 0.3);
+						} else {
+							text_path(theChar);
+						}
 					}
 				}
 				// text_path(wrapHeading[i]);
@@ -276,27 +279,32 @@ function paint()
 		
 		for (var i=0; i<wrapMain.length; i++) {
 			textLocation = mainHeight * (i + 1) + headingEnable*headingTotalHeight - scroll;
-			move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
-			for (var j = 0; j < wrapMain[i].length; j++) {
-				theChar = wrapMain[i][j];
-				if (theChar === '®') { //supersript ®
-					set_font_size(mySize * 0.7);
-					rel_move_to(0, mainHeight * -0.3);
-					text_path(theChar);
-					set_font_size(mySize);
-					rel_move_to(0, mainHeight * 0.3);
-				} else if (theChar === '_') { //underscore toggles Bold text
-					if (!isBold) {
-						select_font_face(myFont + ' Bold');
-						isBold = 1;
+			//post("textLocation " + textLocation +"\n");
+			if ((textLocation >= mainHeight*-1.) && (textLocation <= box_rect[3])) {
+				move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
+				for (var j = 0; j < wrapMain[i].length; j++) {
+					theChar = wrapMain[i][j];
+					if (theChar === '®') { //supersript ®
+						set_font_size(mySize * 0.7);
+						rel_move_to(0, mainHeight * -0.3);
+						text_path(theChar);
+						set_font_size(mySize);
+						rel_move_to(0, mainHeight * 0.3);
+					} else if (theChar === '_') { //underscore toggles Bold text
+						if (!isBold) {
+							select_font_face(myFont + ' Bold');
+							isBold = 1;
+						} else {
+							select_font_face(myFont);
+							isBold = 0;
+						}
 					} else {
-						select_font_face(myFont);
-						isBold = 0;
+						text_path(theChar);
 					}
-				} else {
-					text_path(theChar);
+					prevChar = theChar;
 				}
-				prevChar = theChar;
+			} else {
+				//post("not drawing " + i +"\n");
 			}
 			// text_path(wrapMain[i]);
 			fill();
