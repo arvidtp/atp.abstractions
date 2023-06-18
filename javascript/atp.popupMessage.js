@@ -574,8 +574,13 @@ function fitHeight(a) {
 	}
 	
 	//tell someone about it:
-	outlet(0, target, target_rect[0], target_rect[1], target_rect[2], finalHeight);
-	box.message(target, target_rect[0], target_rect[1], target_rect[2], finalHeight);
+	if ((arrowDir == 4) && showArrow) {
+		outlet  (0, target, target_rect[0], target_rect[1]+target_rect[3]-finalHeight, target_rect[2], finalHeight);
+		box.message(target, target_rect[0], target_rect[1]+target_rect[3]-finalHeight, target_rect[2], finalHeight);
+	} else {
+		outlet  (0, target, target_rect[0], target_rect[1], target_rect[2], finalHeight);
+		box.message(target, target_rect[0], target_rect[1], target_rect[2], finalHeight);
+	}
 	
 	bottomPrev = bottom;
 	swPrev = sw;
