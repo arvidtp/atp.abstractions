@@ -288,38 +288,42 @@ function paint()
 		set_source_rgba(textColor[0], textColor[1], textColor[2], textColor[3]);
 		select_font_face(myFont);
 		set_font_size(mySize);
-		
+				
 		for (var i=0; i<wrapMain.length; i++) {
 			textLocation = mainHeight * (i + 1) + headingEnable*headingTotalHeight - scroll;
 			//post("textLocation " + textLocation +"\n");
-			if ((textLocation >= mainHeight*-1.) && (textLocation <= box_rect[3])) {
-				move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
-				for (var j = 0; j < wrapMain[i].length; j++) {
-					theChar = wrapMain[i][j];
-					if (theChar === '®') { //supersript ®
+			var renderText = (textLocation >= mainHeight*-1.) && (textLocation <= box_rect[3]);
+				
+			move_to(margin+arrowSizeL, textLocation+0.5*margin+arrowSizeT);
+			for (var j = 0; j < wrapMain[i].length; j++) {
+				theChar = wrapMain[i][j];
+				if (theChar === '®') { //supersript ®
+					if (renderText) {
 						set_font_size(mySize * 0.7);
 						rel_move_to(0, mainHeight * -0.3);
 						text_path(theChar);
 						set_font_size(mySize);
 						rel_move_to(0, mainHeight * 0.3);
-					} else if (theChar === '_') { //underscore toggles Bold text
-						if (!isBold) {
-							select_font_face(myFont + ' Bold');
-							isBold = 1;
-						} else {
-							select_font_face(myFont);
-							isBold = 0;
-						}
+					}
+				} else if (theChar === '_') { //underscore toggles Bold text
+					if (!isBold) {
+						select_font_face(myFont + ' Bold');
+						isBold = 1;
 					} else {
+						select_font_face(myFont);
+						isBold = 0;
+					}
+				} else {
+					if (renderText) {
 						text_path(theChar);
 					}
-					prevChar = theChar;
 				}
-			} else {
-				//post("not drawing " + i +"\n");
+				prevChar = theChar;
 			}
 			// text_path(wrapMain[i]);
-			fill();
+			if (renderText) {
+				fill();
+			}
 		}
 
 		if (showCloseButton) {
