@@ -32,8 +32,8 @@ function bang()
 	var val;
 	for (var i=0; i<frames; i++) {
 		for (var j=0; j<channels; j++) {
-			val = buf.peek(j+1, i, 1);
-			if (Math.abs(val) > maxVal) {
+			val = Math.abs(buf.peek(j+1, i, 1));
+			if (val > maxVal) {
 				maxVal = val;
 				maxValIndex = i;
 				maxValChan = j;
